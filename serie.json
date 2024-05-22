@@ -1,0 +1,7 @@
+{
+    "series":["F032.IMC.IND.Z.Z.EP18.Z.Z.0.M","F034.PCC.IND.CCHC.2014.0.M","G089.IME.IND.A0.M"],
+    "nombres" : ["Imacec","Imacon","Imce total"],
+    "desde":"2010-01-01",
+    "hasta":"2020-12-01"
+
+}

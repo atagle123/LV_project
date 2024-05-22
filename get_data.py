@@ -1,45 +1,57 @@
 import bcchapi
-import numpy as np
-import matplotlib.pyplot as plt
-import json 
 import os
-import seaborn as sns
-
-json_series_file ="series.json" # donde estan las series
-json_plot_file ="plotting.json" # donde estan los plot de las series
-
-##### Funciones para leer archivos json #####
-
-def read_json(file):
-    with open(file,encoding="utf8") as f: # VER LOS ENCODINGS DE LOS ARCHIVOS  Latin-1, UTF-8
-        data = json.load(f)
-    return data
-
-def get_json(file):
-    data=read_json(file)
-    return data
-
+from utils.json_utils import get_json
 
 ##### Get data #####
 
 class Data:
     '''
-        Function to get one dataframe of data from bccentral API
+        Class to get data from bccentral API
     '''
-    def __init__(self,data_dir):
+    def __init__(self,data_dir="data"):
         self.siete = bcchapi.Siete(file="credentials.txt") # tiene que ser string # file="credenciales.txt" hacer mas seguro el logging con variables de ambiente
         self.data_directory=data_dir
         if not os.path.exists( self.data_directory):
               os.makedirs( self.data_directory)
 
-    def get_data(self):
-        args=get_json(json_series_file)
+    def get_data_from_json(self,json_file="serie.json"):
+        """
+        Function to to get the parameters from the json file and make request to the API
+        
+        """
+        args=get_json(json_file)
+        self.name=args["nombres"]   # que pasa si no pongo nombres?? quizas buscarlos
+        self.data=self.siete.cuadro(**args)
+        return(self.data)
+    
+    def get_data_from_args(self,args):
+        """
+        Function to to get the data from a dict of args
+
+        """
+        self.name=args["nombres"]   # que pasa si no pongo nombres?? quizas buscarlos
         self.data=self.siete.cuadro(**args)
         return(self.data)
 
-    def download_data(self,format="csv",filename=""):
+
+
+    def download_data(self,format="csv",filename=None):
+        """
+        Function to download the data to csv or excel
+        """
+        if filename is None:
+            filename=str(self.name)
         if format=="excel":
-            self.data.to_csv(os.path.join(self.data_directory, filename))
+            self.data.to_excel(os.path.join(self.data_directory, f"{filename}.xlsx"))
         else:
-            self.data.to_csv(os.path.join(self.data_directory, filename))
+            self.data.to_csv(os.path.join(self.data_directory, f"{filename}.csv"))
         print("Data downloaded")
+
+    
+    def search_data(self, search_string):
+        """
+        Function to search the data
+        """
+        return(self.siete.buscar(search_string))
+
+    #def create_filename(self):

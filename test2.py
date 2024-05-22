@@ -1,14 +1,5 @@
-import bcchapi
-import numpy as np
-# Incluyendo credenciales explícitamente
-import matplotlib.pyplot as plt
-siete = bcchapi.Siete(file="credentials.txt")
+from get_data import Data
 
-df=siete.cuadro(
-  series="F034.VVNN.FLU.CCHC.Z.0.T",
-  nombres = ["imacec"]
-)
-
-df.plot()
-plt.show()
-print(df)
+data=Data()
+data.get_data()
+data.download_data(format="excel")

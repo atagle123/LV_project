@@ -1,0 +1,252 @@
+{
+    "imacon": "F034.PCC.IND.CCHC.2014.0.M",
+    "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T",
+    "venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",
+    "imacec":"F032.IMC.IND.Z.Z.EP18.Z.Z.0.M",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Nivel nacional":	"F034.VALV.FLU.BCCH.Z.NAC.A",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Casas": "F034.VALV.FLU.BCCH.Z.CAS.A",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Departamentos" : "F034.VALV.FLU.BCCH.Z.DEP.A",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Zona Norte" : "F034.VALV.FLU.BCCH.Z.ZN.A",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Zona Centro" : "F034.VALV.FLU.BCCH.Z.ZC.A",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Zona Sur" : "F034.VALV.FLU.BCCH.Z.ZS.A",
+    "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Región Metropolitana de Santiago" : "F034.VALV.FLU.BCCH.Z.RM.A",
+    
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Nivel nacional"  : "F034.VALV.PPB.BCCH.Z.NAC.A",
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Casas" : "F034.VALV.PPB.BCCH.Z.CAS.A",
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Departamentos" : "F034.VALV.PPB.BCCH.Z.DEP.A",
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Zona Norte" : "F034.VALV.PPB.BCCH.Z.ZN.A",
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Zona Centro " :	"F034.VALV.PPB.BCCH.Z.ZC.A",
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Zona Sur" : "F034.VALV.PPB.BCCH.Z.ZS.A",
+    "Valor de mercado de la vivienda: General y por zonas (% del PIB) Región Metropolitana de Santiago" : "F034.VALV.PPB.BCCH.Z.RM.A",
+    
+    "Indicadores de ventas efectivas de viviendas, SII (índice 2008=100) Número total de operaciones de compraventa" : "F034.CVV.FLU.BCCH.Z.NOP.T",
+    "Indicadores de ventas efectivas de viviendas, SII (índice 2008=100) Casas nuevas" : "F034.CVV.FLU.BCCH.Z.CASN.T",
+    "Indicadores de ventas efectivas de viviendas, SII (índice 2008=100) Casas usadas" : "F034.CVV.FLU.BCCH.Z.CASU.T",
+    "Indicadores de ventas efectivas de viviendas, SII (índice 2008=100) Departamentos nuevos" : "F034.CVV.FLU.BCCH.Z.DEPN.T",
+    "Indicadores de ventas efectivas de viviendas, SII (índice 2008=100) Departamentos usados" : "F034.CVV.FLU.BCCH.Z.DEPU.T",
+    
+    "Indicadores de venta de vivienda (promesas de compraventa), CChC Ventas viviendas nuevas nacional, CChC (unidades)" : "F034.VVNN.FLU.CCHC.Z.0.T",
+    "Indicadores de venta de vivienda (promesas de compraventa), CChC Ventas viviendas nuevas Gran Santiago, CChC (unidades)" : "F034.VVNS.FLU.CCHC.Z.0.T",
+    
+    "Ventas viviendas nuevas nacional, CChC (unidades), variación anual Ventas viviendas nuevas nacional, CChC (unidades), variación anual" : "F034.VVNN.FLU.CCHC.Z.0.M",
+    "Ventas viviendas nuevas Gran Santiago (CChC), variación anual Ventas viviendas nuevas Gran Santiago, CChC (unidades)" : "F034.VVNS.FLU.CCHC.Z.0.M",
+    
+    "Relación préstamo a valor de la vivienda (LTV) Promedio simple" : "F034.RPV.PRO.BCCH.Z.Z.T",
+    "Relación préstamo a valor de la vivienda (LTV) Promedio ponderado" : "F034.RPV.PPO.BCCH.Z.Z.T",
+    "Relación préstamo a valor de la vivienda (LTV) Percentil 25" :"F034.RPV.PER25.BCCH.Z.Z.T",
+    "Relación préstamo a valor de la vivienda (LTV) Percentil 50 ": "F034.RPV.PER50.BCCH.Z.Z.T",
+    "Relación préstamo a valor de la vivienda (LTV) Percentil 75" : "F034.RPV.PER75.BCCH.Z.Z.T",
+    
+    "Montos de ahorro y número de cuentas de ahorro para la vivienda en instituciones financieras fiscalizadas por la CMF, por género Monto de cuentas de ahorro para la vivienda, total   (millones de pesos)" : "F022.DAVA.STO.Z.Z.CLP.M",
+    "Montos de ahorro y número de cuentas de ahorro para la vivienda en instituciones financieras fiscalizadas por la CMF, por género Número de cuentas de ahorro para la vivienda, total" : "F022.DAVA.STO.Z.Z.N.M",
+    
+    "Número de viviendas y superficie autorizada en obras nuevas, total país Total superficie (m2)" : "F034.CST.FLU.INE.Z.0.M",
+    "Número de viviendas y superficie autorizada en obras nuevas, total país Vivienda (número)" : "F034.CVN.FLU.INE.Z.0.M",
+    "Número de viviendas y superficie autorizada en obras nuevas,Vivienda superficie (m2) total país" :	"F034.CVS.FLU.INE.Z.0.M",
+    "Número de viviendas y superficie autorizada en obras nuevas, total país Industria, comercio y establecimientos financieros superficie (m2)" : "F034.CSNH.FLU.INE.Z.0.M",
+    "Número de viviendas y superficie autorizada en obras nuevas, total país Servicios superficie (m2)" : "F034.CSS.FLU.INE.Z.0.M",
+    
+    "PIB Servicios de vivienda e inmobiliarios, referencia 2018 (miles de millones de pesos) PIB a precios corrientes" : "F032.PIB.FLU.N.CLP.EP18.10.Z.0.T",
+    "PIB Servicios de vivienda e inmobiliarios, referencia 2018 (miles de millones de pesos) PIB volumen a precios del año anterior encadenado" : "F032.PIB.FLU.R.CLP.EP18.10.Z.0.T",
+    "PIB Servicios de vivienda e inmobiliarios, referencia 2018 (miles de millones de pesos) PIB volumen a precios del año anterior encadenado (desestacionalizado)" : "F032.PIB.FLU.R.CLP.EP18.10.Z.3.T",
+    
+    "Tasa y flujo de colocación promedio vivienda (tasas anuales reajustables en UF, miles de millones de pesos) Vivienda- tasa ": "F022.VIV.TIP.MA03.UF.Z.M",
+    "Tasa y flujo de colocación promedio vivienda (tasas anuales reajustables en UF, miles de millones de pesos) Vivienda - flujo" : "F022.VIV.FLU.MA03.UF.Z.M",
+    
+    "Créditos para la vivienda, Indicadores de Morosidad de 90 días o más del Sistema Bancario Índice de cartera con morosidad de 90 días o más, colocaciones a costo amortizado, cartera de vivienda" : "F022.M90MCV.IND.Z.Z.Z.M",
+    
+    "Plazo de créditos hipotecarios para la vivienda (meses) Promedio simple" : "F022.PZCHV.PRO.Z.Z.Z.D",
+    "Plazo de créditos hipotecarios para la vivienda (meses) Promedio ponderado" : "F022.PZCHV.PPO.Z.Z.Z.D",
+    "Plazo de créditos hipotecarios para la vivienda (meses) Percentil 25" : "F022.PZCHV.PER25.Z.Z.Z.D",
+    "Plazo de créditos hipotecarios para la vivienda (meses) Percentil 50" : "F022.PZCHV.PER50.Z.Z.Z.D",
+    "Plazo de créditos hipotecarios para la vivienda (meses) Percentil 75" : "F022.PZCHV.PER75.Z.Z.Z.D",
+    
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Estándares de aprobación de créditos inmobiliarios y de la construcción, Empresas inmobiliarias" : "F034.EACEI.IND.BCCH.Z.Z.T",
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Demanda (solicitudes) de nuevos créditos inmobiliarios y de la construcción a su banco, Empresas inmobiliarias" : "F034.DCEI.IND.BCCH.Z.Z.T",
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Estándares de aprobación de créditos a personas,  Hipotecarios para la vivienda" : "F034.EACPH.IND.BCCH.Z.Z.T",
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Demanda (solicitudes) por créditos de consumo o de vivienda, Hipotecarios para la vivienda" : "F034.DCPH.IND.BCCH.Z.Z.T",
+    
+    "Colocaciones de vivienda, variación anual  Colocaciones de vivienda, variación anual" : "F022.VIVBI.STO.Z.Z.CLP.M",
+    "Colocaciones reales vivienda, variación anual Colocaciones reales vivienda (saldos)" : "F022.VIV.STO.TP.Z.P96.M",
+    
+    "Tasa de interés promedio créditos de vivienda, más de 3 años (UF) Tasa de interés promedio créditos de vivienda , más de 3 años (UF)" : "F022.VIV.TIP.MA03.UF.Z.M",
+    
+    "Entrada neta de empresas, Actividades inmobiliarias (Cantidad) Entrada neta de empresas" : "F034.ENE.FLU.BCCH.Z.INMENE.M",
+    "Entrada neta de empresas, Actividades inmobiliarias (Cantidad) Empresas nuevas (+)" : "F034.ENE.FLU.BCCH.Z.INMENU.M",
+    "Entrada neta de empresas, Actividades inmobiliarias (Cantidad) Empresas reentrantes (+)" : "F034.ENE.FLU.BCCH.Z.INMERE.M",
+    "Entrada neta de empresas, Actividades inmobiliarias (Cantidad) Empresas sin reporte (-)" : "F034.ENE.FLU.BCCH.Z.INMESR.M",
+    
+    "PIB Servicios de vivienda e inmobiliarios referencia 2018 (miles de millones de pesos) PIB a precios corrientes" : "F032.PIB.FLU.N.CLP.EP18.10.Z.0.T",
+    "PIB Servicios de vivienda e inmobiliarios referencia 2018 (miles de millones de pesos) PIB volumen a precios del año anterior encadenado" : "F032.PIB.FLU.R.CLP.EP18.10.Z.0.T",
+    "PIB Servicios de vivienda e inmobiliarios referencia 2018 (miles de millones de pesos) PIB volumen a precios del año anterior encadenado (desestacionalizado)" : "F032.PIB.FLU.R.CLP.EP18.10.Z.3.T",
+    
+    "Ocupación por rama de actividad económica, mensual, INE (promedios móviles trimestrales, miles de personas) Actividades inmobiliarias" : "F049.OCU.PMT.INE4.39A.M",
+    "Ocupación por rama de actividad económica, mensual, INE (promedios móviles trimestrales, miles de personas) Actividades inmobiliarias, empresariales, y de alquiler" : "F049.OCU.PMT.INE9.39A.M",
+    "Cesantes por rama de actividad económica, mensual, INE (promedios móviles trimestrales, miles de personas). Actividades inmobiliarias, empresariales, y de alquiler" : "F049.DES.PMT.INE9.39A.M",
+    "Cesantes por rama de actividad económica, mensual, INE (promedios móviles trimestrales, miles de personas) Actividades inmobiliarias" : "F049.CES.PMT.INE4.39A.M",
+    
+    "Montos de deuda y número de deudores en instituciones financieras fiscalizadas por la CMF, por cartera y género Monto de deudas de vivienda (millones de pesos)" : "F022.COLVIVA.STO.Z.Z.CLP.M",
+    
+    "IPC y medidas subyacentes, base Promedio 2023=100, series referenciales INE IPC Vivienda" : "F074.IPCVIV.IND.Z.2023.C.M",
+        
+    "Indicadores de actividad de la construcción Despachos de cemento, toneladas, CCHC (año base 2014)" : "G034.DCEM.FLU.CCHC.Z.0.M",
+    "Indicadores de actividad de la construcción Despacho de materiales (base 2008=100), CCHC" : "G034.DMAT.IND.CCHC.2008.0.M",
+    "Indicadores de actividad de la construcción Despacho de materiales (base 1980=100), CCHC" : "G034.DMAT.IND.CCHC.1980.0.M",
+    "Indicadores de actividad de la construcción IMACON (base 2008=100), CCHC" : "F034.PCC.IND.CCHC.2008.0.M",
+        
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Comercio": "G089.IME.IND.A1.M",
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Construcción" : "G089.IME.IND.A3.M",
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Industria" : "G089.IME.IND.A2.M",
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Minería" : "G089.IME.IND.A4.M",
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Total" : "G089.IME.IND.A0.M",
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE:  Sin Minería" : "G089.IME.IND.A04.M",
+        
+    "Ejecución ingresos tributarios (millones de pesos) Crédito Especial Empresas Constructoras" : "F051.A01172.FLU.C.D.CLP.M",
+    
+    "Indicadores sector comercio (Base 2018=100) Materiales para la construcción, herramientas, ferretería y pintura" : "F034.VCCMC.IND.INE.2018.0.M",
+    
+    "Stock de capital neto, precios corrientes, por tipo de activo, referencia 2018 (miles de millones de pesos) Resto construcción" : "F039.S2.STO.N.CLP.2018.Z.02.0.A",
+    "Stock de capital neto, precios corrientes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S2.STO.N.CLP.2018.06.Z.0.A",
+    "Stock de capital neto, precios constantes, por tipo de activo, referencia 2018 (miles de millones de pesos) Resto construcción" : "F039.S2.STO.R.CLP.2018.Z.02.0.A",
+    "Stock de capital neto, precios constantes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S2.STO.R.CLP.2018.06.Z.0.A",
+    
+    "Stock de capital neto, precios corrientes, por tipo de activo, referencia 2008 (millones de pesos) Resto de construcción" : "F039.S2.STO.N.CLP.2008.Z.02.0.A",
+    "Stock de capital neto, precios corrientes, por clase de actividad económica, referencia 2008 (millones de pesos) Construcción" : "F039.S2.STO.N.CLP.2008.06.Z.0.A",
+    "Stock de capital neto, precios constantes, por tipo de activo, referencia 2008 (millones de pesos) Resto de construcción" : "F039.S2.STO.R.CLP.2008.Z.02.0.A",
+    "Stock de capital neto, precios constantes, por clase de actividad económica, referencia 2008 (millones de pesos) Construcción" : "F039.S2.STO.R.CLP.2008.06.Z.0.A",
+    
+    "Consumo de capital fijo, precios corrientes, por tipo de activo, referencia 2018 (miles de millones de pesos) Resto construcción" : "F039.S3.STO.N.CLP.2018.Z.02.0.A",
+    "Consumo de capital fijo, precios corrientes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S3.STO.N.CLP.2018.06.Z.0.A",
+    "Consumo de capital fijo, precios constantes, por tipo de activo, referencia 2018 (miles de millones de pesos) Resto construcción" : "F039.S3.STO.R.CLP.2018.Z.02.0.A",
+    "Consumo de capital fijo, precios constantes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S3.STO.R.CLP.2018.06.Z.0.A",
+    
+    "Stock de capital bruto, a precios corrientes, referencia 2008 (millones de pesos) Resto de construcción" : "F039.S1.STO.N.CLP.2008.Z.02.0.A",
+    "Stock de capital bruto, precios constantes, referencia 2008 (millones de pesos) Resto de construcción" : "F039.S1.STO.R.CLP.2008.Z.02.0.A",
+    
+    "IPP: Índice de sección, base 2019=100 Materiales e insumos de construcción" : "F075.IPP.IND.F.2019.Z.M",
+    "IPP: Índice de división, base 2019=100 Construcción de edificios" : "F075.IPP.IND.F41.2019.Z.M",
+    "IPP: Índice de división, base 2019=100 Construcción de obras de ingeniería civil" : "F075.IPP.IND.F42.2019.Z.M",
+    "IPP: Índice de división, base 2019=100 Actividades especializadas de construcción" : "F075.IPP.IND.F43.2019.Z.M",
+    "IPP: Índice de clase 2019=100 Fabricación de partes y piezas de carpintería para edificios y construcciones" : "F075.IPP.IND.C1622.2019.Z.M",
+    "IPP: Índice de clase 2019=100 Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción" : "F075.IPP.IND.C2824.2019.Z.M",
+    
+    "IPP: Índice de subclase, base 2019=100 Obras y piezas de carpintería para edificios y construcción" : "F075.IPP.IND.C31600.2019.Z.M",
+    "IPP: Índice de subclase, base 2019=100 Componentes estructurales prefabricados para obras construcción o de ingeniería civil, de cemento, hormigón o piedra artificial" : "F075.IPP.IND.C37550.2019.Z.M",
+    
+    
+    "IPP: Índice de producto, base 2019=100 Piezas de carpintería como vigas, cuartones, puntales que forman parte de cubiertas y estructuras de todas las construcciones en general, de madera" : "F075.IPP.IND.C3160002.2019.Z.M",
+    "IPP: Índice de producto, base 2019=100 Componentes estructurales prefabricados para obras construcción o de ingeniería civil, de cemento, hormigón o piedra artificial" : "F075.IPP.IND.C3755000.2019.Z.M",
+    
+    "IPC: Divisiones (índice promedio 2009=100) Muebles, artículos para el hogar y para la conservación corriente del hogar" : "F074.IPC.IND.DI05.2009.C.M",
+    
+    
+    "Valorización de Mercado Construcción: General y Zonas(miles de millones de pesos) Nivel nacional" : "F034.VALC.FLU.BCCH.Z.NAC.A",
+    "Valorización de Mercado Construcción: General y Zonas(miles de millones de pesos) Casas" : "F034.VALC.FLU.BCCH.Z.CAS.A",
+    "Valorización de Mercado Construcción: General y Zonas(miles de millones de pesos) Departamentos" : "F034.VALC.FLU.BCCH.Z.DEP.A",
+    
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Nivel nacional" : "F034.MCC.FLU.BCCH.Z.NAC.A",
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Casas" : "F034.MCC.FLU.BCCH.Z.CAS.A",
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Departamentos" : "F034.MCC.FLU.BCCH.Z.DEP.A",
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Zona Norte" : "F034.MCC.FLU.BCCH.Z.ZN.A",
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Zona Centro" : "F034.MCC.FLU.BCCH.Z.ZC.A",
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Zona Sur" : "F034.MCC.FLU.BCCH.Z.ZS.A",
+    "Metros Cuadrados Construidos: General y Zonas (millones de metros cuadrados) Región Metropolitana de Santiago" : "F034.MCC.FLU.BCCH.Z.RM.A",
+    
+    
+    "Construcción y otras obras volumen a precios del año anterior encadenado, referencia 2018, serie empalmada, trimestral, variación anual Formación bruta de capital fijo, construcción y otras obras, volumen a precios del año anterior encadenado, referencia 2018 (miles de millones de pesos)" : "F033.FKK.FLU.R.CLP.EP18.0.T",
+    "Construcción y otras obras volumen a precios del año anterior encadenado, referencia 2018, serie empalmada, variación anual Formación bruta de capital fijo, construcción y otras obras, volumen a precios del año anterior encadenado, referencia 2018 (miles de millones de pesos)" : "F033.FKK.FLU.R.CLP.EP18.0.T",
+    
+    "Ratios de los hogares e IPSFL, referencia 2018 (promedio móvil anual) Deuda bancaria hipotecaria (porcentaje del PIB)" : "F038.DEUBH.PPB2.53.10.N.2018.CLP.T",
+    "Ratios de los hogares e IPSFL, referencia 2018 (promedio móvil anual) Deuda bancaria hipotecaria (porcentaje del ingreso disponible)" : "F038.DEUBH.PIND.53.10.N.2018.CLP.T",
+    
+    "Ratios de los hogares e IPSFL, referencia 2013 (promedio móvil anual) Deuda bancaria hipotecaria (porcentaje del PIB)" : "F038.DEUBH.PPB2.53.10.N.2013.CLP.T",
+    "Ratios de los hogares e IPSFL, referencia 2013 (promedio móvil anual) Deuda bancaria hipotecaria (porcentaje del ingreso disponible)" : "F038.DEUBH.PIND.53.10.N.2013.CLP.T",
+    
+    
+    "Balances financieros de la economía nacional, referencia 2018 (miles de millones de pesos) Préstamos activos" : "F038.400.STO.10.Z.N.2018.CLP.T",
+    
+    "Contribución IPV General, casas y departamentos Contribución índice precios de vivienda, BCCh" : "F034.IPV.INC.BCCH.2008.0.T",
+    
+    "IPV General, casas y departamentos IPV General" : "F034.IPV.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Casas" : "F034.IPVC.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Casas Usadas" : "F034.IPVCUSED.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Casas Nuevas" : "F034.IPVCNEW.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Departamentos" : "F034.IPVD.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Departamentos Nuevos" : "F034.IPVDNEW.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Departamentos Usados" : "F034.IPVDUSED.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Nuevas" : "F034.IPVNEW.FLU.BCCH.2008.0.T",
+    "IPV General, casas y departamentos IPV Usadas" : "F034.IPVUSED.FLU.BCCH.2008.0.T",
+    
+    "IPV por zonas geográficas Zona Norte" : "F034.IVPZ1.FLU.BCCH.2008.0.T",
+    "IPV por zonas geográficas Zona Centro" : "F034.IPVZ2.FLU.BCCH.2008.0.T",
+    "IPV por zonas geográficas Zona Sur" : "F034.IPVZ3.FLU.BCCH.2008.0.T",
+    "IPV por zonas geográficas Región Metropolitana" : "F034.IPVZ4.FLU.BCCH.2008.0.T",
+    
+    "Valorización de Mercado Terreno: General y Zonas (miles de millones de pesos) Nivel nacional" : "F034.VALT.FLU.BCCH.Z.NAC.A",
+    "Valorización de Mercado Terreno: General y Zonas (miles de millones de pesos) Casas" : "F034.VALT.FLU.BCCH.Z.CAS.A",
+    "Valorización de Mercado Terreno: General y Zonas (miles de millones de pesos) Departamentos" : "F034.VALT.FLU.BCCH.Z.DEP.A",
+    
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Nivel nacional" : "F034.MCT.FLU.BCCH.Z.NAC.A",
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Casas" : "F034.MCT.FLU.BCCH.Z.CAS.A",
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Departamentos" : "F034.MCT.FLU.BCCH.Z.DEP.A",
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Zona Norte" : "F034.MCT.FLU.BCCH.Z.ZN.A",
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Zona Centro": "F034.MCT.FLU.BCCH.Z.ZC.A",
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Zona Sur" : "F034.MCT.FLU.BCCH.Z.ZS.A",
+    "Metros Cuadrados de Terreno: General y Zonas (millones de metros cuadrados) Región Metropolitana de Santiago" : "F034.MCT.FLU.BCCH.Z.RM.A",
+    
+    "Riqueza financiera total Activos Financieros Netos (miles de millones de pesos)" : "F038.999.STO.53.10.N.2018.CLP.T",
+    "Riqueza financiera total Activos financieros netos (porcentaje del PIB)" : "F038.999.PPB2.53.10.N.2018.CLP.T",
+    "Riqueza financiera total Activos financieros netos (porcentaje del ingreso disponible)" : "F038.999.PIND.53.10.N.2018.CLP.T",
+    
+    "Deuda total Deuda total (miles de millones de pesos)" : "F038.000.STO.10.53.N.2018.CLP.T",
+    "Deuda total Deuda  (porcentaje del PIB)" : "F038.DEUD.PPB2.53.10.N.2018.CLP.T",
+    "Deuda total Deuda (porcentaje del ingreso disponible)" : "F038.DEUD.PIND.10.53.N.2018.CLP.T",
+    
+    "Ahorro Ahorro total (miles de millones de pesos)" : "F038.AHO.FLU.53.10.N.2018.CLP.T",
+    "Ahorro Ahorro no previsional (miles de millones de pesos)" : "F038.AHO2.FLU.52.10.N.2018.CLP.T",
+    "Ahorro Ahorro total (porcentaje del PIB)" : "F038.AHO.PPB2.53.10.N.2018.CLP.T",
+    "Ahorro Ahorro total (porcentaje del ingreso disponible)" : "F038.AHO.PIND.53.10.N.2018.CLP.T",
+    
+    "Número de Propiedades: General y Zonas Nivel nacional" : "F034.NUMP.FLU.BCCH.Z.NAC.A",
+    "Número de Propiedades: General y Zonas Casas" : "F034.NUMP.FLU.BCCH.Z.CAS.A",
+    "Número de Propiedades: General y Zonas Departamentos": "F034.NUMP.FLU.BCCH.Z.DEP.A",
+    "Número de Propiedades: General y Zonas Zona Norte" : "F034.NUMP.FLU.BCCH.Z.ZN.A",
+    "Número de Propiedades: General y Zonas Zona Centro" : "F034.NUMP.FLU.BCCH.Z.ZC.A",
+    "Número de Propiedades: General y Zonas Zona Sur" : "F034.NUMP.FLU.BCCH.Z.ZS.A",
+    "Número de Propiedades: General y Zonas Región Metropolitana de Santiago" : "F034.NUMP.FLU.BCCH.Z.RM.A"
+    
+}
+
+Indicadores Sectoriales	Indicadores de venta de vivienda (promesas de compraventa), CChC	F034.VVNN.FLU.CCHC.Z.0.T	Ventas viviendas nuevas nacional, CChC (unidades)
+Indicadores Sectoriales	Indicadores de venta de vivienda (promesas de compraventa), CChC	F034.VVNS.FLU.CCHC.Z.0.T	Ventas viviendas nuevas Gran Santiago, CChC (unidades)
+{
+    "imacon": "F034.PCC.IND.CCHC.2014.0.M",
+    "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T",
+    "venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",
+    "imacec":"F032.IMC.IND.Z.Z.EP18.Z.Z.0.M",
+    "Número de viviendas y superficie autorizada en obras nuevas, total país Total superficie (m2)" : "F034.CST.FLU.INE.Z.0.M",
+    "Número de viviendas y superficie autorizada en obras nuevas, total país Vivienda (número)" : "F034.CVN.FLU.INE.Z.0.M",
+    "Stock de capital neto, precios corrientes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S2.STO.N.CLP.2018.06.Z.0.A",
+    "Balances financieros de la economía nacional, referencia 2018 (miles de millones de pesos) Préstamos activos" : "F038.400.STO.10.Z.N.2018.CLP.T",
+    "Ejecución ingresos tributarios (millones de pesos) Crédito Especial Empresas Constructoras" : "F051.A01172.FLU.C.D.CLP.M",
+    "Ratios de los hogares e IPSFL, referencia 2018 (promedio móvil anual) Deuda bancaria hipotecaria (porcentaje del PIB)" : "F038.DEUBH.PPB2.53.10.N.2018.CLP.T",
+    "Montos de deuda y número de deudores en instituciones financieras fiscalizadas por la CMF, por cartera y género Monto de deudas de vivienda (millones de pesos)" : "F022.COLVIVA.STO.Z.Z.CLP.M",
+    "Deuda total Deuda total (miles de millones de pesos)" : "F038.000.STO.10.53.N.2018.CLP.T",
+    "Contribución IPV General, casas y departamentos Contribución índice precios de vivienda, BCCh" : "F034.IPV.INC.BCCH.2008.0.T",
+    "Valorización de Mercado Terreno: General y Zonas (miles de millones de pesos) Nivel nacional" : "F034.VALT.FLU.BCCH.Z.NAC.A",
+    "Riqueza financiera total Activos Financieros Netos (miles de millones de pesos)" : "F038.999.STO.53.10.N.2018.CLP.T",
+    "IPP: Índice de sección, base 2019=100 Materiales e insumos de construcción" : "F075.IPP.IND.F.2019.Z.M",
+    "IPP: Índice de división, base 2019=100 Construcción de edificios" : "F075.IPP.IND.F41.2019.Z.M",
+    "Consumo de capital fijo, precios corrientes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S3.STO.N.CLP.2018.06.Z.0.A",
+    "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Construcción" : "G089.IME.IND.A3.M",
+    "Número de Propiedades: General y Zonas Nivel nacional" : "F034.NUMP.FLU.BCCH.Z.NAC.A",
+    "Construcción y otras obras volumen a precios del año anterior encadenado, referencia 2018, serie empalmada, trimestral, variación anual Formación bruta de capital fijo, construcción y otras obras, volumen a precios del año anterior encadenado, referencia 2018 (miles de millones de pesos)" : "F033.FKK.FLU.R.CLP.EP18.0.T"
+    }
+
+
+    {
+        "imacon": "F034.PCC.IND.CCHC.2014.0.M",
+        "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T",
+        "venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",
+        "imacec":"F032.IMC.IND.Z.Z.EP18.Z.Z.0.M"}
+        

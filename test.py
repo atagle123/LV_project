@@ -1,12 +1,7 @@
-import bcchapi
-import numpy as np
-#siete = bcchapi.Siete("ataglem@ext.larrainvial.com", "Larra.2024")
+from plots_data import Plot_Data
 
+plot=Plot_Data()
+plot.get_data_plots()
 
-from get_data import Data
+plot.plot_serie(serie_name="Imacec...")
 
-data=Data()
-
-data.download_data()
-data.plot_data()
-#data.plot_data()
