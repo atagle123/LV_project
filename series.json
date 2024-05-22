@@ -1,0 +1,56 @@
+[
+    {
+        "series":["F032.IMC.IND.Z.Z.EP18.Z.Z.0.M","F034.PCC.IND.CCHC.2014.0.M","G089.IME.IND.A0.M"],
+        "nombres" : ["Imacec","Imacon","Imce total"],
+        "desde":"2010-01-01",
+        "hasta":"2020-12-01"
+
+    },
+
+    {
+        "series":["F034.VVNN.FLU.CCHC.Z.0.T","F034.CVN.FLU.INE.Z.0.M"],
+        "nombres" : ["promesas compra venta","Número de viviendas autorizadas"],
+        "variacion":12,
+        "frecuencia":"A",
+        "observado":{"promesas compra venta":"last", "Número de viviendas autorizadas":"last"}
+        
+
+    },
+
+    {
+        "series":["F038.DEUD.PPB2.53.10.N.2018.CLP.T","F038.DEUBH.PPB2.53.10.N.2018.CLP.T"],
+        "nombres" :["deuda total pib","deuda hipotecaria pib"]
+  
+    },
+
+    {
+        "series":["F038.DEUD.PPB2.53.10.N.2018.CLP.T","F038.DEUBH.PPB2.53.10.N.2018.CLP.T"],
+        "nombres" :["deuda total pib","deuda hipotecaria pib"],
+        "variacion":12,
+        "frecuencia":"A",
+        "observado":{"deuda total pib":"last", "deuda hipotecaria pib":"last"}
+  
+    },
+
+    {
+        "series":["F034.CST.FLU.INE.Z.0.M","F034.PCC.IND.CCHC.2014.0.M"],
+        "nombres" : ["Número de viviendas autorizadas","IMACON"]
+    },
+
+    {
+        "series":["F034.CST.FLU.INE.Z.0.M","F034.PCC.IND.CCHC.2014.0.M"],
+        "nombres" : ["Número de viviendas autorizadas","IMACON"],
+        "variacion":12,
+        "frecuencia":"A",
+        "observado":{"Número de viviendas autorizadas":"last", "IMACON":"last"}
+    },
+
+    {
+        "series":"F075.IPP.IND.F.2019.Z.M",
+        "nombres" : ["Costo Materiales e insumos de construcción"]  
+    },
+    {
+        "series":["F034.VVNN.FLU.CCHC.Z.0.T","F022.VIV.TIP.MA03.UF.Z.M"],
+        "nombres" : ["Venta viviendas nuevas ","Tasas anuales reajustadas UF "]  
+    }
+]
