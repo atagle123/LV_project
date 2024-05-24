@@ -213,13 +213,10 @@
     "Número de Propiedades: General y Zonas Zona Norte" : "F034.NUMP.FLU.BCCH.Z.ZN.A",
     "Número de Propiedades: General y Zonas Zona Centro" : "F034.NUMP.FLU.BCCH.Z.ZC.A",
     "Número de Propiedades: General y Zonas Zona Sur" : "F034.NUMP.FLU.BCCH.Z.ZS.A",
-    "Número de Propiedades: General y Zonas Región Metropolitana de Santiago" : "F034.NUMP.FLU.BCCH.Z.RM.A"
-    
-}
-
-Indicadores Sectoriales	Indicadores de venta de vivienda (promesas de compraventa), CChC	F034.VVNN.FLU.CCHC.Z.0.T	Ventas viviendas nuevas nacional, CChC (unidades)
-Indicadores Sectoriales	Indicadores de venta de vivienda (promesas de compraventa), CChC	F034.VVNS.FLU.CCHC.Z.0.T	Ventas viviendas nuevas Gran Santiago, CChC (unidades)
-{
+    "Número de Propiedades: General y Zonas Región Metropolitana de Santiago" : "F034.NUMP.FLU.BCCH.Z.RM.A",
+    "Expectativas Económicas Índice de difusión sector construcción Salarios": "G089.IME.IND.A36.M",
+    "Indicadores de venta de vivienda (promesas de compraventa) CChC (unidades)":"F034.VVNN.FLU.CCHC.Z.0.T",
+    "Indicadores de venta de vivienda (promesas de compraventa) CChC Ventas viviendas nuevas Gran Santiago CChC (unidades)": "F034.VVNS.FLU.CCHC.Z.0.T",
     "imacon": "F034.PCC.IND.CCHC.2014.0.M",
     "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T",
     "venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",
@@ -240,11 +237,8 @@ Indicadores Sectoriales	Indicadores de venta de vivienda (promesas de compravent
     "Consumo de capital fijo, precios corrientes, por clase de actividad económica, referencia 2018 (miles de millones de pesos) Construcción" : "F039.S3.STO.N.CLP.2018.06.Z.0.A",
     "Expectativas Económicas Índice mensual de confianza empresarial (IMCE), total general e índices de difusión sectoriales IMCE: Construcción" : "G089.IME.IND.A3.M",
     "Número de Propiedades: General y Zonas Nivel nacional" : "F034.NUMP.FLU.BCCH.Z.NAC.A",
-    "Construcción y otras obras volumen a precios del año anterior encadenado, referencia 2018, serie empalmada, trimestral, variación anual Formación bruta de capital fijo, construcción y otras obras, volumen a precios del año anterior encadenado, referencia 2018 (miles de millones de pesos)" : "F033.FKK.FLU.R.CLP.EP18.0.T"
-    }
-
-
-    {
+    "Construcción y otras obras volumen a precios del año anterior encadenado, referencia 2018, serie empalmada, trimestral, variación anual Formación bruta de capital fijo, construcción y otras obras, volumen a precios del año anterior encadenado, referencia 2018 (miles de millones de pesos)" : "F033.FKK.FLU.R.CLP.EP18.0.T",
+   
         "imacon": "F034.PCC.IND.CCHC.2014.0.M",
         "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T",
         "venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",

@@ -18,8 +18,9 @@ class Plot_Data(Data):
                 self.plot_serie(file)
     """
     def get_data_plots(self,args):
-        self.get_data_from_args(args)
-        
+        data=self.get_data_from_args(args)
+        return(data)
+    
     def plot_serie(self,serie_name="",plot_args={}):
         """
         Function to plot the data series of Data
@@ -42,38 +43,4 @@ class Plot_Data(Data):
           name=str(serie_name) # falta probar
         plt.title(name)
         plt.savefig(os.path.join(self.plot_directory, name))
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-json_plot_file ="plotting.json" # donde estan los plot de las series
-
-
-    def preprocses_data(self):  # hacer preprocess normal
-        
-        for i,data in self.data_list:
-            self.data_list[i]=data.dropna()
-            
-        return(None)
-        
-    def match_lists(self,list_1,list_2): # list 1 es la mas larga
-        list_empty_dicts=[{} for _ in range(len(list_1)-len(list_2))]
-        list_2.extend(list_empty_dicts)
-        return(list_2)
-      '''
+        plt.close()
