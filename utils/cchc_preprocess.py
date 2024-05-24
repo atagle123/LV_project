@@ -17,7 +17,7 @@ def download_excel_to_df(url="https://cchc.cl/uploads/indicador/archivos/ICEWeb.
 
 
 
-def preprocess_iCE(df):
+def preprocess_iCE(df,new_column_mapping={0: 'Year', 1: 'Month',5:"Índice general", 11:"Materiales peso",12:"Sueldos y Salarios peso",13:"Misceláneos peso", 14:"Obra Gruesa peso",15:"Terminaciones peso",16:"Instalaciones peso",17: "Costos Indirectos peso"}):
     """
     Preprocess the dataframe for ICE excel data
     """
@@ -27,7 +27,6 @@ def preprocess_iCE(df):
     df=df.drop(index=[0, 1,2])
     df = df.reset_index(drop=True)
 
-    new_column_mapping = {0: 'Year', 1: 'Month',5:"Índice general", 11:"Materiales peso",12:"Sueldos y Salarios peso",13:"Misceláneos peso", 14:"Obra Gruesa peso",15:"Terminaciones peso",16:"Instalaciones peso",17: "Costos Indirectos peso"}
     df = rename_col_by_index(df, new_column_mapping)
     df.dropna(axis=0,subset=["Month"], inplace=True)
     df=process_dates(df)

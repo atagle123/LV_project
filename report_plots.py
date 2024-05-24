@@ -5,22 +5,26 @@ import os
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
+from utils.cchc_preprocess import download_excel_to_df,preprocess_iCE,preprocess_ventas_santiago
 
-######################################
-###  IMACEC vs IMACON vs IMCE  #######
-######################################
+
+##################################
+###  IMACEC vs IMACON vs IMCE  ###
+##################################
+
 args={
         "series":["F032.IMC.IND.Z.Z.EP18.Z.Z.0.M","F034.PCC.IND.CCHC.2014.0.M","G089.IME.IND.A0.M"],
         "nombres" : ["IMACEC","IMACON","IMCE"],
-        "desde":"2010-01-01",
-        "hasta":"2020-12-01"
-
+        "desde":"2010-01-01"
     }
 
 title="IMACEC vs IMACON vs IMCE"
 
 plot=Plot_Data()
 df=plot.get_data_plots(args)
+### plot ###
+
 df.plot(title=title, color=["midnightblue", "orange", "powderblue"], lw=3)
 plt.xlabel("Fecha")
 plt.ylabel("Índice")
@@ -30,6 +34,7 @@ plt.close()
 #############################################################
 #### Evolución promesas vs viviendas autorizadas Var YoY ####
 #############################################################
+
 args={
         "series":["F034.VVNN.FLU.CCHC.Z.0.T","F034.CVN.FLU.INE.Z.0.M"],
         "nombres" : ["Promesas compra venta","Número de viviendas autorizadas"],
@@ -45,6 +50,8 @@ title="Evolución promesas vs viviendas autorizadas Var YoY"
 plot=Plot_Data()
 df=plot.get_data_plots(args)
 df=df.dropna(subset="Promesas compra venta")
+### plot ###
+
 df.plot(kind="line",title=title,color=["midnightblue","orange"],lw=3)
 plt.xlabel("Fecha")
 plt.ylabel("%")
@@ -67,6 +74,9 @@ title="Préstamos hipotecarios vs Préstamos Totales % del PIB"
 
 plot=Plot_Data()
 df=plot.get_data_plots(args)
+
+### plot ###
+
 df.plot(title=title,color=["midnightblue","orange"],lw=3)
 
 plt.xlabel("Fecha")
@@ -78,7 +88,6 @@ plt.close()
 ###########################################################
 ### Préstamos hipotecarios vs Préstamos Totales Var YoY ###
 ###########################################################
-
 
 args={
         "series":["F038.DEUD.PPB2.53.10.N.2018.CLP.T","F038.DEUBH.PPB2.53.10.N.2018.CLP.T"],
@@ -94,6 +103,9 @@ title="Préstamos hipotecarios vs Préstamos Totales Var YoY"
 plot=Plot_Data()
 df=plot.get_data_plots(args)
 df=df*100
+
+### plot ###
+
 df.plot(title=title,color=["midnightblue","orange"],lw=3)
 
 plt.xlabel("Fecha")
@@ -119,13 +131,15 @@ title="IMACON vs viviendas autorizadas"
 plot=Plot_Data()
 df=plot.get_data_plots(args)
 
-fig, ax1 = plt.subplots(figsize=(8, 5))
-
-ax2 = ax1.twinx()
-
 df=df*100   
 df['Date'] = df.index
 df=df.dropna(subset="Número de viviendas autorizadas")
+
+### plot ###
+
+fig, ax1 = plt.subplots(figsize=(8, 5))
+
+ax2 = ax1.twinx()
 
 df.plot(x="Date",y="IMACON",ax=ax1,color="midnightblue",lw=3)
 df.plot(x="Date",y="Número de viviendas autorizadas",title=title,ax=ax2,color="orange",lw=3)
@@ -134,7 +148,6 @@ ax2.set_ylabel("Miles")
 
 ax1.legend(loc='upper left')
 ax2.legend(loc='upper right')
-
 
 plt.savefig(os.path.join("plots",title)) 
 plt.close()
@@ -159,11 +172,13 @@ title="IMACON vs viviendas autorizadas Var YoY"
 plot=Plot_Data()
 df=plot.get_data_plots(args)
 
+df=df*100   
+df['Date'] = df.index
+
+### plot ###
+
 fig, ax1 = plt.subplots(figsize=(8, 5))
 ax2 = ax1.twinx()
-
-df=df*100   # usar diferentes ejes
-df['Date'] = df.index
 
 df.plot(x="Date",y="IMACON",ax=ax1,color="midnightblue",lw=3)
 df.plot(x="Date",y="Número de viviendas autorizadas",title=title,ax=ax2,color="orange",lw=3)
@@ -193,12 +208,14 @@ plot=Plot_Data()
 df=plot.get_data_plots(args)
 
 df=df.dropna(subset="Venta viviendas nuevas")
-fig, ax1 = plt.subplots(figsize=(8, 5))
-
-ax2 = ax1.twinx()
 
 df=df*100   
 df['Date'] = df.index
+
+### plot ###
+fig, ax1 = plt.subplots(figsize=(8, 5))
+
+ax2 = ax1.twinx()
 
 df["Tasas anuales reajustadas UF"]=df["Tasas anuales reajustadas UF"]/100
 
@@ -219,9 +236,6 @@ plt.close()
 ### Índice costos de edificación desgolse Var YoY ############
 ##############################################################
 
-
-from utils.cchc_preprocess import download_excel_to_df,preprocess_iCE
-
 title="Índice costos de edificación desgolse Var YoY"
 
 df=download_excel_to_df()
@@ -231,6 +245,8 @@ df_new=df.loc[:,["Materiales","Sueldos y Salarios","Misceláneos","Índice gener
 df_new.index.name="Fecha"
 var=(df_new.shift(-12)-df_new)/df_new*100
 var=var.iloc[250:,:]
+
+### plot ###
 
 fig, ax = plt.subplots(figsize=(8, 5))
 
@@ -255,6 +271,8 @@ df_combined = pd.concat([mat, sysal, misc], axis=1)
 column_names={0:"Materiales",1:"Sueldos y Salarios",2:"Misceláneos"}
 df_combined.rename(columns=column_names,inplace=True)
 
+### plot ###
+
 sns.lineplot(data=df_combined,palette="rocket",dashes=False).set_title(title)
 plt.ylabel('%')
 plt.savefig(os.path.join("plots",title))
@@ -272,13 +290,18 @@ args=        {
         "frecuencia":"A",
         "observado":{"IMACON":"last", "PIB":"last"}
     }
+
 title="IMACON vs PIB Var YoY"
 
-fig, ax = plt.subplots(figsize=(8, 5))
 plot=Plot_Data()
 df=plot.get_data_plots(args) 
 df=df.dropna(subset=["PIB"])
 df=df*100
+
+### plot ###
+
+fig, ax = plt.subplots(figsize=(8, 5))
+
 df.plot(use_index=True,y=["IMACON","PIB"],kind="line",title=title,lw=3,color=["midnightblue","orange"],ax=ax)
 plt.xlabel('Fecha')
 plt.ylabel("%")
@@ -303,15 +326,17 @@ title="IMACON vs Ventas casas nuevas Var YoY"
 plot=Plot_Data()
 df=plot.get_data_plots(args)
 
+df=df*100  
+df['Fecha'] = df.index
+
+### plot ###
+
 fig, ax1 = plt.subplots(figsize=(8, 5))
 
 ax2 = ax1.twinx()
 
 ax1.set_ylabel("%")
 ax2.set_ylabel("%")
-
-df=df*100   # usar diferentes ejes
-df['Fecha'] = df.index
 
 df.plot(x="Fecha",y="IMACON",ax=ax1,color="midnightblue",lw=3)
 df.plot(x="Fecha",y="Ventas casas nuevas",title=title,ax=ax2,color="orange",lw=3)
@@ -340,12 +365,15 @@ title="Ventas inmobiliarias vs Deuda bancaria hipótecaria % del PIB"
 plot=Plot_Data()
 df=plot.get_data_plots(args)  
 
+df=df.dropna(subset="Venta viviendas nuevas")
+df["Fecha"]=df.index
+
+### plots ###
+
 fig, ax1 = plt.subplots(figsize=(8, 5))
 ax2 = ax1.twinx()
 
 plt.title(title)
-df=df.dropna(subset="Venta viviendas nuevas")
-df["Fecha"]=df.index
 
 df.plot(x="Fecha",y="Venta viviendas nuevas",ax=ax1,color="midnightblue",lw=3)
 df.plot(x="Fecha",y="Deuda bancaria hipótecaria % del PIB",kind="line",ax=ax2,color="orange",lw=3)
@@ -380,6 +408,8 @@ df=df.dropna(subset="Venta viviendas nuevas")
 df=df*100
 df["Fecha"]=df.index
 
+### plot ###
+
 fig, ax1 = plt.subplots(figsize=(8, 5))
 ax2 = ax1.twinx()
 
@@ -407,7 +437,9 @@ args=        {
     }
 
 plot_args={"kind":"line",
-    "title":"Índice Materiales e insumos de construcción"   # ajustar
+    "title":"Índice Materiales e insumos de construcción",
+    "lw":3,
+    "color":"midnightblue"
     }
 
 plot=Plot_Data()
@@ -420,10 +452,11 @@ plot.plot_serie(plot_args=plot_args)
 
 title="Oferta viviendas Gran Santiago"
 
-from utils.cchc_preprocess import preprocess_ventas_santiago
 
 df=download_excel_to_df(url="https://cchc.cl/uploads/indicador/archivos/GranSantiagoMercadoWeb.xls",filename="GranSantiagoMercadoWeb",sheet_name=1)
 df=preprocess_ventas_santiago(df)
+
+### plot ###
 
 fig, ax1 = plt.subplots(figsize=(8, 5))
 ax2 = ax1.twinx()
@@ -437,5 +470,66 @@ df.iloc[40:,:].plot(x="Period",y=["Viviendas meses"],kind="line",ax=ax2,color="o
 ax1.set_ylabel("Unidades")
 ax2.set_ylabel("Meses")
 
+plt.savefig(os.path.join("plots",title))
+plt.close()
+
+
+###############################################################
+### Índice costos de edificación en altura desgolse Var YoY ###
+###############################################################
+
+title="Índice costos de edificación en altura desgolse Var YoY"
+
+df=download_excel_to_df(url="https://cchc.cl/uploads/indicador/archivos/ICEAltura.xls",filename="ICEAltura")
+new_column_mapping={0: 'Year', 1: 'Month',5:"Índice general", 14:"Materiales peso",15:"Salarios peso",16:"Subcontratos peso",17:"Misceláneos peso"}
+df=preprocess_iCE(df,new_column_mapping)
+
+df_new=df.loc[:,["Materiales","Salarios","Subcontratos","Misceláneos","Índice general"]]
+df_new.index.name="Fecha"
+var=(df_new.shift(-12)-df_new)/df_new*100
+
+### plot ###
+
+fig, ax = plt.subplots(figsize=(8, 5))
+
+ax=sns.lineplot(data=var,dashes=False,palette="rocket",lw=3).set_title(title)
+plt.ylabel('%')
+
+plt.savefig(os.path.join("plots",title))
+plt.close()
+
+##############################################################################
+### Contribución a Índice costos de edificación en altura desgolse Var YoY ###
+##############################################################################
+
+
+title="Contribución a Índice costos de edificación en altura desgolse Var YoY"
+
+mat=var["Materiales"]*df["Materiales peso"].shift(-12)
+sysal=var["Salarios"]*df["Salarios peso"].shift(-12)
+subcon=var["Subcontratos"]*df["Subcontratos peso"].shift(-12)
+misc=var["Misceláneos"]*df["Misceláneos peso"].shift(-12)
+
+df_combined = pd.concat([mat, sysal, subcon, misc], axis=1)
+df_combined=df_combined.dropna()
+column_names={0:"Materiales",1:"Sueldos y Salarios",2:"Subcontratos",3:"Misceláneos"}
+df_combined.rename(columns=column_names,inplace=True)
+
+
+### plot ###
+
+y=df_combined.to_numpy(dtype=float).T
+y_stack = np.cumsum(y, axis=0)   
+x=df_combined.index.to_numpy()
+fig = plt.figure()
+ax1 = fig.add_subplot(111)
+
+ax1.fill_between(x, 0, y_stack[0,:], facecolor="black", alpha=.7)
+ax1.fill_between(x, y_stack[0,:], y_stack[1,:], facecolor="darkslategrey", alpha=.7)
+ax1.fill_between(x, y_stack[1,:], y_stack[2,:], facecolor="darkred")
+ax1.fill_between(x, y_stack[2,:], y_stack[3,:], facecolor="midnightblue")
+plt.title(title)
+plt.xlabel('Fecha')
+plt.ylabel('%')
 plt.savefig(os.path.join("plots",title))
 plt.close()
