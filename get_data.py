@@ -1,7 +1,7 @@
 import bcchapi
 import os
 from utils.json_utils import get_json
-
+import datetime
 ##### Get data #####
 
 class Data:
@@ -40,7 +40,7 @@ class Data:
         Function to download the data to csv or excel
         """
         if filename is None:
-            filename=str(self.name)
+            filename=self.generate_filename()
         if format=="excel":
             self.data.to_excel(os.path.join(self.data_directory, f"{filename}.xlsx"))
         else:
@@ -54,4 +54,17 @@ class Data:
         """
         return(self.siete.buscar(search_string))
     
-    #def create_filename(self):
+    def generate_filename(self,prefix="series", date_format="%Y%m%d_%H%M%S"):
+        """
+        Generate a file name with a given prefix, suffix, and date format.
+
+        Parameters:
+        prefix (str): The prefix of the file name.
+        date_format (str): The datetime format to use in the file name.
+
+        Returns:
+        str: Generated file name.
+        """
+        current_time = datetime.datetime.now().strftime(date_format)
+        filename = f"{prefix}_{current_time}"
+        return filename
