@@ -9,6 +9,10 @@ import numpy as np
 from utils.cchc_preprocess import download_excel_to_df,preprocess_iCE,preprocess_ventas_santiago
 
 
+#################################################################
+### A script for create the required plots in a scpecific way ###
+#################################################################
+
 ##################################
 ###  IMACEC vs IMACON vs IMCE  ###
 ##################################
@@ -23,6 +27,7 @@ title="IMACEC vs IMACON vs IMCE"
 
 plot=Plot_Data()
 df=plot.get_data_plots(args)
+
 ### plot ###
 
 df.plot(title=title, color=["midnightblue", "orange", "powderblue"], lw=3)
@@ -39,7 +44,7 @@ args={
         "series":["F034.VVNN.FLU.CCHC.Z.0.T","F034.CVN.FLU.INE.Z.0.M"],
         "nombres" : ["Promesas compra venta","Número de viviendas autorizadas"],
         "variacion":12,
-        "frecuencia":"A",
+        "frecuencia":"YE",
         "observado":{"Promesas compra venta":"last", "Número de viviendas autorizadas":"last"}
 
     }
@@ -93,7 +98,7 @@ args={
         "series":["F038.DEUD.PPB2.53.10.N.2018.CLP.T","F038.DEUBH.PPB2.53.10.N.2018.CLP.T"],
         "nombres" :["Deuda total","Deuda hipotecaria"],
         "variacion":12,
-        "frecuencia":"A",
+        "frecuencia":"YE",
         "observado":{"Deuda total":"last", "Deuda hipotecaria":"last"}
   
     }
@@ -162,7 +167,7 @@ args=    {
         "nombres" : ["Número de viviendas autorizadas","IMACON"],
         "desde":"2008-01-01",    # tentativo
         "variacion":12,
-        "frecuencia":"A",
+        "frecuencia":"YE",
         "observado":{"Número de viviendas autorizadas":"last", "IMACON":"last"}
     }
 
@@ -287,7 +292,7 @@ args=        {
         "nombres" : ["IMACON","PIB"],
         "desde":"2008-01-01",    
         "variacion":12,
-        "frecuencia":"A",
+        "frecuencia":"YE",
         "observado":{"IMACON":"last", "PIB":"last"}
     }
 
@@ -317,7 +322,7 @@ args=        {
         "nombres" : ["IMACON","Ventas casas nuevas"],
         "desde":"2008-01-01",    # tentativo
         "variacion":12,
-        "frecuencia":"A",
+        "frecuencia":"YE",
         "observado":{"IMACON":"last", "Ventas casas nuevas":"last"}
     }
 
@@ -395,7 +400,7 @@ args=        {
         "nombres" : ["Venta viviendas nuevas","Deuda bancaria hipótecaria"],
         "desde":"2008-01-01",    # tentativo
         "variacion":12,
-        "frecuencia":"A",
+        "frecuencia":"YE",
         "observado":{"Venta viviendas nuevas":"last", "Deuda bancaria hipótecaria":"last"}
     }
 
@@ -524,12 +529,13 @@ x=df_combined.index.to_numpy()
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 
-ax1.fill_between(x, 0, y_stack[0,:], facecolor="black", alpha=.7)
-ax1.fill_between(x, y_stack[0,:], y_stack[1,:], facecolor="darkslategrey", alpha=.7)
-ax1.fill_between(x, y_stack[1,:], y_stack[2,:], facecolor="darkred")
-ax1.fill_between(x, y_stack[2,:], y_stack[3,:], facecolor="midnightblue")
+ax1.fill_between(x, 0, y_stack[0,:], facecolor="black", alpha=.7,label="Materiales")
+ax1.fill_between(x, y_stack[0,:], y_stack[1,:], facecolor="darkslategrey", alpha=.7,label="Sueldos y Salarios")
+ax1.fill_between(x, y_stack[1,:], y_stack[2,:], facecolor="darkred",label="Subcontratos")
+ax1.fill_between(x, y_stack[2,:], y_stack[3,:], facecolor="midnightblue",label="Misceláneos")
 plt.title(title)
 plt.xlabel('Fecha')
 plt.ylabel('%')
+ax1.legend(loc="upper left")
 plt.savefig(os.path.join("plots",title))
 plt.close()
