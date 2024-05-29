@@ -46,6 +46,7 @@ def preprocess_iCE(df,new_column_mapping={0: 'Year', 1: 'Month',5:"Índice gener
     df=process_dates(df)
     df["Day"]=1
     df.index=pd.to_datetime(df.loc[:,("Year","Month","Day")])
+    df.index.name = 'Fecha'
     df=df.drop(columns=["Year","Month","Day"])
     df=df[pd.to_numeric(df["Índice general"],errors="coerce").notnull()]
     return df
@@ -103,7 +104,9 @@ def preprocess_ventas_santiago(df):
     df = rename_col_by_index(df, new_column_mapping)
     df.dropna(axis=0,subset=["Departamentos ventas"], inplace=True)
     df=process_dates(df,first_number=2004,frequency=1)
-    df["Period"] = df["Year"].astype(str) +" Q"+ df["Month"].astype(str)
-    df=df.drop(columns=["Year","Month"])
+    df["Period"] = df["Year"].astype(str) +"-Q"+ df["Month"].astype(str)
+    df.index = pd.PeriodIndex(df["Period"], freq='Q').to_timestamp()
+    df.index.name = 'Fecha'
+    df=df.drop(columns=["Year","Month","Period"])
     return df
 

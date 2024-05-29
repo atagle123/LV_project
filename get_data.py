@@ -2,7 +2,7 @@ import bcchapi
 import os
 from utils.json_utils import get_json
 import datetime
-
+import pandas as pd
 
 ##### Get data #####
 
@@ -41,7 +41,9 @@ class Data:
             df: dataframe with the data
         """
         self.name=args["nombres"]   # que pasa si no pongo nombres?? quizas buscarlos
-        self.data=self.siete.cuadro(**args)
+        df=self.siete.cuadro(**args)
+        df.index.name="Fecha"
+        self.data=df
         return(self.data)
 
 

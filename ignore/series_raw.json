@@ -1,6 +1,6 @@
 {
     "imacon": "F034.PCC.IND.CCHC.2014.0.M",
-    "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T",
+    "venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T", 
     "venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",
     "imacec":"F032.IMC.IND.Z.Z.EP18.Z.Z.0.M",
     "Valor de mercado de la vivienda: General y por zonas (miles de millones de pesos) Nivel nacional":	"F034.VALV.FLU.BCCH.Z.NAC.A",
@@ -31,7 +31,7 @@
     "Ventas viviendas nuevas nacional, CChC (unidades), variación anual Ventas viviendas nuevas nacional, CChC (unidades), variación anual" : "F034.VVNN.FLU.CCHC.Z.0.M",
     "Ventas viviendas nuevas Gran Santiago (CChC), variación anual Ventas viviendas nuevas Gran Santiago, CChC (unidades)" : "F034.VVNS.FLU.CCHC.Z.0.M",
     
-    "Relación préstamo a valor de la vivienda (LTV) Promedio simple" : "F034.RPV.PRO.BCCH.Z.Z.T",
+    "Relación préstamo a valor de la vivienda (LTV) Promedio simple" : "F034.RPV.PRO.BCCH.Z.Z.T", 
     "Relación préstamo a valor de la vivienda (LTV) Promedio ponderado" : "F034.RPV.PPO.BCCH.Z.Z.T",
     "Relación préstamo a valor de la vivienda (LTV) Percentil 25" :"F034.RPV.PER25.BCCH.Z.Z.T",
     "Relación préstamo a valor de la vivienda (LTV) Percentil 50 ": "F034.RPV.PER50.BCCH.Z.Z.T",

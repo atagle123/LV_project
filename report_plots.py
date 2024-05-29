@@ -137,7 +137,6 @@ plot=Plot_Data()
 df=plot.get_data_plots(args)
 
 df=df*100   
-df['Date'] = df.index
 df=df.dropna(subset="Número de viviendas autorizadas")
 
 ### plot ###
@@ -146,8 +145,8 @@ fig, ax1 = plt.subplots(figsize=(8, 5))
 
 ax2 = ax1.twinx()
 
-df.plot(x="Date",y="IMACON",ax=ax1,color="midnightblue",lw=3)
-df.plot(x="Date",y="Número de viviendas autorizadas",title=title,ax=ax2,color="orange",lw=3)
+df.plot(use_index=True,y="IMACON",ax=ax1,color="midnightblue",lw=3)
+df.plot(use_index=True,y="Número de viviendas autorizadas",title=title,ax=ax2,color="orange",lw=3)
 ax1.set_ylabel("IMACON")
 ax2.set_ylabel("Miles")
 
@@ -178,15 +177,14 @@ plot=Plot_Data()
 df=plot.get_data_plots(args)
 
 df=df*100   
-df['Date'] = df.index
 
 ### plot ###
 
 fig, ax1 = plt.subplots(figsize=(8, 5))
 ax2 = ax1.twinx()
 
-df.plot(x="Date",y="IMACON",ax=ax1,color="midnightblue",lw=3)
-df.plot(x="Date",y="Número de viviendas autorizadas",title=title,ax=ax2,color="orange",lw=3)
+df.plot(y="IMACON",ax=ax1,color="midnightblue",lw=3,use_index=True)
+df.plot(y="Número de viviendas autorizadas",title=title,ax=ax2,color="orange",lw=3,use_index=True)
 
 ax1.set_ylabel("% Imacon")
 ax2.set_ylabel("% Número viviendas")
@@ -215,7 +213,6 @@ df=plot.get_data_plots(args)
 df=df.dropna(subset="Venta viviendas nuevas")
 
 df=df*100   
-df['Date'] = df.index
 
 ### plot ###
 fig, ax1 = plt.subplots(figsize=(8, 5))
@@ -224,8 +221,8 @@ ax2 = ax1.twinx()
 
 df["Tasas anuales reajustadas UF"]=df["Tasas anuales reajustadas UF"]/100
 
-df.plot(x="Date",y="Tasas anuales reajustadas UF",ax=ax1,color="midnightblue",lw=3)
-df.plot(x="Date",y="Venta viviendas nuevas",title=title,ax=ax2,color="orange",lw=3)
+df.plot(y="Tasas anuales reajustadas UF",ax=ax1,color="midnightblue",lw=3,use_index=True)
+df.plot(y="Venta viviendas nuevas",title=title,ax=ax2,color="orange",lw=3,use_index=True)
 
 ax1.set_ylabel("%")
 ax2.set_ylabel("Miles")
@@ -247,7 +244,6 @@ df=download_excel_to_df()
 df=preprocess_iCE(df)
 
 df_new=df.loc[:,["Materiales","Sueldos y Salarios","Misceláneos","Índice general"]]
-df_new.index.name="Fecha"
 var=(df_new.shift(-12)-df_new)/df_new*100
 var=var.iloc[250:,:]
 
@@ -332,7 +328,6 @@ plot=Plot_Data()
 df=plot.get_data_plots(args)
 
 df=df*100  
-df['Fecha'] = df.index
 
 ### plot ###
 
@@ -343,8 +338,8 @@ ax2 = ax1.twinx()
 ax1.set_ylabel("%")
 ax2.set_ylabel("%")
 
-df.plot(x="Fecha",y="IMACON",ax=ax1,color="midnightblue",lw=3)
-df.plot(x="Fecha",y="Ventas casas nuevas",title=title,ax=ax2,color="orange",lw=3)
+df.plot(use_index=True,y="IMACON",ax=ax1,color="midnightblue",lw=3)
+df.plot(use_index=True,y="Ventas casas nuevas",title=title,ax=ax2,color="orange",lw=3)
 
 ax1.set_label('IMACON')
 ax2.set_label('Ventas casas nuevas')
@@ -371,7 +366,6 @@ plot=Plot_Data()
 df=plot.get_data_plots(args)  
 
 df=df.dropna(subset="Venta viviendas nuevas")
-df["Fecha"]=df.index
 
 ### plots ###
 
@@ -380,8 +374,8 @@ ax2 = ax1.twinx()
 
 plt.title(title)
 
-df.plot(x="Fecha",y="Venta viviendas nuevas",ax=ax1,color="midnightblue",lw=3)
-df.plot(x="Fecha",y="Deuda bancaria hipótecaria % del PIB",kind="line",ax=ax2,color="orange",lw=3)
+df.plot(use_index=True,y="Venta viviendas nuevas",ax=ax1,color="midnightblue",lw=3)
+df.plot(use_index=True,y="Deuda bancaria hipótecaria % del PIB",kind="line",ax=ax2,color="orange",lw=3)
 
 ax1.set_ylabel("Unidades")
 ax2.set_ylabel("% del PIB")
@@ -411,7 +405,6 @@ df=plot.get_data_plots(args)
 
 df=df.dropna(subset="Venta viviendas nuevas")
 df=df*100
-df["Fecha"]=df.index
 
 ### plot ###
 
@@ -419,8 +412,8 @@ fig, ax1 = plt.subplots(figsize=(8, 5))
 ax2 = ax1.twinx()
 
 
-df.plot(x="Fecha",y="Venta viviendas nuevas",ax=ax1,color="midnightblue",lw=3)
-df.plot(x="Fecha",y="Deuda bancaria hipótecaria",title=title,ax=ax2,color="orange",lw=3)
+df.plot(use_index=True,y="Venta viviendas nuevas",ax=ax1,color="midnightblue",lw=3)
+df.plot(use_index=True,y="Deuda bancaria hipótecaria",title=title,ax=ax2,color="orange",lw=3)
 
 ax1.set_ylabel("% Ventas")
 ax2.set_ylabel("% Deuda")
@@ -469,8 +462,8 @@ ax2 = ax1.twinx()
 plt.title(title)
 plt.grid()
 
-df.iloc[40:,:].plot(x="Period",y=["Departamentos stock","Casas stock"],kind="bar",stacked=True,ax=ax1,color=["midnightblue","powderblue"])
-df.iloc[40:,:].plot(x="Period",y=["Viviendas meses"],kind="line",ax=ax2,color="orange",lw=3)
+df.iloc[40:,:].plot(use_index=True,y=["Departamentos stock","Casas stock"],kind="bar",stacked=True,ax=ax1,color=["midnightblue","powderblue"])
+df.iloc[40:,:].plot(use_index=True,y=["Viviendas meses"],kind="line",ax=ax2,color="orange",lw=3)
 
 ax1.set_ylabel("Unidades")
 ax2.set_ylabel("Meses")
@@ -490,7 +483,6 @@ new_column_mapping={0: 'Year', 1: 'Month',5:"Índice general", 14:"Materiales pe
 df=preprocess_iCE(df,new_column_mapping)
 
 df_new=df.loc[:,["Materiales","Salarios","Subcontratos","Misceláneos","Índice general"]]
-df_new.index.name="Fecha"
 var=(df_new.shift(-12)-df_new)/df_new*100
 
 ### plot ###
