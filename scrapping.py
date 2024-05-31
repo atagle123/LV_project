@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 import time
 
 
-class Cmf_scrapper: # dos datos balance y estado resultados
+class Cmf_scrapper:  
     def __init__(self,browser="edge",driver_path=None):
         self.browser = browser
         self.driver_path = driver_path or self.get_default_driver_path()

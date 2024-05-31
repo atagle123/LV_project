@@ -43,7 +43,7 @@ def preprocess_iCE(df,new_column_mapping={0: 'Year', 1: 'Month',5:"Índice gener
 
     df = rename_col_by_index(df, new_column_mapping)
     df.dropna(axis=0,subset=["Month"], inplace=True)
-    df=process_dates(df)
+    df=process_dates(df,first_year=2011,first_month=5)
     df["Day"]=1
     df.index=pd.to_datetime(df.loc[:,("Year","Month","Day")])
     df.index.name = 'Fecha'
@@ -65,13 +65,15 @@ def rename_col_by_index(dataframe, index_mapping):
     return dataframe
  
 
-def process_dates(df,first_number=1990,frequency=1):
+
+def process_dates(df,first_year=1990,frequency=1,first_month=None):
     """ Process the dates in the dataframe in a specific way given the report format of the Cchc.
 
     Args:
         df (DataFrame): The dataframe to process the dates in.
-        first_number (int): The first year number in the dataframe.
+        first_year (int): The first year number in the dataframe.
         frequency (int): The number of months between each date (default 1)
+        first_month (int): The first month number in the dataframe (default None if it is 1)
 
     Returns:
         df (DataFrame): The dataframe with processed dates.
@@ -79,14 +81,23 @@ def process_dates(df,first_number=1990,frequency=1):
     for i,j in enumerate(df.iloc[:,0]):
 
         if type(j)==int:
-            first_number=int(j)
             month_counter=frequency
+            actual_year=int(j)
+
+            if i==0:
+                if first_month is not None:
+                    month_counter=first_month
+                if first_year is not None:
+                    actual_year=first_year
+
 
         elif math.isnan(j):
-            df.iloc[i,0]=first_number
+            df.iloc[i,0]=actual_year
             month_counter+=frequency
         df.iloc[i,1]=month_counter
     return(df)
+
+
 
 def preprocess_ventas_santiago(df):
     """ Preprocess the dataframe for ventas Santiago excel data, see https://cchc.cl/centro-de-informacion/indicadores/mercado-inmobiliario-oferta-gran-santiago
@@ -103,7 +114,7 @@ def preprocess_ventas_santiago(df):
     new_column_mapping = {0: 'Year', 1: 'Month',2:"Departamentos stock", 3:"Departamentos ventas",4:"Departamentos Meses",5:"Casas stock", 6:"Casas ventas",7:"Casas meses",8:"Viviendas stock",9: "Viviendas ventas",10: "Viviendas meses"}
     df = rename_col_by_index(df, new_column_mapping)
     df.dropna(axis=0,subset=["Departamentos ventas"], inplace=True)
-    df=process_dates(df,first_number=2004,frequency=1)
+    df=process_dates(df,first_year=2004,frequency=1)
     df["Period"] = df["Year"].astype(str) +"-Q"+ df["Month"].astype(str)
     df.index = pd.PeriodIndex(df["Period"], freq='Q').to_timestamp()
     df.index.name = 'Fecha'

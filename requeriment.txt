@@ -2,4 +2,4 @@
 
 urllib3==1.26.6
 selenium==3.141.0
-python-xbrl
+arelle-release

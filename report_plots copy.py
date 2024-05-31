@@ -10,6 +10,7 @@ import pandas as pd
 import numpy as np
 from utils.cchc_preprocess import download_excel_to_df,preprocess_iCE,preprocess_ventas_santiago
 from utils.download_data import download_dfs
+from datetime import datetime, timedelta
 
 #################################################################
 ### A script for create the required plots in a scpecific way ###
@@ -25,7 +26,7 @@ from utils.download_data import download_dfs
 
 args_mensual=  {
         "series":["F022.VIV.TIP.MA03.UF.Z.M",
-                  "F034.CST.FLU.INE.Z.0.M",
+                  "F034.CVS.FLU.INE.Z.0.M",
                   "F032.IMC.IND.Z.Z.EP18.Z.Z.0.M",
                   "F034.PCC.IND.CCHC.2014.0.M",
                   "G089.IME.IND.A0.M"
@@ -79,7 +80,7 @@ df_trimestral=pd.merge(df_trimestral,df_oferta_vivienda, how='outer', left_index
 
 df_dict={"Mensual":df_mensual,"Trimestral":df_trimestral}  # ver que hago con variaciones? ver como queda y ver que se hace...
 
-#download_dfs(df_dict, "all_data")
+download_dfs(df_dict, "all_data")
 
 df=pd.merge(df_mensual, df_trimestral, how='outer', left_index=True, right_index=True)
 
@@ -169,11 +170,14 @@ plt.close()
 
 title="grafico4"
 
-df_plot=pd.DataFrame()
-df_plot['Permisos de construccion para vivienda (m2)']=(df['Permisos de construccion para vivienda (m2)']/(df['Permisos de construccion para vivienda (m2)'].shift(12))-1)*100
-df_plot["Percepcion de estándares de aprobación de créditos de construccion inmobiliaria"]=df['Percepcion de estándares de aprobación de créditos de construccion inmobiliaria']
 
-df_plot.dropna().plot( color=["orange", "midnightblue"], lw=3)
+df_plot=pd.DataFrame()
+
+df_plot['Permisos de construccion para vivienda (m2) Var YoY']=df['Permisos de construccion para vivienda (m2)'].groupby(pd.Grouper(freq='3ME',closed="left")).sum()
+df_plot.index=df_plot.index+timedelta(days=1)
+df_plot['Permisos de construccion para vivienda (m2) Var YoY']=(df_plot['Permisos de construccion para vivienda (m2) Var YoY']/(df_plot['Permisos de construccion para vivienda (m2) Var YoY'].shift(4))-1)*100
+df_plot["Percepcion de estándares de aprobación de créditos de construccion inmobiliaria"]=df['Percepcion de estándares de aprobación de créditos de construccion inmobiliaria']
+df_plot.dropna().plot( color=["orange", "midnightblue"], lw=3,title=title)
 
 
 plt.savefig(os.path.join("plots",title))
