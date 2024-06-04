@@ -4,14 +4,16 @@ import zipfile
 
 
 def get_data_xbrl_to_dir(url,filename,dir="XBRL_files"):
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
    
-    response = requests.get(url)
+    response = requests.get(url,headers=headers)
     response.raise_for_status()
 
     if not os.path.exists(dir):
         os.makedirs(dir)
 
-    with open(f'{dir}/{filename}.xlsx', 'wb') as f:  # hacer un os path join
+    with open(f'{dir}/{filename}.zip', 'wb') as f:  # hacer un os path join
         f.write(response.content)
 
 
