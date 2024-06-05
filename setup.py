@@ -1,11 +1,13 @@
-from setuptools import setup, find_packages
-import os,sys
-current_dir=os.getcwd()
+import sys
+#print("asd")
+import os
+
+# Get the current working directory
+current_dir = os.getcwd()
 sys.path.append(current_dir)
 
+print("Current working directory:", current_dir)
+#sys.path.append(current_dir)
 
-#setup(
-#    name="utils",
-#    version="1.0",
-#    packages=find_packages(),
-#)
+
+#crear directorios

@@ -1,0 +1,9 @@
+{
+    "series":["F034.EACEI.IND.BCCH.Z.Z.T","F034.DCEI.IND.BCCH.Z.Z.T","F034.EACPH.IND.BCCH.Z.Z.T", "F034.DCPH.IND.BCCH.Z.Z.T","F034.RPV.PRO.BCCH.Z.Z.T"],
+    "nombres" : ["Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Estándares de aprobación de créditos inmobiliarios y de la construcción, Empresas inmobiliarias",
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Demanda (solicitudes) de nuevos créditos inmobiliarios y de la construcción a su banco, Empresas inmobiliarias",
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Estándares de aprobación de créditos a personas,  Hipotecarios para la vivienda",
+    "Condiciones de oferta y demanda de créditos relacionados con la vivienda (Encuesta de crédito Bancario) Demanda (solicitudes) por créditos de consumo o de vivienda, Hipotecarios para la vivienda" ,
+"Relación préstamo a valor de la vivienda (LTV) Promedio simple" ],
+    "desde":"2010-01-01"
+}

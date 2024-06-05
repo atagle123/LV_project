@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--XBRL Generado por D.S.I.C. - Desarrollo de Sistemas Innovadores & Consultoria. Fecha: 09-09-2016 10:04:08--> 
+<!--http://www.dsic.cl --> 
+<!--Software (C) 2009-2016 DSIC Reporting XBRL All rights reserved--> 
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance"> 
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-1/cl-ci_ias-1_2015-03-11_role-810000.xsd#ias-1_2015-03-11_role-810000"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000a" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-1/cl-ci_ias-1_2015-03-11_role-810000.xsd#ias-1_2015-03-11_role-810000a"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000b" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-1/cl-ci_ias-1_2015-03-11_role-810000.xsd#ias-1_2015-03-11_role-810000b"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000c" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-1/cl-ci_ias-1_2015-03-11_role-810000.xsd#ias-1_2015-03-11_role-810000c"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-861200" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-1/cl-ci_ias-1_2015-03-11_role-861200.xsd#ias-1_2015-03-11_role-861200"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-24_2015-03-11_role-818000" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-24/cl-ci_ias-24_2015-03-11_role-818000.xsd#ias-24_2015-03-11_role-818000"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cl-cp/cl-ci_cl-cp_2016-01-11_role-822400.xsd#cl-cp_2016-01-11_role-822400"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400a" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cl-cp/cl-ci_cl-cp_2016-01-11_role-822400.xsd#cl-cp_2016-01-11_role-822400a"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400b" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cl-cp/cl-ci_cl-cp_2016-01-11_role-822400.xsd#cl-cp_2016-01-11_role-822400b"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400f" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cl-cp/cl-ci_cl-cp_2016-01-11_role-822400.xsd#cl-cp_2016-01-11_role-822400f"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-38_2015-03-11_role-823180b" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-38/cl-ci_ias-38_2015-03-11_role-823180.xsd#ias-38_2015-03-11_role-823180b"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-38_2015-03-11_role-823180c" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-38/cl-ci_ias-38_2015-03-11_role-823180.xsd#ias-38_2015-03-11_role-823180c"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700a" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700a"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700b" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700b"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700c" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700c"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700d" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700d"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700e" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700e"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700f" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700f"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-12_2015-03-11_role-835110" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-12/cl-ci_ias-12_2015-03-11_role-835110.xsd#ias-12_2015-03-11_role-835110"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100a" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-8/cl-ci_ifrs-8_2015-03-11_role-871100.xsd#ifrs-8_2015-03-11_role-871100a"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100b" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-8/cl-ci_ifrs-8_2015-03-11_role-871100.xsd#ifrs-8_2015-03-11_role-871100b"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100c" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-8/cl-ci_ifrs-8_2015-03-11_role-871100.xsd#ifrs-8_2015-03-11_role-871100c"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100d" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-8/cl-ci_ifrs-8_2015-03-11_role-871100.xsd#ifrs-8_2015-03-11_role-871100d"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700g" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-12/cl-ci_ifrs-12_2015-03-11_role-825700.xsd#IFRS_12_825700g"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-24_2015-03-11_role-818000a" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-24/cl-ci_ias-24_2015-03-11_role-818000.xsd#ias-24_2015-03-11_role-818000a"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-861200b" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ias-1/cl-ci_ias-1_2015-03-11_role-861200.xsd#ias-1_2015-03-11_role-861200b"/>
+	<link:roleRef roleURI="http://www.svs.cl/cl/fr/ci/role/ifrs-3_2015-03-11_role-817100" xlink:type="simple" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_ifrs-3/cl-ci_ifrs-3_2015-03-11_role-817100.xsd#ifrs-3_2015-03-11_role-817100"/>
+<link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_SubsidiariesMember" xlink:label="SubsidiariesMember" xlink:title="SubsidiariesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_1" xlink:label="Subsidiaria_1" xlink:title="Subsidiaria_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_1" xlink:title="definition: SubsidiariesMember to Subsidiaria_1" order="1.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_2" xlink:label="Subsidiaria_2" xlink:title="Subsidiaria_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_2" xlink:title="definition: SubsidiariesMember to Subsidiaria_2" order="2.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_3" xlink:label="Subsidiaria_3" xlink:title="Subsidiaria_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_3" xlink:title="definition: SubsidiariesMember to Subsidiaria_3" order="3.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_4" xlink:label="Subsidiaria_4" xlink:title="Subsidiaria_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_4" xlink:title="definition: SubsidiariesMember to Subsidiaria_4" order="4.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_5" xlink:label="Subsidiaria_5" xlink:title="Subsidiaria_5"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_5" xlink:title="definition: SubsidiariesMember to Subsidiaria_5" order="5.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_6" xlink:label="Subsidiaria_6" xlink:title="Subsidiaria_6"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_6" xlink:title="definition: SubsidiariesMember to Subsidiaria_6" order="6.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_7" xlink:label="Subsidiaria_7" xlink:title="Subsidiaria_7"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_7" xlink:title="definition: SubsidiariesMember to Subsidiaria_7" order="7.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_8" xlink:label="Subsidiaria_8" xlink:title="Subsidiaria_8"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_8" xlink:title="definition: SubsidiariesMember to Subsidiaria_8" order="8.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_9" xlink:label="Subsidiaria_9" xlink:title="Subsidiaria_9"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_9" xlink:title="definition: SubsidiariesMember to Subsidiaria_9" order="9.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_10" xlink:label="Subsidiaria_10" xlink:title="Subsidiaria_10"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_10" xlink:title="definition: SubsidiariesMember to Subsidiaria_10" order="10.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_11" xlink:label="Subsidiaria_11" xlink:title="Subsidiaria_11"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_11" xlink:title="definition: SubsidiariesMember to Subsidiaria_11" order="11.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_12" xlink:label="Subsidiaria_12" xlink:title="Subsidiaria_12"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_12" xlink:title="definition: SubsidiariesMember to Subsidiaria_12" order="12.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_13" xlink:label="Subsidiaria_13" xlink:title="Subsidiaria_13"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_13" xlink:title="definition: SubsidiariesMember to Subsidiaria_13" order="13.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_14" xlink:label="Subsidiaria_14" xlink:title="Subsidiaria_14"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_14" xlink:title="definition: SubsidiariesMember to Subsidiaria_14" order="14.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_15" xlink:label="Subsidiaria_15" xlink:title="Subsidiaria_15"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_15" xlink:title="definition: SubsidiariesMember to Subsidiaria_15" order="15.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_16" xlink:label="Subsidiaria_16" xlink:title="Subsidiaria_16"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_16" xlink:title="definition: SubsidiariesMember to Subsidiaria_16" order="16.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_17" xlink:label="Subsidiaria_17" xlink:title="Subsidiaria_17"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_17" xlink:title="definition: SubsidiariesMember to Subsidiaria_17" order="17.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_18" xlink:label="Subsidiaria_18" xlink:title="Subsidiaria_18"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_18" xlink:title="definition: SubsidiariesMember to Subsidiaria_18" order="18.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_19" xlink:label="Subsidiaria_19" xlink:title="Subsidiaria_19"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_19" xlink:title="definition: SubsidiariesMember to Subsidiaria_19" order="19.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_20" xlink:label="Subsidiaria_20" xlink:title="Subsidiaria_20"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_20" xlink:title="definition: SubsidiariesMember to Subsidiaria_20" order="20.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_21" xlink:label="Subsidiaria_21" xlink:title="Subsidiaria_21"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_21" xlink:title="definition: SubsidiariesMember to Subsidiaria_21" order="21.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_22" xlink:label="Subsidiaria_22" xlink:title="Subsidiaria_22"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_22" xlink:title="definition: SubsidiariesMember to Subsidiaria_22" order="22.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_23" xlink:label="Subsidiaria_23" xlink:title="Subsidiaria_23"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_23" xlink:title="definition: SubsidiariesMember to Subsidiaria_23" order="23.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_24" xlink:label="Subsidiaria_24" xlink:title="Subsidiaria_24"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_24" xlink:title="definition: SubsidiariesMember to Subsidiaria_24" order="24.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_25" xlink:label="Subsidiaria_25" xlink:title="Subsidiaria_25"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_25" xlink:title="definition: SubsidiariesMember to Subsidiaria_25" order="25.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_26" xlink:label="Subsidiaria_26" xlink:title="Subsidiaria_26"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_26" xlink:title="definition: SubsidiariesMember to Subsidiaria_26" order="26.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_27" xlink:label="Subsidiaria_27" xlink:title="Subsidiaria_27"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_27" xlink:title="definition: SubsidiariesMember to Subsidiaria_27" order="27.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_28" xlink:label="Subsidiaria_28" xlink:title="Subsidiaria_28"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_28" xlink:title="definition: SubsidiariesMember to Subsidiaria_28" order="28.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_29" xlink:label="Subsidiaria_29" xlink:title="Subsidiaria_29"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_29" xlink:title="definition: SubsidiariesMember to Subsidiaria_29" order="29.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_30" xlink:label="Subsidiaria_30" xlink:title="Subsidiaria_30"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_30" xlink:title="definition: SubsidiariesMember to Subsidiaria_30" order="30.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_31" xlink:label="Subsidiaria_31" xlink:title="Subsidiaria_31"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_31" xlink:title="definition: SubsidiariesMember to Subsidiaria_31" order="31.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_32" xlink:label="Subsidiaria_32" xlink:title="Subsidiaria_32"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_32" xlink:title="definition: SubsidiariesMember to Subsidiaria_32" order="32.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_33" xlink:label="Subsidiaria_33" xlink:title="Subsidiaria_33"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_33" xlink:title="definition: SubsidiariesMember to Subsidiaria_33" order="33.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_34" xlink:label="Subsidiaria_34" xlink:title="Subsidiaria_34"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_34" xlink:title="definition: SubsidiariesMember to Subsidiaria_34" order="34.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_35" xlink:label="Subsidiaria_35" xlink:title="Subsidiaria_35"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_35" xlink:title="definition: SubsidiariesMember to Subsidiaria_35" order="35.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_36" xlink:label="Subsidiaria_36" xlink:title="Subsidiaria_36"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_36" xlink:title="definition: SubsidiariesMember to Subsidiaria_36" order="36.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_37" xlink:label="Subsidiaria_37" xlink:title="Subsidiaria_37"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_37" xlink:title="definition: SubsidiariesMember to Subsidiaria_37" order="37.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_38" xlink:label="Subsidiaria_38" xlink:title="Subsidiaria_38"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_38" xlink:title="definition: SubsidiariesMember to Subsidiaria_38" order="38.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_39" xlink:label="Subsidiaria_39" xlink:title="Subsidiaria_39"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_39" xlink:title="definition: SubsidiariesMember to Subsidiaria_39" order="39.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_40" xlink:label="Subsidiaria_40" xlink:title="Subsidiaria_40"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_40" xlink:title="definition: SubsidiariesMember to Subsidiaria_40" order="40.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_41" xlink:label="Subsidiaria_41" xlink:title="Subsidiaria_41"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_41" xlink:title="definition: SubsidiariesMember to Subsidiaria_41" order="41.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_42" xlink:label="Subsidiaria_42" xlink:title="Subsidiaria_42"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_42" xlink:title="definition: SubsidiariesMember to Subsidiaria_42" order="42.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_43" xlink:label="Subsidiaria_43" xlink:title="Subsidiaria_43"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_43" xlink:title="definition: SubsidiariesMember to Subsidiaria_43" order="43.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_44" xlink:label="Subsidiaria_44" xlink:title="Subsidiaria_44"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_44" xlink:title="definition: SubsidiariesMember to Subsidiaria_44" order="44.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_45" xlink:label="Subsidiaria_45" xlink:title="Subsidiaria_45"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_45" xlink:title="definition: SubsidiariesMember to Subsidiaria_45" order="45.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_46" xlink:label="Subsidiaria_46" xlink:title="Subsidiaria_46"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_46" xlink:title="definition: SubsidiariesMember to Subsidiaria_46" order="46.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_47" xlink:label="Subsidiaria_47" xlink:title="Subsidiaria_47"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_47" xlink:title="definition: SubsidiariesMember to Subsidiaria_47" order="47.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_48" xlink:label="Subsidiaria_48" xlink:title="Subsidiaria_48"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_48" xlink:title="definition: SubsidiariesMember to Subsidiaria_48" order="48.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_49" xlink:label="Subsidiaria_49" xlink:title="Subsidiaria_49"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_49" xlink:title="definition: SubsidiariesMember to Subsidiaria_49" order="49.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_50" xlink:label="Subsidiaria_50" xlink:title="Subsidiaria_50"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_50" xlink:title="definition: SubsidiariesMember to Subsidiaria_50" order="50.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_51" xlink:label="Subsidiaria_51" xlink:title="Subsidiaria_51"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_51" xlink:title="definition: SubsidiariesMember to Subsidiaria_51" order="51.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_52" xlink:label="Subsidiaria_52" xlink:title="Subsidiaria_52"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_52" xlink:title="definition: SubsidiariesMember to Subsidiaria_52" order="52.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_53" xlink:label="Subsidiaria_53" xlink:title="Subsidiaria_53"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_53" xlink:title="definition: SubsidiariesMember to Subsidiaria_53" order="53.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_54" xlink:label="Subsidiaria_54" xlink:title="Subsidiaria_54"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_54" xlink:title="definition: SubsidiariesMember to Subsidiaria_54" order="54.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_55" xlink:label="Subsidiaria_55" xlink:title="Subsidiaria_55"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_55" xlink:title="definition: SubsidiariesMember to Subsidiaria_55" order="55.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_56" xlink:label="Subsidiaria_56" xlink:title="Subsidiaria_56"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_56" xlink:title="definition: SubsidiariesMember to Subsidiaria_56" order="56.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_57" xlink:label="Subsidiaria_57" xlink:title="Subsidiaria_57"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_57" xlink:title="definition: SubsidiariesMember to Subsidiaria_57" order="57.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_58" xlink:label="Subsidiaria_58" xlink:title="Subsidiaria_58"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_58" xlink:title="definition: SubsidiariesMember to Subsidiaria_58" order="58.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_59" xlink:label="Subsidiaria_59" xlink:title="Subsidiaria_59"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_59" xlink:title="definition: SubsidiariesMember to Subsidiaria_59" order="59.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_60" xlink:label="Subsidiaria_60" xlink:title="Subsidiaria_60"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_60" xlink:title="definition: SubsidiariesMember to Subsidiaria_60" order="60.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_61" xlink:label="Subsidiaria_61" xlink:title="Subsidiaria_61"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_61" xlink:title="definition: SubsidiariesMember to Subsidiaria_61" order="61.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_62" xlink:label="Subsidiaria_62" xlink:title="Subsidiaria_62"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_62" xlink:title="definition: SubsidiariesMember to Subsidiaria_62" order="62.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_63" xlink:label="Subsidiaria_63" xlink:title="Subsidiaria_63"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_63" xlink:title="definition: SubsidiariesMember to Subsidiaria_63" order="63.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_64" xlink:label="Subsidiaria_64" xlink:title="Subsidiaria_64"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_64" xlink:title="definition: SubsidiariesMember to Subsidiaria_64" order="64.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_65" xlink:label="Subsidiaria_65" xlink:title="Subsidiaria_65"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_65" xlink:title="definition: SubsidiariesMember to Subsidiaria_65" order="65.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_66" xlink:label="Subsidiaria_66" xlink:title="Subsidiaria_66"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_66" xlink:title="definition: SubsidiariesMember to Subsidiaria_66" order="66.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_67" xlink:label="Subsidiaria_67" xlink:title="Subsidiaria_67"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_67" xlink:title="definition: SubsidiariesMember to Subsidiaria_67" order="67.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_68" xlink:label="Subsidiaria_68" xlink:title="Subsidiaria_68"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_68" xlink:title="definition: SubsidiariesMember to Subsidiaria_68" order="68.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_69" xlink:label="Subsidiaria_69" xlink:title="Subsidiaria_69"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_69" xlink:title="definition: SubsidiariesMember to Subsidiaria_69" order="69.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_70" xlink:label="Subsidiaria_70" xlink:title="Subsidiaria_70"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_70" xlink:title="definition: SubsidiariesMember to Subsidiaria_70" order="70.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_71" xlink:label="Subsidiaria_71" xlink:title="Subsidiaria_71"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_71" xlink:title="definition: SubsidiariesMember to Subsidiaria_71" order="71.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_72" xlink:label="Subsidiaria_72" xlink:title="Subsidiaria_72"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_72" xlink:title="definition: SubsidiariesMember to Subsidiaria_72" order="72.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_73" xlink:label="Subsidiaria_73" xlink:title="Subsidiaria_73"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_73" xlink:title="definition: SubsidiariesMember to Subsidiaria_73" order="73.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_74" xlink:label="Subsidiaria_74" xlink:title="Subsidiaria_74"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_74" xlink:title="definition: SubsidiariesMember to Subsidiaria_74" order="74.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_75" xlink:label="Subsidiaria_75" xlink:title="Subsidiaria_75"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_75" xlink:title="definition: SubsidiariesMember to Subsidiaria_75" order="75.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_76" xlink:label="Subsidiaria_76" xlink:title="Subsidiaria_76"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_76" xlink:title="definition: SubsidiariesMember to Subsidiaria_76" order="76.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_77" xlink:label="Subsidiaria_77" xlink:title="Subsidiaria_77"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_77" xlink:title="definition: SubsidiariesMember to Subsidiaria_77" order="77.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_78" xlink:label="Subsidiaria_78" xlink:title="Subsidiaria_78"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_78" xlink:title="definition: SubsidiariesMember to Subsidiaria_78" order="78.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_79" xlink:label="Subsidiaria_79" xlink:title="Subsidiaria_79"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_79" xlink:title="definition: SubsidiariesMember to Subsidiaria_79" order="79.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_80" xlink:label="Subsidiaria_80" xlink:title="Subsidiaria_80"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_80" xlink:title="definition: SubsidiariesMember to Subsidiaria_80" order="80.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Subsidiaria_81" xlink:label="Subsidiaria_81" xlink:title="Subsidiaria_81"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="Subsidiaria_81" xlink:title="definition: SubsidiariesMember to Subsidiaria_81" order="81.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000a">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_ReclassifiedItemsMember" xlink:label="ReclassifiedItemsAxis" xlink:title="ReclassifiedItemsAxis"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000b">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_AssetsAndLiabilitiesMember" xlink:label="AssetsAndLiabilitiesAxis" xlink:title="AssetsAndLiabilitiesAxis"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-810000c">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_CapitalRequirementsMember" xlink:label="CapitalRequirementsAxis" xlink:title="CapitalRequirementsAxis"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-861200">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_PreferenceSharesMember" xlink:label="ClassesOfShareCapitalAxis" xlink:title="ClassesOfShareCapitalAxis"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-24_2015-03-11_role-818000">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_AssociatesMember" xlink:label="AssociatesMember" xlink:title="AssociatesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_1" xlink:label="AsociadaOP_1" xlink:title="AsociadaOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_1" xlink:title="definition: AssociatesMember to AsociadaOP_1" order="82.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_2" xlink:label="AsociadaOP_2" xlink:title="AsociadaOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_2" xlink:title="definition: AssociatesMember to AsociadaOP_2" order="83.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_3" xlink:label="AsociadaOP_3" xlink:title="AsociadaOP_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_3" xlink:title="definition: AssociatesMember to AsociadaOP_3" order="84.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_4" xlink:label="AsociadaOP_4" xlink:title="AsociadaOP_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_4" xlink:title="definition: AssociatesMember to AsociadaOP_4" order="85.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_5" xlink:label="AsociadaOP_5" xlink:title="AsociadaOP_5"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_5" xlink:title="definition: AssociatesMember to AsociadaOP_5" order="86.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_6" xlink:label="AsociadaOP_6" xlink:title="AsociadaOP_6"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_6" xlink:title="definition: AssociatesMember to AsociadaOP_6" order="87.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_7" xlink:label="AsociadaOP_7" xlink:title="AsociadaOP_7"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_7" xlink:title="definition: AssociatesMember to AsociadaOP_7" order="88.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_8" xlink:label="AsociadaOP_8" xlink:title="AsociadaOP_8"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_8" xlink:title="definition: AssociatesMember to AsociadaOP_8" order="89.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_9" xlink:label="AsociadaOP_9" xlink:title="AsociadaOP_9"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_9" xlink:title="definition: AssociatesMember to AsociadaOP_9" order="90.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_10" xlink:label="AsociadaOP_10" xlink:title="AsociadaOP_10"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_10" xlink:title="definition: AssociatesMember to AsociadaOP_10" order="91.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_11" xlink:label="AsociadaOP_11" xlink:title="AsociadaOP_11"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_11" xlink:title="definition: AssociatesMember to AsociadaOP_11" order="92.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_12" xlink:label="AsociadaOP_12" xlink:title="AsociadaOP_12"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_12" xlink:title="definition: AssociatesMember to AsociadaOP_12" order="93.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_13" xlink:label="AsociadaOP_13" xlink:title="AsociadaOP_13"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_13" xlink:title="definition: AssociatesMember to AsociadaOP_13" order="94.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_14" xlink:label="AsociadaOP_14" xlink:title="AsociadaOP_14"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_14" xlink:title="definition: AssociatesMember to AsociadaOP_14" order="95.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_15" xlink:label="AsociadaOP_15" xlink:title="AsociadaOP_15"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_15" xlink:title="definition: AssociatesMember to AsociadaOP_15" order="96.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_16" xlink:label="AsociadaOP_16" xlink:title="AsociadaOP_16"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_16" xlink:title="definition: AssociatesMember to AsociadaOP_16" order="97.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_17" xlink:label="AsociadaOP_17" xlink:title="AsociadaOP_17"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_17" xlink:title="definition: AssociatesMember to AsociadaOP_17" order="98.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_18" xlink:label="AsociadaOP_18" xlink:title="AsociadaOP_18"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_18" xlink:title="definition: AssociatesMember to AsociadaOP_18" order="99.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_19" xlink:label="AsociadaOP_19" xlink:title="AsociadaOP_19"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_19" xlink:title="definition: AssociatesMember to AsociadaOP_19" order="100.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_20" xlink:label="AsociadaOP_20" xlink:title="AsociadaOP_20"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_20" xlink:title="definition: AssociatesMember to AsociadaOP_20" order="101.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_21" xlink:label="AsociadaOP_21" xlink:title="AsociadaOP_21"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_21" xlink:title="definition: AssociatesMember to AsociadaOP_21" order="102.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_22" xlink:label="AsociadaOP_22" xlink:title="AsociadaOP_22"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_22" xlink:title="definition: AssociatesMember to AsociadaOP_22" order="103.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_23" xlink:label="AsociadaOP_23" xlink:title="AsociadaOP_23"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_23" xlink:title="definition: AssociatesMember to AsociadaOP_23" order="104.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_24" xlink:label="AsociadaOP_24" xlink:title="AsociadaOP_24"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_24" xlink:title="definition: AssociatesMember to AsociadaOP_24" order="105.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_25" xlink:label="AsociadaOP_25" xlink:title="AsociadaOP_25"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_25" xlink:title="definition: AssociatesMember to AsociadaOP_25" order="106.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_26" xlink:label="AsociadaOP_26" xlink:title="AsociadaOP_26"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_26" xlink:title="definition: AssociatesMember to AsociadaOP_26" order="107.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_27" xlink:label="AsociadaOP_27" xlink:title="AsociadaOP_27"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_27" xlink:title="definition: AssociatesMember to AsociadaOP_27" order="108.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_28" xlink:label="AsociadaOP_28" xlink:title="AsociadaOP_28"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_28" xlink:title="definition: AssociatesMember to AsociadaOP_28" order="109.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_29" xlink:label="AsociadaOP_29" xlink:title="AsociadaOP_29"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_29" xlink:title="definition: AssociatesMember to AsociadaOP_29" order="110.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_30" xlink:label="AsociadaOP_30" xlink:title="AsociadaOP_30"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_30" xlink:title="definition: AssociatesMember to AsociadaOP_30" order="111.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_31" xlink:label="AsociadaOP_31" xlink:title="AsociadaOP_31"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_31" xlink:title="definition: AssociatesMember to AsociadaOP_31" order="112.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_32" xlink:label="AsociadaOP_32" xlink:title="AsociadaOP_32"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_32" xlink:title="definition: AssociatesMember to AsociadaOP_32" order="113.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_33" xlink:label="AsociadaOP_33" xlink:title="AsociadaOP_33"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_33" xlink:title="definition: AssociatesMember to AsociadaOP_33" order="114.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_AsociadaOP_34" xlink:label="AsociadaOP_34" xlink:title="AsociadaOP_34"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssociatesMember" xlink:to="AsociadaOP_34" xlink:title="definition: AssociatesMember to AsociadaOP_34" order="115.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_ParentMember" xlink:label="ParentMember" xlink:title="ParentMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ControladoraOP_1" xlink:label="ControladoraOP_1" xlink:title="ControladoraOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ParentMember" xlink:to="ControladoraOP_1" xlink:title="definition: ParentMember to ControladoraOP_1" order="116.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ControladoraOP_2" xlink:label="ControladoraOP_2" xlink:title="ControladoraOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ParentMember" xlink:to="ControladoraOP_2" xlink:title="definition: ParentMember to ControladoraOP_2" order="117.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_JointControlOrSignificantInfluenceMember" xlink:label="JointControlOrSignificantInfluenceMember" xlink:title="JointControlOrSignificantInfluenceMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ControlOP_1" xlink:label="ControlOP_1" xlink:title="ControlOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="JointControlOrSignificantInfluenceMember" xlink:to="ControlOP_1" xlink:title="definition: JointControlOrSignificantInfluenceMember to ControlOP_1" order="118.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ControlOP_2" xlink:label="ControlOP_2" xlink:title="ControlOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="JointControlOrSignificantInfluenceMember" xlink:to="ControlOP_2" xlink:title="definition: JointControlOrSignificantInfluenceMember to ControlOP_2" order="119.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_JointVenturesWhereEntityIsVenturerMember" xlink:label="JointVenturesWhereEntityIsVenturerMember" xlink:title="JointVenturesWhereEntityIsVenturerMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_NegociosOP_1" xlink:label="NegociosOP_1" xlink:title="NegociosOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="JointVenturesWhereEntityIsVenturerMember" xlink:to="NegociosOP_1" xlink:title="definition: JointVenturesWhereEntityIsVenturerMember to NegociosOP_1" order="120.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_NegociosOP_2" xlink:label="NegociosOP_2" xlink:title="NegociosOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="JointVenturesWhereEntityIsVenturerMember" xlink:to="NegociosOP_2" xlink:title="definition: JointVenturesWhereEntityIsVenturerMember to NegociosOP_2" order="121.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_NegociosOP_3" xlink:label="NegociosOP_3" xlink:title="NegociosOP_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="JointVenturesWhereEntityIsVenturerMember" xlink:to="NegociosOP_3" xlink:title="definition: JointVenturesWhereEntityIsVenturerMember to NegociosOP_3" order="122.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_NegociosOP_4" xlink:label="NegociosOP_4" xlink:title="NegociosOP_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="JointVenturesWhereEntityIsVenturerMember" xlink:to="NegociosOP_4" xlink:title="definition: JointVenturesWhereEntityIsVenturerMember to NegociosOP_4" order="123.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_OtherRelatedPartiesMember" xlink:label="OtherRelatedPartiesMember" xlink:title="OtherRelatedPartiesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_OtrasPartesOP_1" xlink:label="OtrasPartesOP_1" xlink:title="OtrasPartesOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="OtherRelatedPartiesMember" xlink:to="OtrasPartesOP_1" xlink:title="definition: OtherRelatedPartiesMember to OtrasPartesOP_1" order="124.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_OtrasPartesOP_2" xlink:label="OtrasPartesOP_2" xlink:title="OtrasPartesOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="OtherRelatedPartiesMember" xlink:to="OtrasPartesOP_2" xlink:title="definition: OtherRelatedPartiesMember to OtrasPartesOP_2" order="125.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_KeyManagementPersonnelOfEntityOrParentMember" xlink:label="KeyManagementPersonnelOfEntityOrParentMember" xlink:title="KeyManagementPersonnelOfEntityOrParentMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_PersonalOP_1" xlink:label="PersonalOP_1" xlink:title="PersonalOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="KeyManagementPersonnelOfEntityOrParentMember" xlink:to="PersonalOP_1" xlink:title="definition: KeyManagementPersonnelOfEntityOrParentMember to PersonalOP_1" order="126.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_PersonalOP_2" xlink:label="PersonalOP_2" xlink:title="PersonalOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="KeyManagementPersonnelOfEntityOrParentMember" xlink:to="PersonalOP_2" xlink:title="definition: KeyManagementPersonnelOfEntityOrParentMember to PersonalOP_2" order="127.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_SubsidiariesMember" xlink:label="SubsidiariesMember" xlink:title="SubsidiariesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_1" xlink:label="SubsidiariaOP_1" xlink:title="SubsidiariaOP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_1" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_1" order="128.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_2" xlink:label="SubsidiariaOP_2" xlink:title="SubsidiariaOP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_2" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_2" order="129.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_3" xlink:label="SubsidiariaOP_3" xlink:title="SubsidiariaOP_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_3" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_3" order="130.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_4" xlink:label="SubsidiariaOP_4" xlink:title="SubsidiariaOP_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_4" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_4" order="131.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_5" xlink:label="SubsidiariaOP_5" xlink:title="SubsidiariaOP_5"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_5" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_5" order="132.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_6" xlink:label="SubsidiariaOP_6" xlink:title="SubsidiariaOP_6"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_6" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_6" order="133.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_7" xlink:label="SubsidiariaOP_7" xlink:title="SubsidiariaOP_7"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_7" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_7" order="134.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_8" xlink:label="SubsidiariaOP_8" xlink:title="SubsidiariaOP_8"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_8" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_8" order="135.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_9" xlink:label="SubsidiariaOP_9" xlink:title="SubsidiariaOP_9"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_9" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_9" order="136.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_10" xlink:label="SubsidiariaOP_10" xlink:title="SubsidiariaOP_10"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_10" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_10" order="137.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_11" xlink:label="SubsidiariaOP_11" xlink:title="SubsidiariaOP_11"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_11" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_11" order="138.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_12" xlink:label="SubsidiariaOP_12" xlink:title="SubsidiariaOP_12"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_12" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_12" order="139.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_13" xlink:label="SubsidiariaOP_13" xlink:title="SubsidiariaOP_13"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_13" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_13" order="140.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_14" xlink:label="SubsidiariaOP_14" xlink:title="SubsidiariaOP_14"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_14" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_14" order="141.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_15" xlink:label="SubsidiariaOP_15" xlink:title="SubsidiariaOP_15"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_15" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_15" order="142.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_16" xlink:label="SubsidiariaOP_16" xlink:title="SubsidiariaOP_16"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_16" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_16" order="143.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_17" xlink:label="SubsidiariaOP_17" xlink:title="SubsidiariaOP_17"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_17" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_17" order="144.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_18" xlink:label="SubsidiariaOP_18" xlink:title="SubsidiariaOP_18"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_18" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_18" order="145.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_19" xlink:label="SubsidiariaOP_19" xlink:title="SubsidiariaOP_19"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_19" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_19" order="146.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_20" xlink:label="SubsidiariaOP_20" xlink:title="SubsidiariaOP_20"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_20" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_20" order="147.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_21" xlink:label="SubsidiariaOP_21" xlink:title="SubsidiariaOP_21"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_21" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_21" order="148.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_22" xlink:label="SubsidiariaOP_22" xlink:title="SubsidiariaOP_22"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_22" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_22" order="149.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_23" xlink:label="SubsidiariaOP_23" xlink:title="SubsidiariaOP_23"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_23" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_23" order="150.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_24" xlink:label="SubsidiariaOP_24" xlink:title="SubsidiariaOP_24"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_24" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_24" order="151.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_25" xlink:label="SubsidiariaOP_25" xlink:title="SubsidiariaOP_25"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_25" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_25" order="152.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_26" xlink:label="SubsidiariaOP_26" xlink:title="SubsidiariaOP_26"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_26" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_26" order="153.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_27" xlink:label="SubsidiariaOP_27" xlink:title="SubsidiariaOP_27"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_27" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_27" order="154.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_28" xlink:label="SubsidiariaOP_28" xlink:title="SubsidiariaOP_28"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_28" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_28" order="155.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_29" xlink:label="SubsidiariaOP_29" xlink:title="SubsidiariaOP_29"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_29" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_29" order="156.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_30" xlink:label="SubsidiariaOP_30" xlink:title="SubsidiariaOP_30"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_30" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_30" order="157.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_31" xlink:label="SubsidiariaOP_31" xlink:title="SubsidiariaOP_31"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_31" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_31" order="158.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_32" xlink:label="SubsidiariaOP_32" xlink:title="SubsidiariaOP_32"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_32" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_32" order="159.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_33" xlink:label="SubsidiariaOP_33" xlink:title="SubsidiariaOP_33"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_33" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_33" order="160.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_34" xlink:label="SubsidiariaOP_34" xlink:title="SubsidiariaOP_34"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_34" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_34" order="161.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_35" xlink:label="SubsidiariaOP_35" xlink:title="SubsidiariaOP_35"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_35" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_35" order="162.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_36" xlink:label="SubsidiariaOP_36" xlink:title="SubsidiariaOP_36"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_36" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_36" order="163.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_37" xlink:label="SubsidiariaOP_37" xlink:title="SubsidiariaOP_37"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_37" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_37" order="164.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_38" xlink:label="SubsidiariaOP_38" xlink:title="SubsidiariaOP_38"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_38" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_38" order="165.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_39" xlink:label="SubsidiariaOP_39" xlink:title="SubsidiariaOP_39"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_39" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_39" order="166.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaOP_40" xlink:label="SubsidiariaOP_40" xlink:title="SubsidiariaOP_40"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaOP_40" xlink:title="definition: SubsidiariesMember to SubsidiariaOP_40" order="167.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400">
+	<link:loc xlink:type="locator" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cor_2016-01-11.xsd#cl-ci_PrestamosMiembro" xlink:label="PrestamosMiembro" xlink:title="PrestamosMiembro"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_1" xlink:label="Prestamo_1" xlink:title="Prestamo_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_1" xlink:title="definition: PrestamosMiembro to Prestamo_1" order="168.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_2" xlink:label="Prestamo_2" xlink:title="Prestamo_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_2" xlink:title="definition: PrestamosMiembro to Prestamo_2" order="169.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_3" xlink:label="Prestamo_3" xlink:title="Prestamo_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_3" xlink:title="definition: PrestamosMiembro to Prestamo_3" order="170.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_4" xlink:label="Prestamo_4" xlink:title="Prestamo_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_4" xlink:title="definition: PrestamosMiembro to Prestamo_4" order="171.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_5" xlink:label="Prestamo_5" xlink:title="Prestamo_5"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_5" xlink:title="definition: PrestamosMiembro to Prestamo_5" order="172.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_6" xlink:label="Prestamo_6" xlink:title="Prestamo_6"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_6" xlink:title="definition: PrestamosMiembro to Prestamo_6" order="173.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_7" xlink:label="Prestamo_7" xlink:title="Prestamo_7"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_7" xlink:title="definition: PrestamosMiembro to Prestamo_7" order="174.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_8" xlink:label="Prestamo_8" xlink:title="Prestamo_8"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_8" xlink:title="definition: PrestamosMiembro to Prestamo_8" order="175.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_9" xlink:label="Prestamo_9" xlink:title="Prestamo_9"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_9" xlink:title="definition: PrestamosMiembro to Prestamo_9" order="176.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_10" xlink:label="Prestamo_10" xlink:title="Prestamo_10"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_10" xlink:title="definition: PrestamosMiembro to Prestamo_10" order="177.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_11" xlink:label="Prestamo_11" xlink:title="Prestamo_11"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_11" xlink:title="definition: PrestamosMiembro to Prestamo_11" order="178.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_12" xlink:label="Prestamo_12" xlink:title="Prestamo_12"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_12" xlink:title="definition: PrestamosMiembro to Prestamo_12" order="179.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_13" xlink:label="Prestamo_13" xlink:title="Prestamo_13"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_13" xlink:title="definition: PrestamosMiembro to Prestamo_13" order="180.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_14" xlink:label="Prestamo_14" xlink:title="Prestamo_14"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_14" xlink:title="definition: PrestamosMiembro to Prestamo_14" order="181.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_15" xlink:label="Prestamo_15" xlink:title="Prestamo_15"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_15" xlink:title="definition: PrestamosMiembro to Prestamo_15" order="182.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_16" xlink:label="Prestamo_16" xlink:title="Prestamo_16"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_16" xlink:title="definition: PrestamosMiembro to Prestamo_16" order="183.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_17" xlink:label="Prestamo_17" xlink:title="Prestamo_17"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_17" xlink:title="definition: PrestamosMiembro to Prestamo_17" order="184.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_18" xlink:label="Prestamo_18" xlink:title="Prestamo_18"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_18" xlink:title="definition: PrestamosMiembro to Prestamo_18" order="185.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_19" xlink:label="Prestamo_19" xlink:title="Prestamo_19"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_19" xlink:title="definition: PrestamosMiembro to Prestamo_19" order="186.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_20" xlink:label="Prestamo_20" xlink:title="Prestamo_20"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_20" xlink:title="definition: PrestamosMiembro to Prestamo_20" order="187.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_21" xlink:label="Prestamo_21" xlink:title="Prestamo_21"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_21" xlink:title="definition: PrestamosMiembro to Prestamo_21" order="188.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_22" xlink:label="Prestamo_22" xlink:title="Prestamo_22"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_22" xlink:title="definition: PrestamosMiembro to Prestamo_22" order="189.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_23" xlink:label="Prestamo_23" xlink:title="Prestamo_23"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_23" xlink:title="definition: PrestamosMiembro to Prestamo_23" order="190.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_24" xlink:label="Prestamo_24" xlink:title="Prestamo_24"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_24" xlink:title="definition: PrestamosMiembro to Prestamo_24" order="191.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_25" xlink:label="Prestamo_25" xlink:title="Prestamo_25"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_25" xlink:title="definition: PrestamosMiembro to Prestamo_25" order="192.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_26" xlink:label="Prestamo_26" xlink:title="Prestamo_26"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_26" xlink:title="definition: PrestamosMiembro to Prestamo_26" order="193.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_27" xlink:label="Prestamo_27" xlink:title="Prestamo_27"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_27" xlink:title="definition: PrestamosMiembro to Prestamo_27" order="194.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_28" xlink:label="Prestamo_28" xlink:title="Prestamo_28"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_28" xlink:title="definition: PrestamosMiembro to Prestamo_28" order="195.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_29" xlink:label="Prestamo_29" xlink:title="Prestamo_29"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_29" xlink:title="definition: PrestamosMiembro to Prestamo_29" order="196.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_30" xlink:label="Prestamo_30" xlink:title="Prestamo_30"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_30" xlink:title="definition: PrestamosMiembro to Prestamo_30" order="197.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_31" xlink:label="Prestamo_31" xlink:title="Prestamo_31"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_31" xlink:title="definition: PrestamosMiembro to Prestamo_31" order="198.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_32" xlink:label="Prestamo_32" xlink:title="Prestamo_32"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_32" xlink:title="definition: PrestamosMiembro to Prestamo_32" order="199.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_33" xlink:label="Prestamo_33" xlink:title="Prestamo_33"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_33" xlink:title="definition: PrestamosMiembro to Prestamo_33" order="200.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_34" xlink:label="Prestamo_34" xlink:title="Prestamo_34"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_34" xlink:title="definition: PrestamosMiembro to Prestamo_34" order="201.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_35" xlink:label="Prestamo_35" xlink:title="Prestamo_35"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_35" xlink:title="definition: PrestamosMiembro to Prestamo_35" order="202.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_36" xlink:label="Prestamo_36" xlink:title="Prestamo_36"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_36" xlink:title="definition: PrestamosMiembro to Prestamo_36" order="203.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_37" xlink:label="Prestamo_37" xlink:title="Prestamo_37"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_37" xlink:title="definition: PrestamosMiembro to Prestamo_37" order="204.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_38" xlink:label="Prestamo_38" xlink:title="Prestamo_38"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_38" xlink:title="definition: PrestamosMiembro to Prestamo_38" order="205.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_39" xlink:label="Prestamo_39" xlink:title="Prestamo_39"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_39" xlink:title="definition: PrestamosMiembro to Prestamo_39" order="206.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_40" xlink:label="Prestamo_40" xlink:title="Prestamo_40"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_40" xlink:title="definition: PrestamosMiembro to Prestamo_40" order="207.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_41" xlink:label="Prestamo_41" xlink:title="Prestamo_41"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_41" xlink:title="definition: PrestamosMiembro to Prestamo_41" order="208.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_42" xlink:label="Prestamo_42" xlink:title="Prestamo_42"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_42" xlink:title="definition: PrestamosMiembro to Prestamo_42" order="209.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_43" xlink:label="Prestamo_43" xlink:title="Prestamo_43"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_43" xlink:title="definition: PrestamosMiembro to Prestamo_43" order="210.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_44" xlink:label="Prestamo_44" xlink:title="Prestamo_44"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_44" xlink:title="definition: PrestamosMiembro to Prestamo_44" order="211.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_45" xlink:label="Prestamo_45" xlink:title="Prestamo_45"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_45" xlink:title="definition: PrestamosMiembro to Prestamo_45" order="212.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_46" xlink:label="Prestamo_46" xlink:title="Prestamo_46"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_46" xlink:title="definition: PrestamosMiembro to Prestamo_46" order="213.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_47" xlink:label="Prestamo_47" xlink:title="Prestamo_47"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_47" xlink:title="definition: PrestamosMiembro to Prestamo_47" order="214.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_48" xlink:label="Prestamo_48" xlink:title="Prestamo_48"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_48" xlink:title="definition: PrestamosMiembro to Prestamo_48" order="215.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_49" xlink:label="Prestamo_49" xlink:title="Prestamo_49"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_49" xlink:title="definition: PrestamosMiembro to Prestamo_49" order="216.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_50" xlink:label="Prestamo_50" xlink:title="Prestamo_50"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_50" xlink:title="definition: PrestamosMiembro to Prestamo_50" order="217.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_51" xlink:label="Prestamo_51" xlink:title="Prestamo_51"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_51" xlink:title="definition: PrestamosMiembro to Prestamo_51" order="218.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_52" xlink:label="Prestamo_52" xlink:title="Prestamo_52"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_52" xlink:title="definition: PrestamosMiembro to Prestamo_52" order="219.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_53" xlink:label="Prestamo_53" xlink:title="Prestamo_53"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_53" xlink:title="definition: PrestamosMiembro to Prestamo_53" order="220.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_54" xlink:label="Prestamo_54" xlink:title="Prestamo_54"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_54" xlink:title="definition: PrestamosMiembro to Prestamo_54" order="221.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_55" xlink:label="Prestamo_55" xlink:title="Prestamo_55"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_55" xlink:title="definition: PrestamosMiembro to Prestamo_55" order="222.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_56" xlink:label="Prestamo_56" xlink:title="Prestamo_56"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_56" xlink:title="definition: PrestamosMiembro to Prestamo_56" order="223.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_57" xlink:label="Prestamo_57" xlink:title="Prestamo_57"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_57" xlink:title="definition: PrestamosMiembro to Prestamo_57" order="224.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_58" xlink:label="Prestamo_58" xlink:title="Prestamo_58"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_58" xlink:title="definition: PrestamosMiembro to Prestamo_58" order="225.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_59" xlink:label="Prestamo_59" xlink:title="Prestamo_59"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_59" xlink:title="definition: PrestamosMiembro to Prestamo_59" order="226.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_60" xlink:label="Prestamo_60" xlink:title="Prestamo_60"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_60" xlink:title="definition: PrestamosMiembro to Prestamo_60" order="227.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_61" xlink:label="Prestamo_61" xlink:title="Prestamo_61"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_61" xlink:title="definition: PrestamosMiembro to Prestamo_61" order="228.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_62" xlink:label="Prestamo_62" xlink:title="Prestamo_62"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_62" xlink:title="definition: PrestamosMiembro to Prestamo_62" order="229.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_63" xlink:label="Prestamo_63" xlink:title="Prestamo_63"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_63" xlink:title="definition: PrestamosMiembro to Prestamo_63" order="230.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_64" xlink:label="Prestamo_64" xlink:title="Prestamo_64"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_64" xlink:title="definition: PrestamosMiembro to Prestamo_64" order="231.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_65" xlink:label="Prestamo_65" xlink:title="Prestamo_65"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_65" xlink:title="definition: PrestamosMiembro to Prestamo_65" order="232.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_66" xlink:label="Prestamo_66" xlink:title="Prestamo_66"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_66" xlink:title="definition: PrestamosMiembro to Prestamo_66" order="233.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_67" xlink:label="Prestamo_67" xlink:title="Prestamo_67"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_67" xlink:title="definition: PrestamosMiembro to Prestamo_67" order="234.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_68" xlink:label="Prestamo_68" xlink:title="Prestamo_68"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_68" xlink:title="definition: PrestamosMiembro to Prestamo_68" order="235.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_69" xlink:label="Prestamo_69" xlink:title="Prestamo_69"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_69" xlink:title="definition: PrestamosMiembro to Prestamo_69" order="236.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_70" xlink:label="Prestamo_70" xlink:title="Prestamo_70"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_70" xlink:title="definition: PrestamosMiembro to Prestamo_70" order="237.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_71" xlink:label="Prestamo_71" xlink:title="Prestamo_71"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_71" xlink:title="definition: PrestamosMiembro to Prestamo_71" order="238.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_72" xlink:label="Prestamo_72" xlink:title="Prestamo_72"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_72" xlink:title="definition: PrestamosMiembro to Prestamo_72" order="239.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_73" xlink:label="Prestamo_73" xlink:title="Prestamo_73"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_73" xlink:title="definition: PrestamosMiembro to Prestamo_73" order="240.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_74" xlink:label="Prestamo_74" xlink:title="Prestamo_74"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_74" xlink:title="definition: PrestamosMiembro to Prestamo_74" order="241.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_75" xlink:label="Prestamo_75" xlink:title="Prestamo_75"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_75" xlink:title="definition: PrestamosMiembro to Prestamo_75" order="242.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_76" xlink:label="Prestamo_76" xlink:title="Prestamo_76"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_76" xlink:title="definition: PrestamosMiembro to Prestamo_76" order="243.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_77" xlink:label="Prestamo_77" xlink:title="Prestamo_77"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_77" xlink:title="definition: PrestamosMiembro to Prestamo_77" order="244.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_78" xlink:label="Prestamo_78" xlink:title="Prestamo_78"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_78" xlink:title="definition: PrestamosMiembro to Prestamo_78" order="245.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_79" xlink:label="Prestamo_79" xlink:title="Prestamo_79"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_79" xlink:title="definition: PrestamosMiembro to Prestamo_79" order="246.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_80" xlink:label="Prestamo_80" xlink:title="Prestamo_80"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_80" xlink:title="definition: PrestamosMiembro to Prestamo_80" order="247.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_81" xlink:label="Prestamo_81" xlink:title="Prestamo_81"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_81" xlink:title="definition: PrestamosMiembro to Prestamo_81" order="248.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_82" xlink:label="Prestamo_82" xlink:title="Prestamo_82"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_82" xlink:title="definition: PrestamosMiembro to Prestamo_82" order="249.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_83" xlink:label="Prestamo_83" xlink:title="Prestamo_83"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_83" xlink:title="definition: PrestamosMiembro to Prestamo_83" order="250.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_84" xlink:label="Prestamo_84" xlink:title="Prestamo_84"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_84" xlink:title="definition: PrestamosMiembro to Prestamo_84" order="251.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_85" xlink:label="Prestamo_85" xlink:title="Prestamo_85"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_85" xlink:title="definition: PrestamosMiembro to Prestamo_85" order="252.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_86" xlink:label="Prestamo_86" xlink:title="Prestamo_86"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_86" xlink:title="definition: PrestamosMiembro to Prestamo_86" order="253.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_87" xlink:label="Prestamo_87" xlink:title="Prestamo_87"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_87" xlink:title="definition: PrestamosMiembro to Prestamo_87" order="254.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_88" xlink:label="Prestamo_88" xlink:title="Prestamo_88"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_88" xlink:title="definition: PrestamosMiembro to Prestamo_88" order="255.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_89" xlink:label="Prestamo_89" xlink:title="Prestamo_89"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_89" xlink:title="definition: PrestamosMiembro to Prestamo_89" order="256.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_90" xlink:label="Prestamo_90" xlink:title="Prestamo_90"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_90" xlink:title="definition: PrestamosMiembro to Prestamo_90" order="257.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_91" xlink:label="Prestamo_91" xlink:title="Prestamo_91"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_91" xlink:title="definition: PrestamosMiembro to Prestamo_91" order="258.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_92" xlink:label="Prestamo_92" xlink:title="Prestamo_92"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_92" xlink:title="definition: PrestamosMiembro to Prestamo_92" order="259.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_93" xlink:label="Prestamo_93" xlink:title="Prestamo_93"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_93" xlink:title="definition: PrestamosMiembro to Prestamo_93" order="260.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_94" xlink:label="Prestamo_94" xlink:title="Prestamo_94"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_94" xlink:title="definition: PrestamosMiembro to Prestamo_94" order="261.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_95" xlink:label="Prestamo_95" xlink:title="Prestamo_95"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_95" xlink:title="definition: PrestamosMiembro to Prestamo_95" order="262.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_96" xlink:label="Prestamo_96" xlink:title="Prestamo_96"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_96" xlink:title="definition: PrestamosMiembro to Prestamo_96" order="263.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_97" xlink:label="Prestamo_97" xlink:title="Prestamo_97"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_97" xlink:title="definition: PrestamosMiembro to Prestamo_97" order="264.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_98" xlink:label="Prestamo_98" xlink:title="Prestamo_98"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_98" xlink:title="definition: PrestamosMiembro to Prestamo_98" order="265.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_99" xlink:label="Prestamo_99" xlink:title="Prestamo_99"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_99" xlink:title="definition: PrestamosMiembro to Prestamo_99" order="266.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_100" xlink:label="Prestamo_100" xlink:title="Prestamo_100"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_100" xlink:title="definition: PrestamosMiembro to Prestamo_100" order="267.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_101" xlink:label="Prestamo_101" xlink:title="Prestamo_101"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_101" xlink:title="definition: PrestamosMiembro to Prestamo_101" order="268.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_102" xlink:label="Prestamo_102" xlink:title="Prestamo_102"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_102" xlink:title="definition: PrestamosMiembro to Prestamo_102" order="269.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_103" xlink:label="Prestamo_103" xlink:title="Prestamo_103"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_103" xlink:title="definition: PrestamosMiembro to Prestamo_103" order="270.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_104" xlink:label="Prestamo_104" xlink:title="Prestamo_104"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_104" xlink:title="definition: PrestamosMiembro to Prestamo_104" order="271.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_105" xlink:label="Prestamo_105" xlink:title="Prestamo_105"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_105" xlink:title="definition: PrestamosMiembro to Prestamo_105" order="272.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_106" xlink:label="Prestamo_106" xlink:title="Prestamo_106"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_106" xlink:title="definition: PrestamosMiembro to Prestamo_106" order="273.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_107" xlink:label="Prestamo_107" xlink:title="Prestamo_107"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_107" xlink:title="definition: PrestamosMiembro to Prestamo_107" order="274.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_108" xlink:label="Prestamo_108" xlink:title="Prestamo_108"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_108" xlink:title="definition: PrestamosMiembro to Prestamo_108" order="275.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_109" xlink:label="Prestamo_109" xlink:title="Prestamo_109"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_109" xlink:title="definition: PrestamosMiembro to Prestamo_109" order="276.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_110" xlink:label="Prestamo_110" xlink:title="Prestamo_110"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_110" xlink:title="definition: PrestamosMiembro to Prestamo_110" order="277.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_111" xlink:label="Prestamo_111" xlink:title="Prestamo_111"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_111" xlink:title="definition: PrestamosMiembro to Prestamo_111" order="278.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_112" xlink:label="Prestamo_112" xlink:title="Prestamo_112"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_112" xlink:title="definition: PrestamosMiembro to Prestamo_112" order="279.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_113" xlink:label="Prestamo_113" xlink:title="Prestamo_113"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_113" xlink:title="definition: PrestamosMiembro to Prestamo_113" order="280.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_114" xlink:label="Prestamo_114" xlink:title="Prestamo_114"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_114" xlink:title="definition: PrestamosMiembro to Prestamo_114" order="281.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_115" xlink:label="Prestamo_115" xlink:title="Prestamo_115"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_115" xlink:title="definition: PrestamosMiembro to Prestamo_115" order="282.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_116" xlink:label="Prestamo_116" xlink:title="Prestamo_116"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_116" xlink:title="definition: PrestamosMiembro to Prestamo_116" order="283.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_117" xlink:label="Prestamo_117" xlink:title="Prestamo_117"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_117" xlink:title="definition: PrestamosMiembro to Prestamo_117" order="284.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_118" xlink:label="Prestamo_118" xlink:title="Prestamo_118"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_118" xlink:title="definition: PrestamosMiembro to Prestamo_118" order="285.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_119" xlink:label="Prestamo_119" xlink:title="Prestamo_119"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_119" xlink:title="definition: PrestamosMiembro to Prestamo_119" order="286.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_120" xlink:label="Prestamo_120" xlink:title="Prestamo_120"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_120" xlink:title="definition: PrestamosMiembro to Prestamo_120" order="287.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_121" xlink:label="Prestamo_121" xlink:title="Prestamo_121"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_121" xlink:title="definition: PrestamosMiembro to Prestamo_121" order="288.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_122" xlink:label="Prestamo_122" xlink:title="Prestamo_122"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_122" xlink:title="definition: PrestamosMiembro to Prestamo_122" order="289.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_123" xlink:label="Prestamo_123" xlink:title="Prestamo_123"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_123" xlink:title="definition: PrestamosMiembro to Prestamo_123" order="290.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_124" xlink:label="Prestamo_124" xlink:title="Prestamo_124"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_124" xlink:title="definition: PrestamosMiembro to Prestamo_124" order="291.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_125" xlink:label="Prestamo_125" xlink:title="Prestamo_125"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_125" xlink:title="definition: PrestamosMiembro to Prestamo_125" order="292.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_126" xlink:label="Prestamo_126" xlink:title="Prestamo_126"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_126" xlink:title="definition: PrestamosMiembro to Prestamo_126" order="293.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_127" xlink:label="Prestamo_127" xlink:title="Prestamo_127"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_127" xlink:title="definition: PrestamosMiembro to Prestamo_127" order="294.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_128" xlink:label="Prestamo_128" xlink:title="Prestamo_128"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_128" xlink:title="definition: PrestamosMiembro to Prestamo_128" order="295.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_129" xlink:label="Prestamo_129" xlink:title="Prestamo_129"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_129" xlink:title="definition: PrestamosMiembro to Prestamo_129" order="296.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_130" xlink:label="Prestamo_130" xlink:title="Prestamo_130"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_130" xlink:title="definition: PrestamosMiembro to Prestamo_130" order="297.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_131" xlink:label="Prestamo_131" xlink:title="Prestamo_131"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_131" xlink:title="definition: PrestamosMiembro to Prestamo_131" order="298.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_132" xlink:label="Prestamo_132" xlink:title="Prestamo_132"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_132" xlink:title="definition: PrestamosMiembro to Prestamo_132" order="299.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_133" xlink:label="Prestamo_133" xlink:title="Prestamo_133"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_133" xlink:title="definition: PrestamosMiembro to Prestamo_133" order="300.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_134" xlink:label="Prestamo_134" xlink:title="Prestamo_134"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_134" xlink:title="definition: PrestamosMiembro to Prestamo_134" order="301.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_135" xlink:label="Prestamo_135" xlink:title="Prestamo_135"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_135" xlink:title="definition: PrestamosMiembro to Prestamo_135" order="302.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_136" xlink:label="Prestamo_136" xlink:title="Prestamo_136"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_136" xlink:title="definition: PrestamosMiembro to Prestamo_136" order="303.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_137" xlink:label="Prestamo_137" xlink:title="Prestamo_137"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_137" xlink:title="definition: PrestamosMiembro to Prestamo_137" order="304.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_138" xlink:label="Prestamo_138" xlink:title="Prestamo_138"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_138" xlink:title="definition: PrestamosMiembro to Prestamo_138" order="305.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_139" xlink:label="Prestamo_139" xlink:title="Prestamo_139"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_139" xlink:title="definition: PrestamosMiembro to Prestamo_139" order="306.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_140" xlink:label="Prestamo_140" xlink:title="Prestamo_140"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_140" xlink:title="definition: PrestamosMiembro to Prestamo_140" order="307.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_141" xlink:label="Prestamo_141" xlink:title="Prestamo_141"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_141" xlink:title="definition: PrestamosMiembro to Prestamo_141" order="308.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_142" xlink:label="Prestamo_142" xlink:title="Prestamo_142"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_142" xlink:title="definition: PrestamosMiembro to Prestamo_142" order="309.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_143" xlink:label="Prestamo_143" xlink:title="Prestamo_143"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_143" xlink:title="definition: PrestamosMiembro to Prestamo_143" order="310.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_144" xlink:label="Prestamo_144" xlink:title="Prestamo_144"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_144" xlink:title="definition: PrestamosMiembro to Prestamo_144" order="311.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_145" xlink:label="Prestamo_145" xlink:title="Prestamo_145"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_145" xlink:title="definition: PrestamosMiembro to Prestamo_145" order="312.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_146" xlink:label="Prestamo_146" xlink:title="Prestamo_146"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_146" xlink:title="definition: PrestamosMiembro to Prestamo_146" order="313.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_147" xlink:label="Prestamo_147" xlink:title="Prestamo_147"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_147" xlink:title="definition: PrestamosMiembro to Prestamo_147" order="314.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_148" xlink:label="Prestamo_148" xlink:title="Prestamo_148"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_148" xlink:title="definition: PrestamosMiembro to Prestamo_148" order="315.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_149" xlink:label="Prestamo_149" xlink:title="Prestamo_149"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_149" xlink:title="definition: PrestamosMiembro to Prestamo_149" order="316.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_150" xlink:label="Prestamo_150" xlink:title="Prestamo_150"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_150" xlink:title="definition: PrestamosMiembro to Prestamo_150" order="317.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_151" xlink:label="Prestamo_151" xlink:title="Prestamo_151"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_151" xlink:title="definition: PrestamosMiembro to Prestamo_151" order="318.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_152" xlink:label="Prestamo_152" xlink:title="Prestamo_152"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_152" xlink:title="definition: PrestamosMiembro to Prestamo_152" order="319.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_153" xlink:label="Prestamo_153" xlink:title="Prestamo_153"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_153" xlink:title="definition: PrestamosMiembro to Prestamo_153" order="320.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_154" xlink:label="Prestamo_154" xlink:title="Prestamo_154"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_154" xlink:title="definition: PrestamosMiembro to Prestamo_154" order="321.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_155" xlink:label="Prestamo_155" xlink:title="Prestamo_155"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_155" xlink:title="definition: PrestamosMiembro to Prestamo_155" order="322.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_156" xlink:label="Prestamo_156" xlink:title="Prestamo_156"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_156" xlink:title="definition: PrestamosMiembro to Prestamo_156" order="323.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_157" xlink:label="Prestamo_157" xlink:title="Prestamo_157"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_157" xlink:title="definition: PrestamosMiembro to Prestamo_157" order="324.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_158" xlink:label="Prestamo_158" xlink:title="Prestamo_158"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_158" xlink:title="definition: PrestamosMiembro to Prestamo_158" order="325.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_159" xlink:label="Prestamo_159" xlink:title="Prestamo_159"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_159" xlink:title="definition: PrestamosMiembro to Prestamo_159" order="326.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_160" xlink:label="Prestamo_160" xlink:title="Prestamo_160"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_160" xlink:title="definition: PrestamosMiembro to Prestamo_160" order="327.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_161" xlink:label="Prestamo_161" xlink:title="Prestamo_161"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_161" xlink:title="definition: PrestamosMiembro to Prestamo_161" order="328.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_162" xlink:label="Prestamo_162" xlink:title="Prestamo_162"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_162" xlink:title="definition: PrestamosMiembro to Prestamo_162" order="329.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_163" xlink:label="Prestamo_163" xlink:title="Prestamo_163"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_163" xlink:title="definition: PrestamosMiembro to Prestamo_163" order="330.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_164" xlink:label="Prestamo_164" xlink:title="Prestamo_164"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_164" xlink:title="definition: PrestamosMiembro to Prestamo_164" order="331.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_165" xlink:label="Prestamo_165" xlink:title="Prestamo_165"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_165" xlink:title="definition: PrestamosMiembro to Prestamo_165" order="332.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_166" xlink:label="Prestamo_166" xlink:title="Prestamo_166"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_166" xlink:title="definition: PrestamosMiembro to Prestamo_166" order="333.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_167" xlink:label="Prestamo_167" xlink:title="Prestamo_167"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_167" xlink:title="definition: PrestamosMiembro to Prestamo_167" order="334.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_168" xlink:label="Prestamo_168" xlink:title="Prestamo_168"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_168" xlink:title="definition: PrestamosMiembro to Prestamo_168" order="335.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_169" xlink:label="Prestamo_169" xlink:title="Prestamo_169"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_169" xlink:title="definition: PrestamosMiembro to Prestamo_169" order="336.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_170" xlink:label="Prestamo_170" xlink:title="Prestamo_170"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_170" xlink:title="definition: PrestamosMiembro to Prestamo_170" order="337.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_171" xlink:label="Prestamo_171" xlink:title="Prestamo_171"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_171" xlink:title="definition: PrestamosMiembro to Prestamo_171" order="338.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_172" xlink:label="Prestamo_172" xlink:title="Prestamo_172"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_172" xlink:title="definition: PrestamosMiembro to Prestamo_172" order="339.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_173" xlink:label="Prestamo_173" xlink:title="Prestamo_173"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_173" xlink:title="definition: PrestamosMiembro to Prestamo_173" order="340.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_174" xlink:label="Prestamo_174" xlink:title="Prestamo_174"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_174" xlink:title="definition: PrestamosMiembro to Prestamo_174" order="341.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_175" xlink:label="Prestamo_175" xlink:title="Prestamo_175"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_175" xlink:title="definition: PrestamosMiembro to Prestamo_175" order="342.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_176" xlink:label="Prestamo_176" xlink:title="Prestamo_176"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_176" xlink:title="definition: PrestamosMiembro to Prestamo_176" order="343.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_177" xlink:label="Prestamo_177" xlink:title="Prestamo_177"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_177" xlink:title="definition: PrestamosMiembro to Prestamo_177" order="344.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_178" xlink:label="Prestamo_178" xlink:title="Prestamo_178"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_178" xlink:title="definition: PrestamosMiembro to Prestamo_178" order="345.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_179" xlink:label="Prestamo_179" xlink:title="Prestamo_179"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_179" xlink:title="definition: PrestamosMiembro to Prestamo_179" order="346.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_180" xlink:label="Prestamo_180" xlink:title="Prestamo_180"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_180" xlink:title="definition: PrestamosMiembro to Prestamo_180" order="347.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_181" xlink:label="Prestamo_181" xlink:title="Prestamo_181"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_181" xlink:title="definition: PrestamosMiembro to Prestamo_181" order="348.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_182" xlink:label="Prestamo_182" xlink:title="Prestamo_182"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_182" xlink:title="definition: PrestamosMiembro to Prestamo_182" order="349.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_183" xlink:label="Prestamo_183" xlink:title="Prestamo_183"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_183" xlink:title="definition: PrestamosMiembro to Prestamo_183" order="350.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_184" xlink:label="Prestamo_184" xlink:title="Prestamo_184"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_184" xlink:title="definition: PrestamosMiembro to Prestamo_184" order="351.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_185" xlink:label="Prestamo_185" xlink:title="Prestamo_185"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_185" xlink:title="definition: PrestamosMiembro to Prestamo_185" order="352.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_186" xlink:label="Prestamo_186" xlink:title="Prestamo_186"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_186" xlink:title="definition: PrestamosMiembro to Prestamo_186" order="353.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_187" xlink:label="Prestamo_187" xlink:title="Prestamo_187"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_187" xlink:title="definition: PrestamosMiembro to Prestamo_187" order="354.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_188" xlink:label="Prestamo_188" xlink:title="Prestamo_188"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_188" xlink:title="definition: PrestamosMiembro to Prestamo_188" order="355.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_189" xlink:label="Prestamo_189" xlink:title="Prestamo_189"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_189" xlink:title="definition: PrestamosMiembro to Prestamo_189" order="356.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_190" xlink:label="Prestamo_190" xlink:title="Prestamo_190"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_190" xlink:title="definition: PrestamosMiembro to Prestamo_190" order="357.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_191" xlink:label="Prestamo_191" xlink:title="Prestamo_191"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_191" xlink:title="definition: PrestamosMiembro to Prestamo_191" order="358.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_192" xlink:label="Prestamo_192" xlink:title="Prestamo_192"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_192" xlink:title="definition: PrestamosMiembro to Prestamo_192" order="359.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Prestamo_193" xlink:label="Prestamo_193" xlink:title="Prestamo_193"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="PrestamosMiembro" xlink:to="Prestamo_193" xlink:title="definition: PrestamosMiembro to Prestamo_193" order="360.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400a">
+	<link:loc xlink:type="locator" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cor_2016-01-11.xsd#cl-ci_ObligacionesLeasingMiembro" xlink:label="ObligacionesLeasingMiembro" xlink:title="ObligacionesLeasingMiembro"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_1" xlink:label="Leasing_1" xlink:title="Leasing_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_1" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_1" order="361.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_2" xlink:label="Leasing_2" xlink:title="Leasing_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_2" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_2" order="362.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_3" xlink:label="Leasing_3" xlink:title="Leasing_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_3" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_3" order="363.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_4" xlink:label="Leasing_4" xlink:title="Leasing_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_4" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_4" order="364.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_5" xlink:label="Leasing_5" xlink:title="Leasing_5"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_5" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_5" order="365.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_6" xlink:label="Leasing_6" xlink:title="Leasing_6"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_6" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_6" order="366.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_7" xlink:label="Leasing_7" xlink:title="Leasing_7"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_7" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_7" order="367.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_8" xlink:label="Leasing_8" xlink:title="Leasing_8"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_8" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_8" order="368.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_9" xlink:label="Leasing_9" xlink:title="Leasing_9"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_9" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_9" order="369.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_10" xlink:label="Leasing_10" xlink:title="Leasing_10"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_10" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_10" order="370.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_11" xlink:label="Leasing_11" xlink:title="Leasing_11"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_11" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_11" order="371.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_12" xlink:label="Leasing_12" xlink:title="Leasing_12"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_12" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_12" order="372.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_13" xlink:label="Leasing_13" xlink:title="Leasing_13"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_13" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_13" order="373.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_14" xlink:label="Leasing_14" xlink:title="Leasing_14"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_14" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_14" order="374.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_15" xlink:label="Leasing_15" xlink:title="Leasing_15"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_15" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_15" order="375.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_16" xlink:label="Leasing_16" xlink:title="Leasing_16"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_16" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_16" order="376.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_17" xlink:label="Leasing_17" xlink:title="Leasing_17"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_17" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_17" order="377.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_18" xlink:label="Leasing_18" xlink:title="Leasing_18"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_18" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_18" order="378.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_19" xlink:label="Leasing_19" xlink:title="Leasing_19"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_19" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_19" order="379.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_20" xlink:label="Leasing_20" xlink:title="Leasing_20"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_20" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_20" order="380.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_21" xlink:label="Leasing_21" xlink:title="Leasing_21"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_21" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_21" order="381.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Leasing_22" xlink:label="Leasing_22" xlink:title="Leasing_22"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ObligacionesLeasingMiembro" xlink:to="Leasing_22" xlink:title="definition: ObligacionesLeasingMiembro to Leasing_22" order="382.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400b">
+	<link:loc xlink:type="locator" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cor_2016-01-11.xsd#cl-ci_ObligacionesEmisionesDeudaMiembro" xlink:label="ObligacionesEmisionesDeudaMiembro" xlink:title="ObligacionesEmisionesDeudaMiembro"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/cl-cp_2016-01-11_role-822400f">
+	<link:loc xlink:type="locator" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cor_2016-01-11.xsd#cl-ci_DetallePorTipoOperacionesMiembro" xlink:label="DetallePorTipoOperacionesMiembro" xlink:title="DetallePorTipoOperacionesMiembro"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DetalleUT_1" xlink:label="DetalleUT_1" xlink:title="DetalleUT_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="DetallePorTipoOperacionesMiembro" xlink:to="DetalleUT_1" xlink:title="definition: DetallePorTipoOperacionesMiembro to DetalleUT_1" order="383.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DetalleUT_2" xlink:label="DetalleUT_2" xlink:title="DetalleUT_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="DetallePorTipoOperacionesMiembro" xlink:to="DetalleUT_2" xlink:title="definition: DetallePorTipoOperacionesMiembro to DetalleUT_2" order="384.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-38_2015-03-11_role-823180b">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_IntangibleAssetsWithIndefiniteUsefulLifeMember" xlink:label="IntangibleAssetsWithIndefiniteUsefulLifeMember" xlink:title="IntangibleAssetsWithIndefiniteUsefulLifeMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ActivosIntangiblesIndef_1" xlink:label="ActivosIntangiblesIndef_1" xlink:title="ActivosIntangiblesIndef_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="IntangibleAssetsWithIndefiniteUsefulLifeMember" xlink:to="ActivosIntangiblesIndef_1" xlink:title="definition: IntangibleAssetsWithIndefiniteUsefulLifeMember to ActivosIntangiblesIndef_1" order="385.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ActivosIntangiblesIndef_2" xlink:label="ActivosIntangiblesIndef_2" xlink:title="ActivosIntangiblesIndef_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="IntangibleAssetsWithIndefiniteUsefulLifeMember" xlink:to="ActivosIntangiblesIndef_2" xlink:title="definition: IntangibleAssetsWithIndefiniteUsefulLifeMember to ActivosIntangiblesIndef_2" order="386.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-38_2015-03-11_role-823180c">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_IntangibleAssetsMaterialToEntityMember" xlink:label="IntangibleAssetsMaterialToEntityMember" xlink:title="IntangibleAssetsMaterialToEntityMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ActivosIntangiblesEntid_1" xlink:label="ActivosIntangiblesEntid_1" xlink:title="ActivosIntangiblesEntid_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="IntangibleAssetsMaterialToEntityMember" xlink:to="ActivosIntangiblesEntid_1" xlink:title="definition: IntangibleAssetsMaterialToEntityMember to ActivosIntangiblesEntid_1" order="387.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_ActivosIntangiblesEntid_2" xlink:label="ActivosIntangiblesEntid_2" xlink:title="ActivosIntangiblesEntid_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="IntangibleAssetsMaterialToEntityMember" xlink:to="ActivosIntangiblesEntid_2" xlink:title="definition: IntangibleAssetsMaterialToEntityMember to ActivosIntangiblesEntid_2" order="388.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_SubsidiariesMember" xlink:label="SubsidiariesMember" xlink:title="SubsidiariesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_1" xlink:label="SubsidiariaP_1" xlink:title="SubsidiariaP_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_1" xlink:title="definition: SubsidiariesMember to SubsidiariaP_1" order="389.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_2" xlink:label="SubsidiariaP_2" xlink:title="SubsidiariaP_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_2" xlink:title="definition: SubsidiariesMember to SubsidiariaP_2" order="390.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_3" xlink:label="SubsidiariaP_3" xlink:title="SubsidiariaP_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_3" xlink:title="definition: SubsidiariesMember to SubsidiariaP_3" order="391.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_4" xlink:label="SubsidiariaP_4" xlink:title="SubsidiariaP_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_4" xlink:title="definition: SubsidiariesMember to SubsidiariaP_4" order="392.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_5" xlink:label="SubsidiariaP_5" xlink:title="SubsidiariaP_5"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_5" xlink:title="definition: SubsidiariesMember to SubsidiariaP_5" order="393.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_6" xlink:label="SubsidiariaP_6" xlink:title="SubsidiariaP_6"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_6" xlink:title="definition: SubsidiariesMember to SubsidiariaP_6" order="394.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_7" xlink:label="SubsidiariaP_7" xlink:title="SubsidiariaP_7"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_7" xlink:title="definition: SubsidiariesMember to SubsidiariaP_7" order="395.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_8" xlink:label="SubsidiariaP_8" xlink:title="SubsidiariaP_8"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_8" xlink:title="definition: SubsidiariesMember to SubsidiariaP_8" order="396.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_9" xlink:label="SubsidiariaP_9" xlink:title="SubsidiariaP_9"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_9" xlink:title="definition: SubsidiariesMember to SubsidiariaP_9" order="397.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_10" xlink:label="SubsidiariaP_10" xlink:title="SubsidiariaP_10"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_10" xlink:title="definition: SubsidiariesMember to SubsidiariaP_10" order="398.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_11" xlink:label="SubsidiariaP_11" xlink:title="SubsidiariaP_11"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_11" xlink:title="definition: SubsidiariesMember to SubsidiariaP_11" order="399.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_12" xlink:label="SubsidiariaP_12" xlink:title="SubsidiariaP_12"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_12" xlink:title="definition: SubsidiariesMember to SubsidiariaP_12" order="400.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_13" xlink:label="SubsidiariaP_13" xlink:title="SubsidiariaP_13"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_13" xlink:title="definition: SubsidiariesMember to SubsidiariaP_13" order="401.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_14" xlink:label="SubsidiariaP_14" xlink:title="SubsidiariaP_14"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_14" xlink:title="definition: SubsidiariesMember to SubsidiariaP_14" order="402.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_15" xlink:label="SubsidiariaP_15" xlink:title="SubsidiariaP_15"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_15" xlink:title="definition: SubsidiariesMember to SubsidiariaP_15" order="403.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_16" xlink:label="SubsidiariaP_16" xlink:title="SubsidiariaP_16"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_16" xlink:title="definition: SubsidiariesMember to SubsidiariaP_16" order="404.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_17" xlink:label="SubsidiariaP_17" xlink:title="SubsidiariaP_17"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_17" xlink:title="definition: SubsidiariesMember to SubsidiariaP_17" order="405.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_18" xlink:label="SubsidiariaP_18" xlink:title="SubsidiariaP_18"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_18" xlink:title="definition: SubsidiariesMember to SubsidiariaP_18" order="406.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_19" xlink:label="SubsidiariaP_19" xlink:title="SubsidiariaP_19"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_19" xlink:title="definition: SubsidiariesMember to SubsidiariaP_19" order="407.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_20" xlink:label="SubsidiariaP_20" xlink:title="SubsidiariaP_20"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_20" xlink:title="definition: SubsidiariesMember to SubsidiariaP_20" order="408.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_21" xlink:label="SubsidiariaP_21" xlink:title="SubsidiariaP_21"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_21" xlink:title="definition: SubsidiariesMember to SubsidiariaP_21" order="409.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_22" xlink:label="SubsidiariaP_22" xlink:title="SubsidiariaP_22"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_22" xlink:title="definition: SubsidiariesMember to SubsidiariaP_22" order="410.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_23" xlink:label="SubsidiariaP_23" xlink:title="SubsidiariaP_23"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_23" xlink:title="definition: SubsidiariesMember to SubsidiariaP_23" order="411.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubsidiariaP_24" xlink:label="SubsidiariaP_24" xlink:title="SubsidiariaP_24"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SubsidiariesMember" xlink:to="SubsidiariaP_24" xlink:title="definition: SubsidiariesMember to SubsidiariaP_24" order="412.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700a">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_ConsolidatedStructuredEntitiesMember" xlink:label="ConsolidatedStructuredEntitiesMember" xlink:title="ConsolidatedStructuredEntitiesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_EntidadConsolidada_1" xlink:label="EntidadConsolidada_1" xlink:title="EntidadConsolidada_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ConsolidatedStructuredEntitiesMember" xlink:to="EntidadConsolidada_1" xlink:title="definition: ConsolidatedStructuredEntitiesMember to EntidadConsolidada_1" order="413.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_EntidadConsolidada_2" xlink:label="EntidadConsolidada_2" xlink:title="EntidadConsolidada_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ConsolidatedStructuredEntitiesMember" xlink:to="EntidadConsolidada_2" xlink:title="definition: ConsolidatedStructuredEntitiesMember to EntidadConsolidada_2" order="414.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700b">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_AssociatesMember" xlink:label="AssociatesMember" xlink:title="AssociatesMember"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700c">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_JointOperationsMember" xlink:label="JointOperationsMember" xlink:title="JointOperationsMember"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700d">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_JointVenturesMember" xlink:label="JointVenturesMember" xlink:title="JointVenturesMember"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700e">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_AssetbackedFinancingsMember" xlink:label="AssetbackedFinancingsMember" xlink:title="AssetbackedFinancingsMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Financiacion_1" xlink:label="Financiacion_1" xlink:title="Financiacion_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssetbackedFinancingsMember" xlink:to="Financiacion_1" xlink:title="definition: AssetbackedFinancingsMember to Financiacion_1" order="415.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Financiacion_2" xlink:label="Financiacion_2" xlink:title="Financiacion_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="AssetbackedFinancingsMember" xlink:to="Financiacion_2" xlink:title="definition: AssetbackedFinancingsMember to Financiacion_2" order="416.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_InvestmentFundsMember" xlink:label="InvestmentFundsMember" xlink:title="InvestmentFundsMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Fondos_1" xlink:label="Fondos_1" xlink:title="Fondos_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="InvestmentFundsMember" xlink:to="Fondos_1" xlink:title="definition: InvestmentFundsMember to Fondos_1" order="417.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Fondos_2" xlink:label="Fondos_2" xlink:title="Fondos_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="InvestmentFundsMember" xlink:to="Fondos_2" xlink:title="definition: InvestmentFundsMember to Fondos_2" order="418.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_SecuritisationVehiclesMember" xlink:label="SecuritisationVehiclesMember" xlink:title="SecuritisationVehiclesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Vehiculos_1" xlink:label="Vehiculos_1" xlink:title="Vehiculos_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SecuritisationVehiclesMember" xlink:to="Vehiculos_1" xlink:title="definition: SecuritisationVehiclesMember to Vehiculos_1" order="419.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Vehiculos_2" xlink:label="Vehiculos_2" xlink:title="Vehiculos_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="SecuritisationVehiclesMember" xlink:to="Vehiculos_2" xlink:title="definition: SecuritisationVehiclesMember to Vehiculos_2" order="420.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700f">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_UnconsolidatedSubsidiariesThatInvestmentEntityControlsDirectlyMember" xlink:label="UnconsolidatedSubsidiariesMember" xlink:title="UnconsolidatedSubsidiariesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubInvDirecta_1" xlink:label="SubInvDirecta_1" xlink:title="SubInvDirecta_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnconsolidatedSubsidiariesMember" xlink:to="SubInvDirecta_1" xlink:title="definition: UnconsolidatedSubsidiariesMember to SubInvDirecta_1" order="421.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubInvDirecta_2" xlink:label="SubInvDirecta_2" xlink:title="SubInvDirecta_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnconsolidatedSubsidiariesMember" xlink:to="SubInvDirecta_2" xlink:title="definition: UnconsolidatedSubsidiariesMember to SubInvDirecta_2" order="422.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember" xlink:label="UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember" xlink:title="UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubInversion_1" xlink:label="SubInversion_1" xlink:title="SubInversion_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember" xlink:to="SubInversion_1" xlink:title="definition: UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember to SubInversion_1" order="423.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_SubInversion_2" xlink:label="SubInversion_2" xlink:title="SubInversion_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember" xlink:to="SubInversion_2" xlink:title="definition: UnconsolidatedSubsidiariesControlledBySubsidiariesOfInvestmentEntityMember to SubInversion_2" order="424.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-12_2015-03-11_role-835110">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_UnusedTaxCreditsMember" xlink:label="UnusedTaxCreditsMember" xlink:title="UnusedTaxCreditsMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_CreditosFiscales_1" xlink:label="CreditosFiscales_1" xlink:title="CreditosFiscales_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnusedTaxCreditsMember" xlink:to="CreditosFiscales_1" xlink:title="definition: UnusedTaxCreditsMember to CreditosFiscales_1" order="425.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_CreditosFiscales_2" xlink:label="CreditosFiscales_2" xlink:title="CreditosFiscales_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnusedTaxCreditsMember" xlink:to="CreditosFiscales_2" xlink:title="definition: UnusedTaxCreditsMember to CreditosFiscales_2" order="426.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_TemporaryDifferenceMember" xlink:label="TemporaryDifferenceUnusedTaxLossesAndUnusedTaxCredits" xlink:title="TemporaryDifferenceUnusedTaxLossesAndUnusedTaxCredits"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DiferenciasTemp_1" xlink:label="DiferenciasTemp_1" xlink:title="DiferenciasTemp_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="TemporaryDifferenceUnusedTaxLossesAndUnusedTaxCredits" xlink:to="DiferenciasTemp_1" xlink:title="definition: TemporaryDifferenceUnusedTaxLossesAndUnusedTaxCredits to DiferenciasTemp_1" order="427.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DiferenciasTemp_2" xlink:label="DiferenciasTemp_2" xlink:title="DiferenciasTemp_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="TemporaryDifferenceUnusedTaxLossesAndUnusedTaxCredits" xlink:to="DiferenciasTemp_2" xlink:title="definition: TemporaryDifferenceUnusedTaxLossesAndUnusedTaxCredits to DiferenciasTemp_2" order="428.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_UnusedTaxLossesMember" xlink:label="UnusedTaxsLossesMember" xlink:title="UnusedTaxsLossesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_PerdidasFiscales_1" xlink:label="PerdidasFiscales_1" xlink:title="PerdidasFiscales_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnusedTaxsLossesMember" xlink:to="PerdidasFiscales_1" xlink:title="definition: UnusedTaxsLossesMember to PerdidasFiscales_1" order="429.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_PerdidasFiscales_2" xlink:label="PerdidasFiscales_2" xlink:title="PerdidasFiscales_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnusedTaxsLossesMember" xlink:to="PerdidasFiscales_2" xlink:title="definition: UnusedTaxsLossesMember to PerdidasFiscales_2" order="430.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100a">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_ReportableSegmentsMember" xlink:label="ReportableSegmentsMember" xlink:title="ReportableSegmentsMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Segmento_1" xlink:label="Segmento_1" xlink:title="Segmento_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ReportableSegmentsMember" xlink:to="Segmento_1" xlink:title="definition: ReportableSegmentsMember to Segmento_1" order="431.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Segmento_2" xlink:label="Segmento_2" xlink:title="Segmento_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ReportableSegmentsMember" xlink:to="Segmento_2" xlink:title="definition: ReportableSegmentsMember to Segmento_2" order="432.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Segmento_3" xlink:label="Segmento_3" xlink:title="Segmento_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ReportableSegmentsMember" xlink:to="Segmento_3" xlink:title="definition: ReportableSegmentsMember to Segmento_3" order="433.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Segmento_4" xlink:label="Segmento_4" xlink:title="Segmento_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ReportableSegmentsMember" xlink:to="Segmento_4" xlink:title="definition: ReportableSegmentsMember to Segmento_4" order="434.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100b">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_ProductsAndServicesMember" xlink:label="ProductsAndServicesMember" xlink:title="ProductsAndServicesMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Producto_1" xlink:label="Producto_1" xlink:title="Producto_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ProductsAndServicesMember" xlink:to="Producto_1" xlink:title="definition: ProductsAndServicesMember to Producto_1" order="435.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Producto_2" xlink:label="Producto_2" xlink:title="Producto_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ProductsAndServicesMember" xlink:to="Producto_2" xlink:title="definition: ProductsAndServicesMember to Producto_2" order="436.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Producto_3" xlink:label="Producto_3" xlink:title="Producto_3"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ProductsAndServicesMember" xlink:to="Producto_3" xlink:title="definition: ProductsAndServicesMember to Producto_3" order="437.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Producto_4" xlink:label="Producto_4" xlink:title="Producto_4"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="ProductsAndServicesMember" xlink:to="Producto_4" xlink:title="definition: ProductsAndServicesMember to Producto_4" order="438.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100c">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_ForeignCountriesMember" xlink:label="ForeignCountriesMember" xlink:title="ForeignCountriesMember"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-8_2015-03-11_role-871100d">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_MajorCustomersMember" xlink:label="MajorCustomersMember" xlink:title="MajorCustomersMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Cliente_1" xlink:label="Cliente_1" xlink:title="Cliente_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MajorCustomersMember" xlink:to="Cliente_1" xlink:title="definition: MajorCustomersMember to Cliente_1" order="439.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Cliente_2" xlink:label="Cliente_2" xlink:title="Cliente_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="MajorCustomersMember" xlink:to="Cliente_2" xlink:title="definition: MajorCustomersMember to Cliente_2" order="440.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_GovernmentMember" xlink:label="GovernmentMember" xlink:title="GovernmentMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Gobierno_1" xlink:label="Gobierno_1" xlink:title="Gobierno_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GovernmentMember" xlink:to="Gobierno_1" xlink:title="definition: GovernmentMember to Gobierno_1" order="441.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Gobierno_2" xlink:label="Gobierno_2" xlink:title="Gobierno_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="GovernmentMember" xlink:to="Gobierno_2" xlink:title="definition: GovernmentMember to Gobierno_2" order="442.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-12_2015-03-11_role-825700g">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember" xlink:label="UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember" xlink:title="UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_EntidadEstructuradas_1" xlink:label="EntidadEstructuradas_1" xlink:title="EntidadEstructuradas_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember" xlink:to="EntidadEstructuradas_1" xlink:title="definition: UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember to EntidadEstructuradas_1" order="443.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_EntidadEstructuradas_2" xlink:label="EntidadEstructuradas_2" xlink:title="EntidadEstructuradas_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember" xlink:to="EntidadEstructuradas_2" xlink:title="definition: UnconsolidatedStructuredEntitiesControlledByInvestmentEntityMember to EntidadEstructuradas_2" order="444.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-24_2015-03-11_role-818000a">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_SeparateManagementEntitiesMember" xlink:label="SeparateManagementEntitiesAxis" xlink:title="SeparateManagementEntitiesAxis"/> 
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ias-1_2015-03-11_role-861200b">
+	<link:loc xlink:type="locator" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cor_2016-01-11.xsd#cl-ci_DividendosPeriodoActualMiembro" xlink:label="DividendosPeriodoActualMiembro" xlink:title="DividendosPeriodoActualMiembro"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DividendoActual_1" xlink:label="DividendoActual_1" xlink:title="DividendoActual_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="DividendosPeriodoActualMiembro" xlink:to="DividendoActual_1" xlink:title="definition: DividendosPeriodoActualMiembro to DividendoActual_1" order="445.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DividendoActual_2" xlink:label="DividendoActual_2" xlink:title="DividendoActual_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="DividendosPeriodoActualMiembro" xlink:to="DividendoActual_2" xlink:title="definition: DividendosPeriodoActualMiembro to DividendoActual_2" order="446.0"/>
+	<link:loc xlink:type="locator" xlink:href="http://www.svs.cl/cl/fr/ci/2016-01-11/cl-ci_cor_2016-01-11.xsd#cl-ci_DividendosPeriodoAnteriorMiembro" xlink:label="DividendosPeriodoAnteriorMiembro" xlink:title="DividendosPeriodoAnteriorMiembro"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DividendoAnterior_1" xlink:label="DividendoAnterior_1" xlink:title="DividendoAnterior_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="DividendosPeriodoAnteriorMiembro" xlink:to="DividendoAnterior_1" xlink:title="definition: DividendosPeriodoAnteriorMiembro to DividendoAnterior_1" order="447.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_DividendoAnterior_2" xlink:label="DividendoAnterior_2" xlink:title="DividendoAnterior_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="DividendosPeriodoAnteriorMiembro" xlink:to="DividendoAnterior_2" xlink:title="definition: DividendosPeriodoAnteriorMiembro to DividendoAnterior_2" order="448.0"/>
+</link:definitionLink>
+	<link:definitionLink xlink:type="extended" xlink:role="http://www.svs.cl/cl/fr/ci/role/ifrs-3_2015-03-11_role-817100">
+	<link:loc xlink:type="locator" xlink:href="http://xbrl.ifrs.org/taxonomy/2015-03-11/full_ifrs/full_ifrs-cor_2015-03-11.xsd#ifrs-full_BusinessCombinationsMember" xlink:label="BusinessCombinationsMember" xlink:title="BusinessCombinationsMember"/> 
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Plusvalia_1" xlink:label="Plusvalia_1" xlink:title="Plusvalia_1"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BusinessCombinationsMember" xlink:to="Plusvalia_1" xlink:title="definition: BusinessCombinationsMember to Plusvalia_1" order="449.0"/>
+	<link:loc xlink:type="locator" xlink:href="92434000_2016-06-30_C_dimension.xsd#tx_Plusvalia_2" xlink:label="Plusvalia_2" xlink:title="Plusvalia_2"/> 
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="BusinessCombinationsMember" xlink:to="Plusvalia_2" xlink:title="definition: BusinessCombinationsMember to Plusvalia_2" order="450.0"/>
+</link:definitionLink>
+</link:linkbase>

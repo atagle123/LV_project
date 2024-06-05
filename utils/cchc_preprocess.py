@@ -1,12 +1,12 @@
 from utils.excel_downloads import download_excel_file
 import pandas as pd
 import math
+import os
 
 
 
-
-def download_excel_to_df(url="https://cchc.cl/uploads/indicador/archivos/ICEWeb.xls",filename="ICEWeb",sheet_name=0):
-    """ Downloads an excel file to a dataframe and read ir as a dataframe.
+def download_excel_to_df(url,path,filename="ICEWeb",sheet_name=0): # url: "https://cchc.cl/uploads/indicador/archivos/ICEWeb.xls"
+    """ Downloads an excel file to a dataframe and read it as a dataframe.
     Args:
         url (str): The url of the excel file to download.
         filename (str): The name of the file to save.
@@ -15,11 +15,12 @@ def download_excel_to_df(url="https://cchc.cl/uploads/indicador/archivos/ICEWeb.
     Returns:
         df (DataFrame): The dataframe read from the excel file.
     """
-    download_excel_file(url,name=filename)
 
-    file_path=f"download_excels/{filename}.xlsx"
+    download_excel_file(url,path=path,filename=filename) 
 
-    dfs = pd.read_excel(file_path,sheet_name=sheet_name)
+    filepath = os.path.join(path, f"{filename}.xlsx")
+
+    dfs = pd.read_excel(filepath,sheet_name=sheet_name)
     return(dfs)
 
 
