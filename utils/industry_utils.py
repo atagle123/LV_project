@@ -40,4 +40,3 @@ def build_website_link_from_industry(industry_name):
         Empresa = [f'https://www.cmfchile.cl/portal/principal/613/w3-search.php?keywords={industry_name}#fiscalizados',f"//td[text()={rut}]","./following-sibling::td/a"] # esto puede estar sujeto a cambios de la CMF
         return(Empresa)
 
-

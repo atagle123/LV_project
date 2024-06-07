@@ -7,7 +7,7 @@ from industry.scrapping import find_xbrl_from_rut_name
 
 
 if __name__ == "__main__":
-    empresa="besalco"
+    empresa="falabella"
 
     Empresa = build_website_link_from_industry(empresa)
 

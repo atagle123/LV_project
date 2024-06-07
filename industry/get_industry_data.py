@@ -1,26 +1,21 @@
-import sys,os
-
+import os
+import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from industry.scrapping import find_xbrl_from_rut_name
-from utils.xbrl_download import get_data_xbrl_to_path,unzip_xbrl_file, find_xbrl_path
 from industry.parse_xbrl import DF_XBRL
 from utils import build_website_link_from_industry
+from industry.scrapping import find_xbrl_from_rut_name
 
-
-
-
-def get_accountability(empresa):
-
+if __name__ == "__main__":
+    empresa="falabella"
 
     Empresa = build_website_link_from_industry(empresa)
 
-   # keys = ["Url", "selector1", "Selector2"]
+    # keys = ["Url", "selector1", "Selector2"]
 
     año = ["Año",2024,2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 20211, 2010, 2009, 2008, 2007, 2006, 2005] # eventualmente ver si se estan todos los años y levantar una excepcion si no hay mas alla de lo q se pide
     quarter = ["03", "06", "09", "12"]
 
-   # Tipo_Norma = ["Seleccione", "Estandar IFRS", "Norma Chilena"]
+    # Tipo_Norma = ["Seleccione", "Estandar IFRS", "Norma Chilena"]
 
 
     dates_dict={"03":31,
@@ -37,18 +32,15 @@ def get_accountability(empresa):
     mes=quarter[configurador[1]]
     dia=dates_dict[mes]
 
+
     useful_dates=[f"{año}-{mes}-{dia}",f"{año-1}-12-31"]
 
-    filaname=f"{empresa}_{año}-{mes}-{dia}"
 
-    xbrl_url = find_xbrl_from_rut_name(Empresa, configurador)
+    xbrl_url=find_xbrl_from_rut_name(Empresa,configurador)
 
-    get_data_xbrl_to_path(xbrl_url,filaname)
-    unzip_xbrl_file(filename=filaname, dir="XBRL_files")
-    xbrl_path=find_xbrl_path(filename=filaname, dir="XBRL_files")
+    df_xbrl_instance=DF_XBRL(xbrl_url,empresa,useful_dates)
 
-    df_xbrl_instance=DF_XBRL(xbrl_path,folder_path="xbrl_csv", filename=filaname)
+    concept_dict={"210000":useful_dates,
+                "310000":"all"}#[f"Desde {año-1}-01-01 Hasta {año-1}-{mes}-{dia}",f"Desde {año}-01-01 Hasta {año}-{mes}-{dia}"]} # ojo que esto cambia dependiendo del quarter, que se elija... ver
 
-    filtered_df = df_xbrl_instance.search_concept(concept="871100")
-    filtered_df=df_xbrl_instance.loc_useful_data(date_list=useful_dates,df=filtered_df)
-    df_xbrl_instance.save_data(df=filtered_df, filename=filaname)
+    df_xbrl_instance.download_concepts(concept_dict)

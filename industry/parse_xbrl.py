@@ -280,8 +280,11 @@ class DF_XBRL(Manage_xbrl):
 
         if df is None:
             df=self.df
+        if isinstance(date_list,list):
+            filtered_df=df.loc[:,date_list]
 
-        filtered_df=df.loc[:,date_list]
+        elif date_list=="all":
+            filtered_df=df
 
         if inplace:
             self.df=filtered_df
@@ -314,7 +317,7 @@ class DF_XBRL(Manage_xbrl):
 
         os.makedirs(self.excel_path, exist_ok=True)
         os.makedirs(self.csv_path, exist_ok=True)
-        
+
         if df is None:
             df=self.df
 
@@ -346,6 +349,15 @@ class DF_XBRL(Manage_xbrl):
             df=self.df
 
         concepts=df.index.get_level_values(0).to_list()
-        " quizas hacer unique"
+        #" quizas hacer unique"
 
         return(concepts)
+    
+    def download_concepts(self,concept_dict=None):
+
+        for concept,useful_dates in concept_dict.items():
+
+            filtered_df = self.search_concept(concept=concept)
+            filtered_df=self.loc_data(date_list=useful_dates,df=filtered_df)
+            self.save_data(df=filtered_df, concept_name=concept)
+        pass
