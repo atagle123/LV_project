@@ -7,7 +7,10 @@ import time
 from selenium.webdriver.support.ui import Select
 import os
 
-class Cmf_scrapper:  
+class Cmf_scrapper:
+    """ Class scraper, works with a driver in the drivers folder
+    
+    """
     def __init__(self,browser="edge",driver_path=None):
         self.browser = browser
         self.driver_path = driver_path or self.get_default_driver_path()

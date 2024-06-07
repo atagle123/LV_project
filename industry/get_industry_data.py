@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from industry.scrapping import find_xbrl_from_rut_name
 from utils.xbrl_download import get_data_xbrl_to_path,unzip_xbrl_file, find_xbrl_path
-from utils.parse_xbrl import DF_XBRL
+from industry.parse_xbrl import DF_XBRL
 from utils import build_website_link_from_industry
 
 
@@ -42,6 +42,7 @@ def get_accountability(empresa):
     filaname=f"{empresa}_{año}-{mes}-{dia}"
 
     xbrl_url = find_xbrl_from_rut_name(Empresa, configurador)
+
     get_data_xbrl_to_path(xbrl_url,filaname)
     unzip_xbrl_file(filename=filaname, dir="XBRL_files")
     xbrl_path=find_xbrl_path(filename=filaname, dir="XBRL_files")
@@ -50,4 +51,4 @@ def get_accountability(empresa):
 
     filtered_df = df_xbrl_instance.search_concept(concept="871100")
     filtered_df=df_xbrl_instance.loc_useful_data(date_list=useful_dates,df=filtered_df)
-    df_xbrl_instance.save_readable_data(df=filtered_df, filename=filaname)
+    df_xbrl_instance.save_data(df=filtered_df, filename=filaname)

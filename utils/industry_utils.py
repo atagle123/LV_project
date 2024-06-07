@@ -6,7 +6,7 @@ from utils import read_json
 
 
 
-def get_rut(industry_name,folderpath=""):
+def get_rut(industry_name,folderpath="industry/empresas.json"):
     """
     Get RUT from the json file in the given path by industry name
 
@@ -33,8 +33,9 @@ def build_website_link_from_industry(industry_name):
             list: website links
 
         """
-
-        rut=get_rut(industry_name)
+        default_folder_path="industry/empresas.json"
+        rut=get_rut(industry_name,folderpath=default_folder_path)
+        print(f"RUT:{rut}")
         
         Empresa = [f'https://www.cmfchile.cl/portal/principal/613/w3-search.php?keywords={industry_name}#fiscalizados',f"//td[text()={rut}]","./following-sibling::td/a"] # esto puede estar sujeto a cambios de la CMF
         return(Empresa)
