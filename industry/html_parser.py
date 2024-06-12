@@ -56,7 +56,7 @@ class HTML_industry_data():
         self.excel_path=os.path.join(current_dir, "data", "industrydata", "html", "excel")
 
 
-    def get_historic_data(self,empresa="falabella",desde=2017,hasta=None):
+    def get_historic_data(self,empresa="falabella",desde=2018,hasta=None):
 
         concept_list=["210000","310000","510000"]
 
@@ -78,8 +78,10 @@ class HTML_industry_data():
 
         for keys,values in dict_list.items():
             for i,df in enumerate(values):
-
-                print(keys,i,"Index is unique: ", df.index.is_unique) 
+                if df is not None:
+                   print(keys,i,"Index is unique: ", df.index.is_unique)
+                else:
+                    print(keys, i, "df is None")
 
             dict_list[keys]=pd.concat(values,join="outer",axis="columns")
 
@@ -96,15 +98,17 @@ class HTML_industry_data():
         return(df_dict)
 
 
-    def get_all_industry_historic_data(self,desde=2018,hasta=2020):
+    def get_all_industry_historic_data(self,desde=2018,hasta=None):
         for empresa in ["besalco"]:
             df_dict=self.get_historic_data(empresa, desde,hasta)
 
             for keys,df in df_dict.items():
-
-                check=self.column_checker(df)
-                print("Column checker: ", check)
-                df_dict[keys] = df.loc[:,~df.columns.duplicated()].copy()
+                if df is not None:
+                    check=self.column_checker(df)
+                    print("Column checker: ", check)
+                    df_dict[keys] = df.loc[:,~df.columns.duplicated()].copy()
+                else: 
+                    print("df is None")
 
             self.save_file_excel(df_dict, filename=empresa)
 
@@ -135,6 +139,9 @@ class HTML_industry_data():
             # Iterate over the dictionary and write each DataFrame to a separate Excel sheet
             for sheet_name, df in df_dict.items():
                 df=self.clean(df)
+                """
+                aca va funcion para odernar fechas y para cambiar datos en 51000 y 310000   y para cambiar fechas por Qs
+                """
                 df.to_excel(writer, sheet_name=sheet_name)
 
     def clean(self,df):
@@ -149,7 +156,7 @@ class HTML_industry_data():
 if __name__=="__main__":
 
     instance=HTML_industry_data()
-    instance.get_all_industry_historic_data(desde=2018,hasta=2018)
+    instance.get_all_industry_historic_data(desde=2018)
 
 
 

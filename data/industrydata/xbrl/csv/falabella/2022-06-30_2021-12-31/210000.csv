@@ -1,0 +1,122 @@
+Concept,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,2022-06-30,2021-12-31
+"[210000] Estado de situación financiera, corriente/no corriente - Estados financieros consolidados",,,,,,,,,,,,
+,Statement of financial position [abstract],,,,,,,,,,,
+,,Assets [abstract],,,,,,,,,,
+,,,cl-hb:ActivosNegociosNoBancariosPresentacion,,,,,,,,,
+,,,,Current assets [abstract],,,,,,,,
+,,,,,Cash and cash equivalents,,,,,,"547,018,773,000","533,265,538,000"
+,,,,,Other current financial assets,,,,,,"148,858,241,000","45,368,100,000"
+,,,,,Other current non-financial assets,,,,,,"154,620,454,000","123,118,533,000"
+,,,,,Trade and other current receivables,,,,,,"425,609,456,000","392,422,932,000"
+,,,,,Current receivables due from related parties,,,,,,"15,976,633,000","19,394,535,000"
+,,,,,Current inventories,,,,,,"2,166,718,174,000","1,867,793,791,000"
+,,,,,Current biological assets,,,,,,,
+,,,,,"Current tax assets, current",,,,,,"59,139,835,000","52,894,382,000"
+,,,,,Total current assets other than non-current assets or disposal groups classified as held for sale or as held for distribution to owners,,,,,,"3,517,941,566,000","3,034,257,811,000"
+,,,,,Non-current assets or disposal groups classified as held for sale or as held for distribution to owners,,,,,,"31,198,457,000","38,129,032,000"
+,,,,,Total current assets,,,,,,"3,549,140,023,000","3,072,386,843,000"
+,,,,Non-current assets [abstract],,,,,,,,
+,,,,,Other non-current financial assets,,,,,,"497,052,108,000","507,250,640,000"
+,,,,,Other non-current non-financial assets,,,,,,"63,314,991,000","79,200,811,000"
+,,,,,Trade and other non-current receivables,,,,,,"8,673,424,000","11,810,824,000"
+,,,,,Non-current receivables due from related parties,,,,,,"31,569,041,000","30,315,227,000"
+,,,,,Non-current inventories,,,,,,,
+,,,,,Investments accounted for using equity method,,,,,,"286,248,568,000","246,099,787,000"
+,,,,,Intangible assets other than goodwill,,,,,,"330,353,803,000","331,012,433,000"
+,,,,,Goodwill,,,,,,"667,343,268,000","626,955,302,000"
+,,,,,"Property, plant and equipment",,,,,,"3,828,218,776,000","3,562,938,875,000"
+,,,,,Non-current biological assets,,,,,,,
+,,,,,Investment property,,,,,,"3,489,116,981,000","3,406,025,227,000"
+,,,,,Right-of-use assets,,,,,,,
+,,,,,"Current tax assets, non-current",,,,,,"11,157,590,000","13,289,193,000"
+,,,,,Deferred tax assets,,,,,,"372,566,912,000","260,646,688,000"
+,,,,,Total non-current assets,,,,,,"9,585,615,462,000","9,075,545,007,000"
+,,,,cl-hb:TotalActivosNegociosNoBancarios,,,,,,,"13,134,755,485,000","12,147,931,850,000"
+,,,cl-hb:ActivosBancariosPresentacion,,,,,,,,,
+,,,,cl-hb:EfectivoDepositosBancos,,,,,,,"566,389,255,000","562,625,424,000"
+,,,,cl-hb:OperacionesConLiquidacionCursoBancos,,,,,,,"122,580,473,000","59,886,059,000"
+,,,,cl-hb:ActivosFinancierosParaNegociarValorRazonableCambiosEnResultadosBancos,,,,,,,"11,321,003,000","99,356,256,000"
+,,,,cl-hb:ActivosFinancierosNoDestinadosANegociacionValoradosObligatoriamenteValorRazonableCambiosEnResultadosBancos,,,,,,,,
+,,,,cl-hb:ActivosFinancierosDesignadosValorRazonableCambiosEnResultadosBancos,,,,,,,,
+,,,,cl-hb:ActivosFinancierosValorRazonableCambiosEnOtroResultadoIntegralBancos,,,,,,,"1,571,104,445,000","2,018,807,924,000"
+,,,,cl-hb:ContratosDeDerivadosFinancierosParaCoberturaContableBancos,,,,,,,"910,003,210,000","692,381,202,000"
+,,,,cl-hb:ActivosFinancierosACostoAmortizadoBancos,,,,,,,"6,400,770,794,000","5,361,998,580,000"
+,,,,,cl-hb:DerechosPorPactosDeRetroventaYPrestamosDeValoresBancos,,,,,,"3,589,041,000","15,171,250,000"
+,,,,,cl-hb:InstrumentosFinancierosDeDeudaBancos,,,,,,"5,968,420,000",
+,,,,,cl-hb:AdeudadoBancos,,,,,,,
+,,,,,cl-hb:CreditosYCuentasPorCobrarAClientesComercialesBancos,,,,,,"75,952,813,000","73,287,020,000"
+,,,,,cl-hb:CreditosYCuentasPorCobrarAClientesViviendaBancos,,,,,,"590,337,661,000","568,571,242,000"
+,,,,,cl-hb:CreditosYCuentasPorCobrarAClientesConsumoBancos,,,,,,"5,724,922,859,000","4,704,969,068,000"
+,,,,cl-hb:InversionesSociedadesBancos,,,,,,,"4,393,407,000","3,810,616,000"
+,,,,cl-hb:IntangiblesBancos,,,,,,,"80,085,232,000","78,416,922,000"
+,,,,cl-hb:ActivoFijoBancos,,,,,,,"57,809,226,000","57,637,796,000"
+,,,,cl-hb:ActivoPorDerechoAUsarBienesEnArrendamientoBancos,,,,,,,,
+,,,,cl-hb:ImpuestosCorrientesActivosBancos,,,,,,,"47,896,200,000","21,297,373,000"
+,,,,cl-hb:ImpuestosDiferidosActivosBancos,,,,,,,"91,132,250,000","75,691,795,000"
+,,,,cl-hb:OtrosActivosBancos,,,,,,,"211,093,723,000","252,740,585,000"
+,,,,cl-hb:ActivosNoCorrientesYGruposEnajenablesParaLaVentaBancos,,,,,,,"27,947,000","61,484,000"
+,,,,cl-hb:TotalActivosServiciosBancarios,,,,,,,"10,074,607,165,000","9,284,712,016,000"
+,,,Total assets,,,,,,,,"23,209,362,650,000","21,432,643,866,000"
+,,Equity and liabilities [abstract],,,,,,,,,,
+,,,Liabilities [abstract],,,,,,,,,
+,,,,cl-hb:PasivosNegociosNoBancariosPresentacion,,,,,,,,
+,,,,,Current liabilities [abstract],,,,,,,
+,,,,,,Other current financial liabilities,,,,,"987,095,117,000","508,082,080,000"
+,,,,,,Current lease liabilities,,,,,"104,282,587,000","96,132,009,000"
+,,,,,,Trade and other current payables,,,,,"1,110,752,862,000","1,296,379,060,000"
+,,,,,,Current payables to related parties,,,,,"21,417,825,000","33,530,717,000"
+,,,,,,Other short term provisions,,,,,"27,585,241,000","27,769,367,000"
+,,,,,,"Current tax liabilities, current",,,,,"32,812,881,000","90,466,042,000"
+,,,,,,Current provisions for employee benefits,,,,,"186,630,866,000","207,125,196,000"
+,,,,,,Other current non-financial liabilities,,,,,"158,226,282,000","188,173,945,000"
+,,,,,,Total current liabilities other than liabilities included in disposal groups classified as held for sale,,,,,"2,628,803,661,000","2,447,658,416,000"
+,,,,,,Liabilities included in disposal groups classified as held for sale,,,,,,
+,,,,,,Total current liabilities,,,,,"2,628,803,661,000","2,447,658,416,000"
+,,,,,Non-current liabilities [abstract],,,,,,,
+,,,,,,Other non-current financial liabilities,,,,,"3,537,916,361,000","3,143,925,925,000"
+,,,,,,Non-current lease liabilities,,,,,"1,071,760,763,000","978,459,876,000"
+,,,,,,Trade and other non-current payables,,,,,"1,175,686,000","1,098,361,000"
+,,,,,,Non-current payables to related parties,,,,,,
+,,,,,,Other long term provisions,,,,,"10,562,790,000","9,394,347,000"
+,,,,,,Deferred tax liabilities,,,,,"608,011,025,000","613,288,475,000"
+,,,,,,"Current tax liabilities, non-current",,,,,,
+,,,,,,Non-current provisions for employee benefits,,,,,"51,477,874,000","47,702,105,000"
+,,,,,,Other non-current non-financial liabilities,,,,,"49,170,043,000","48,385,267,000"
+,,,,,,Total non-current liabilities,,,,,"5,330,074,542,000","4,842,254,356,000"
+,,,,,cl-hb:TotalPasivosNegociosNoBancarios,,,,,,"7,958,878,203,000","7,289,912,772,000"
+,,,,cl-hb:PasivosServiciosBancariosPresentacion,,,,,,,,
+,,,,,cl-hb:OperacionesLiquidacionEnCursoBancos,,,,,,"154,606,604,000","448,849,277,000"
+,,,,,cl-hb:PasivosFinancierosParaNegociarAValorRazonableConCambiosEnResultadosBancos,,,,,,"951,588,450,000","779,430,144,000"
+,,,,,,cl-hb:ContratosDerivadosFinancierosPasivosBancos,,,,,"951,588,450,000","779,430,144,000"
+,,,,,,cl-hb:OtrosInstrumentosOPasivosFinancierosBancos,,,,,,
+,,,,,cl-hb:PasivosFinancierosDesignadosAValorRazonableConCambiosEnResultadosBancos,,,,,,,
+,,,,,cl-hb:ContratosDeDerivadosFinancierosParaCoberturaContableBanos,,,,,,,
+,,,,,cl-hb:PasivosFinancierosACostoAmortizadoBancos,,,,,,"6,645,651,941,000","5,763,485,252,000"
+,,,,,,cl-hb:DepositosYOtrasObligacionesALaVistaBancos,,,,,"2,069,361,456,000","2,311,017,791,000"
+,,,,,,cl-hb:DepositosYOtrasCaptacionesAPlazoBancos,,,,,"3,457,258,743,000","2,422,073,787,000"
+,,,,,,cl-hb:ContratosRetrocompraYPrestamosValoresPasivosBancos,,,,,"22,997,294,000",
+,,,,,,cl-hb:ObligacionesConBancos,,,,,"840,984,526,000","781,593,376,000"
+,,,,,,cl-hb:InstrumentosDeudaEmitidosBancos,,,,,"194,245,278,000","183,629,545,000"
+,,,,,,cl-hb:OtrasObligacionesFinancierasBancos,,,,,"60,804,644,000","65,170,753,000"
+,,,,,cl-hb:ObligacionesPorContratosDeArrendamientoBancos,,,,,,"26,232,929,000","26,397,415,000"
+,,,,,cl-hb:InstrumentosFinancierosDeCapitalRegulatorioEmitidosBancos,,,,,,"28,207,229,000","28,378,307,000"
+,,,,,cl-hb:ProvisionesPorContingenciasBancos,,,,,,"50,981,990,000","53,761,481,000"
+,,,,,cl-hb:ProvisionesParaDividendosPagoDeInteresesYReapreciacionDeInstrumentosFinancierosDeCapitalRegulatorioEmitidosBancos,,,,,,,
+,,,,,cl-hb:ProvisionesEspecialesPorRiesgoDeCreditoBancos,,,,,,,
+,,,,,cl-hb:ImpuestosCorrientesPasivosBancos,,,,,,"14,982,000","19,975,132,000"
+,,,,,cl-hb:ImpuestosDiferidosPasivosBancos,,,,,,,
+,,,,,cl-hb:OtrosPasivosBancos,,,,,,"356,066,564,000","377,389,356,000"
+,,,,,cl-hb:PasivosIncluidosEnGruposEnajenablesParaLaVentaBancos,,,,,,,
+,,,,,cl-hb:TotalPasivosServiciosBancarios,,,,,,"8,213,350,689,000","7,497,666,364,000"
+,,,,Total liabilities,,,,,,,"16,172,228,892,000","14,787,579,136,000"
+,,,Equity [abstract],,,,,,,,,
+,,,,Issued capital,,,,,,,"919,419,389,000","919,419,389,000"
+,,,,Profit (loss) accumulated,,,,,,,"5,008,041,352,000","4,912,670,411,000"
+,,,,Share premium,,,,,,,"93,482,329,000","93,482,329,000"
+,,,,Treasury shares,,,,,,,"27,738,111,000","27,738,111,000"
+,,,,Other equity interest,,,,,,,,
+,,,,Other reserves,,,,,,,"12,374,951,000","-246,427,061,000"
+,,,,Equity attributable to owners of parent,,,,,,,"6,005,579,910,000","5,651,406,957,000"
+,,,,Non-controlling interests,,,,,,,"1,031,553,848,000","993,657,773,000"
+,,,,Total equity,,,,,,,"7,037,133,758,000","6,645,064,730,000"
+,,,Total equity and liabilities,,,,,,,,"23,209,362,650,000","21,432,643,866,000"
