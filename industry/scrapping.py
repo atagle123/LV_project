@@ -7,7 +7,7 @@ import time
 from selenium.webdriver.support.ui import Select
 import os
 
-class Cmf_scrapper:
+class Scrapper:
     """ Class scraper, works with a driver in the drivers folder
     
     """
@@ -39,62 +39,104 @@ class Cmf_scrapper:
         pass 
 
 
+class Cmf_scrapper(Scrapper):
+    """Class to scrap data from the cmf website, it inherits from the Scrapper class
 
-def find_xbrl_from_rut_name(Empresa,configurador):
     """
-    Function that given a list of links from the enterprise website, it will find the xbrl file and download it.
+    def __init__(self, browser="edge", driver_path=None):
+        super().__init__(browser, driver_path)
+   
+    def enter_main_page(self,Empresa,configurador):
 
-    Args:
-        Empresa (list): list of links from the enterprise website.
-        configurador (list): list of configuration parameters.
-
-    Returns:
-        str: path to the downloaded xbrl file.
-    """
-    scrappy=Cmf_scrapper()
-    driver=scrappy.driver
-    # Cargar la página de inicio de la empresa en este ejemplo, 
-    driver.get(Empresa[0])
-    time.sleep(2)
-    td_element = driver.find_element(By.XPATH,Empresa[1])
-    a_element = td_element.find_element(By.XPATH,Empresa[2])
-    a_element.click()
-    time.sleep(2)
+        # Cargar la página de inicio de la empresa en este ejemplo, 
+        self.driver.get(Empresa[0])
+        time.sleep(2)
+        td_element = self.driver.find_element(By.XPATH,Empresa[1])
+        a_element = td_element.find_element(By.XPATH,Empresa[2])
+        a_element.click()
+        time.sleep(2)
 
 
-    estados_financieros = driver.find_element(By.XPATH, "//*[@id='listado_reportes']/li[3]/a")
-    estados_financieros.click()
-    time.sleep(2)
+        estados_financieros = self.driver.find_element(By.XPATH, "//*[@id='listado_reportes']/li[3]/a")
+        estados_financieros.click()
+        time.sleep(2)
 
-    periodo = driver.find_element(By.ID,'mm')
-    # Crear un objeto Select a partir del elemento <select>
-    select_periodo = Select(periodo)
-    # Obtener todas las opciones del <select> en una lista
-    base_periodo = select_periodo.options
-    #-----------------------------------------
-    año = driver.find_element(By.ID,'aa')
-    # Crear un objeto Select a partir del elemento <select>
-    select_año = Select(año)
-    # Obtener todas las opciones del <select> en una lista
-    base_año = select_año.options
-    #--------------------------------------------------------
-    tipo_norma = driver.find_element(By.NAME,'tipo_norma')
-    # Crear un objeto Select a partir del elemento <select>
-    select_tipo_norma = Select(tipo_norma)
-    # Obtener todas las opciones del <select> en una lista
-    base_tipo_norma = select_tipo_norma.options
+        periodo = self.driver.find_element(By.ID,'mm')
+        # Crear un objeto Select a partir del elemento <select>
+        select_periodo = Select(periodo)
+        # Obtener todas las opciones del <select> en una lista
+        base_periodo = select_periodo.options
+        #-----------------------------------------
+        año = self.driver.find_element(By.ID,'aa')
+        # Crear un objeto Select a partir del elemento <select>
+        select_año = Select(año)
+        # Obtener todas las opciones del <select> en una lista
+        base_año = select_año.options
+        #--------------------------------------------------------
+        tipo_norma = self.driver.find_element(By.NAME,'tipo_norma')
+        # Crear un objeto Select a partir del elemento <select>
+        select_tipo_norma = Select(tipo_norma)
+        # Obtener todas las opciones del <select> en una lista
+        base_tipo_norma = select_tipo_norma.options
 
-    base_año[configurador[0]].click()
-    base_periodo[configurador[1]].click()
-    base_tipo_norma[configurador[2]].click()
+        base_año[configurador[0]].click()
+        base_periodo[configurador[1]].click()
+        base_tipo_norma[configurador[2]].click()
 
-    time.sleep(2)
-    consulta = driver.find_element(By.XPATH, '//input[@alt="Consultar"]')
-    consulta.click()
+        time.sleep(2)
+        consulta = self.driver.find_element(By.XPATH, '//input[@alt="Consultar"]')
+        consulta.click()
+        
+        return(self.driver)
 
-    link = driver.find_elements_by_xpath( '//*[@id="contenido"]/p/a[6]')  #xpath a xbrl, esto puede llegar a cambiar
 
-    xbrl_url = link[0].get_attribute('href')
+    def find_xbrl_from_rut_name(self,Empresa,configurador):
+        """
+        Function that given a list of links from the enterprise website, it will find the xbrl file and download it.
 
-    driver.close()
-    return(xbrl_url)
+        Args:
+            Empresa (list): list of links from the enterprise website.
+            configurador (list): list of configuration parameters.
+
+        Returns:
+            str: path to the downloaded xbrl file.
+        """
+
+        driver=self.enter_main_page(Empresa, configurador)
+        link = driver.find_elements_by_xpath( '//*[@id="contenido"]/p/a[6]')  #xpath a xbrl, esto puede llegar a cambiar
+
+        xbrl_url = link[0].get_attribute('href')
+
+        driver.close()
+        return(xbrl_url)
+
+    def find_xbrl_from_rut_name(self,Empresa,configurador):
+        """
+        Function that given a list of links from the enterprise website, it will find the xbrl file and download it.
+
+        Args:
+            Empresa (list): list of links from the enterprise website.
+            configurador (list): list of configuration parameters.
+
+        Returns:
+            str: path to the downloaded xbrl file.
+        """
+
+        driver=self.enter_main_page(Empresa, configurador)
+        link = driver.find_elements_by_xpath( '//*[@id="contenido"]/p/a[6]')  #xpath a xbrl, esto puede llegar a cambiar
+
+        xbrl_url = link[0].get_attribute('href')
+
+        driver.close()
+        return(xbrl_url)
+    
+    def get_html(self,Empresa,configurador):
+        """
+        Get the html of the page.
+        
+        """
+        driver=self.enter_main_page(Empresa, configurador)
+        html= driver.page_source
+        driver.close()
+        return(html)
+
