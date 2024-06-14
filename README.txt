@@ -1,17 +1,8 @@
 cosas por hacer:
 
 
-
-- ver tema de cuales columnas sirven para que concepto y tmb que fechas utilizar...:
-iteracion sobre empresas - fechas - conceptos
-ver para eventualmente juntar excels o dataframes por conceptos y años ... 
-
 cosas que faltan importantes:
-- revisar unnamed cols en dataframe ver para saber cuales son los conceptos para hacer el parsing
-- ver el tema de seleccionar las fechas y los conceptos 
 - cambiar prints por logger
-- falta ver formato d enumeros en excel
-- falta ver distintos campos utiles para cada codigo, eventualmente va a haber que hacer un multi index column quizas
 
 
 ideas:

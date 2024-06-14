@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import io
 import os
 import datetime
@@ -56,7 +57,7 @@ class HTML_industry_data():
         self.excel_path=os.path.join(current_dir, "data", "industrydata", "html", "excel")
 
 
-    def get_historic_data(self,empresa="falabella",desde=2018,hasta=None):
+    def get_historic_data(self,empresa="besalco",desde=2018,hasta=None):
 
         concept_list=["210000","310000","510000"]
 
@@ -99,7 +100,7 @@ class HTML_industry_data():
 
 
     def get_all_industry_historic_data(self,desde=2018,hasta=None):
-        for empresa in ["besalco"]:
+        for empresa in ["SIGDO KOPPERS S.A.","besalco"]:
             df_dict=self.get_historic_data(empresa, desde,hasta)
 
             for keys,df in df_dict.items():
@@ -139,24 +140,210 @@ class HTML_industry_data():
             # Iterate over the dictionary and write each DataFrame to a separate Excel sheet
             for sheet_name, df in df_dict.items():
                 df=self.clean(df)
+                if sheet_name in [ "310000", "510000"]:
+
+                        # Construct all quarter data
+                    df=self.construct_all_quarter_data(df)
+                    df=self.delete_col_is_not_quarter_data(df)
+                    df=self.change_quarter_cols_names(df)
+
+                                    # Convert column names to datetime
+                    df.columns = pd.to_datetime(df.columns.map(self.parse_quarter))
+
+                elif sheet_name=="210000":
+                    df.columns = pd.to_datetime(df.columns)
+
+                df = df.sort_index(axis=1)
+                df.columns = df.columns.map(self.format_quarter)
+
                 """
                 aca va funcion para odernar fechas y para cambiar datos en 51000 y 310000   y para cambiar fechas por Qs
                 """
                 df.to_excel(writer, sheet_name=sheet_name)
 
+### AUX functions to clean and order the data ###
+
     def clean(self,df):
-        for index, row in df.iterrows():
-            # Check if all values in the row are the same
-            if row.nunique() == 1:
-                # Replace values with NaNs
-                df.loc[index] = np.nan   
+            df = df.replace('\.', '', regex=True)
+            df = df.replace('-', 0)
+            df = df.fillna(0)
+            for index, row in df.iterrows():
+                # Check if all values in the row are the same
+                if row.nunique() == 1:
+                    # Replace values with NaNs
+                    df.loc[index] = np.nan
+            df = df.apply(pd.to_numeric, errors='ignore')
+            return(df)
+
+    
+    def construct_all_quarter_data(self,df): # 510000 or 310000
+
+        cols = df.columns.tolist()
+        # Iterate over the columns
+        for col_name in cols:
+            # Check if the column name contains 'Q' (indicating quarter data)
+            año1=self.extract_string_in_position(col_name,[6,10])
+            año2=self.extract_string_in_position(col_name,[23,27])
+
+            mes1=self.extract_string_in_position(col_name,[11,13])
+            mes2=self.extract_string_in_position(col_name,[28,30])
+
+            
+            condicion_años=año1==año2
+            condicion_meses=int(mes2)-int(mes1)==2
+
+        # condicion_last_quarter= int(mes2)==12
+
+            if condicion_años and not condicion_meses:  # is not quarter but same year always entre mes1="01"
+                try:
+                    df=self.construct_quarter_by_past_quarter(df,col_name,año1,mes2)
+                except:
+                    df=self.construct_quarter_by_all_quarters(df, col_name, año1, mes2)
+                
         return(df)
+
+    def construct_quarter_by_past_quarter(self,df,col_name,año_target,mes2_target): # asume that there exist a quarter of the form 01-(mes2-3) and the date is in the same year
+
+        dates_dict={"03":31,
+                    "06":30,
+                    "09":30,
+                    "12":31
+                    }
+        
+        mes2=int(mes2_target)-3
+        mes2=f"0{mes2}"
+        target_col_name=f"Desde {año_target}-01-01 Hasta {año_target}-{mes2}-{dates_dict[mes2]}"
+
+        mes1_target=f"0{int(mes2_target)-2}" if int(mes2_target)<12 else f"{int(mes2_target)-2}"
+        new_col_name=f"Desde {año_target}-{mes1_target}-01 Hasta {año_target}-{mes2_target}-{dates_dict[mes2_target]}"
+
+        df[new_col_name]=df[col_name]-df[target_col_name]  # maybe try here
+        return(df)
+
+    def construct_quarter_by_all_quarters(self,df, col_name, año_target, mes2_target): # asume that there exist all the previous quarters in the dataframe
+
+       # cols = df.columns.tolist()
+
+        dates_dict={"03":31,
+                    "06":30,
+                    "09":30,
+                    "12":31
+                    }
+        
+        cols_list=[]
+
+        for mes2 in ["03","06","09"]:
+
+            if int(mes2)<int(mes2_target):
+
+                mes1_target=f"0{int(mes2_target)-2}" if int(mes2_target)<12 else f"{int(mes2_target)-2}"
+                target_col_name=f"Desde {año_target}-{mes1_target}-01 Hasta {año_target}-{mes2}-{dates_dict[mes2]}"
+                cols_list.append(target_col_name)
+
+        assert len(cols_list)==int(mes2_target)//3-1
+        # falta checkear que esten todas...
+        # y checkea que no esten repetidas... (importnate)
+        result = df[cols_list].sum(axis=1)
+
+
+
+        mes1_target=f"0{int(mes2_target)-2}"
+        new_col_name=f"Desde {año_target}-{mes1_target}-01 Hasta {año_target}-{mes2_target}-{dates_dict[mes2_target]}"
+
+        df[new_col_name]=df[col_name]-result
+        return(df)
+
+    def extract_string_in_position(self,str,pos):
+        if type(pos) ==list:
+            str=str[pos[0]:pos[1]]
+
+        elif type(pos)==int:
+            str=str[pos]
+
+        else:
+            raise ValueError("pos must be a list or a string")
+        return(str)
+    
+    def parse_quarter(self,quarter):
+        year, q = quarter.split('Q')
+        month = int(q) * 3 - 2  # Convert quarter to first month
+        return pd.to_datetime(f'{year}-{month:02d}', format='%Y-%m')
+
+    def format_quarter(self,date):
+        return f'{date.year}Q{(date.month - 1) // 3 + 1}'
+    
+    
+    def delete_col_is_not_quarter_data(self,df):
+        """
+        This function deletes columns that are not quarter data from a pandas DataFrame. Asume that all the quarters are in the dataframe. instead it will be removed
+
+        Args:
+            df (pandas.DataFrame): The input DataFrame.
+
+        Returns:
+            pandas.DataFrame: The DataFrame with columns that are not quarter data removed.
+        """
+        # Get the column names as a list
+        cols = df.columns.tolist()
+        # Iterate over the columns
+        for col_name in cols:
+            # Check if the column name contains 'Q' (indicating quarter data)
+            año1=self.extract_string_in_position(col_name,[6,10])
+            año2=self.extract_string_in_position(col_name,[23,27])
+
+            mes1=self.extract_string_in_position(col_name,[11,13])
+            mes2=self.extract_string_in_position(col_name,[28,30])
+
+            
+            condicion_años=año1==año2
+            condicion_meses=int(mes2)-int(mes1)==2
+
+            if not (condicion_años and condicion_meses):  # is not quarter
+                # Drop the column if it's not quarter data
+                df.drop(col_name, axis=1, inplace=True)
+        return(df)
+    
+    def change_quarter_cols_names(self,df):
+        """ Function to change the columns names in the format Desde 2018-01-01 Hasta 2018-03-31' or 2018-03-31 to Q1
+        The dataframe have to has the data in quarter reports 
+        Args:
+            df (pandas dataframe): dataframe with the data in quarter reports
+
+        Returns:
+            pandas dataframe: dataframe with the columns names in the format Q1, Q2, Q3, Q4
+        """
+        cols = df.columns.tolist()
+        # Iterate over the columns
+        dict={}
+        for col_name in cols:
+            # Check if the column name contains 'Q' (indicating quarter data)
+            año1=self.extract_string_in_position(col_name,[6,10])
+            año2=self.extract_string_in_position(col_name,[23,27])
+
+            mes1=self.extract_string_in_position(col_name,[11,13])
+            mes2=self.extract_string_in_position(col_name,[28,30])
+
+            condicion_años=año1==año2
+            condicion_meses=int(mes2)-int(mes1)==2
+
+        # condicion_last_quarter= int(mes2)==12
+
+            if condicion_años and condicion_meses:  # is quarter
+
+                dict[col_name]=f"{año1}Q{int(mes2)//3}"
+        df.rename(columns=dict,inplace=True)
+                
+        return df
+
+
+    
+
 
 
 if __name__=="__main__":
 
     instance=HTML_industry_data()
-    instance.get_all_industry_historic_data(desde=2018)
+    instance.get_all_industry_historic_data(desde=2018)#,hasta=2020)
 
 
 
