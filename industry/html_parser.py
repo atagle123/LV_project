@@ -6,7 +6,7 @@ import datetime
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
-from utils import build_website_link_from_industry,build_configurator_to_scrapping
+from utils import build_website_link_from_industry,build_configurator_to_scrapping, read_json
 from industry.scrapping import Cmf_scrapper
 
 
@@ -100,7 +100,10 @@ class HTML_industry_data():
 
 
     def get_all_industry_historic_data(self,desde=2018,hasta=None):
-        for empresa in ["SIGDO KOPPERS S.A.","besalco"]:
+        empresas_json=read_json("C:/Users/ataglem/Desktop/LV_project/industry/empresas.json")
+        
+        for empresa in empresas_json.keys():
+
             df_dict=self.get_historic_data(empresa, desde,hasta)
 
             for keys,df in df_dict.items():
