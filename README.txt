@@ -33,3 +33,7 @@ usar el html parser para la info importante... si no ir al pdf, y si no ir al xb
 ojo: es porbable que xbrl sea solo consistente con utilizar 12 como mes osea final de año.
 
 usar ultima info disponible , restar los del 510000 y eliminar columnas del 310000, ordenar por fecha 
+
+
+ideas pdf :
+- asumir que una misma tabla no puede estar en dos paginas quizas...
