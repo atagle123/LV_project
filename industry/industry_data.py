@@ -60,8 +60,7 @@ class Industry:
             "12":3
                     }
 
-        años_dict=self.generate_years_dict()
-
+        años_dict=self.generate_years_dict(desde=año)
         año_num=años_dict[año]
         quarter_num=quarter_dict[quarter]
 

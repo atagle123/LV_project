@@ -37,3 +37,7 @@ usar ultima info disponible , restar los del 510000 y eliminar columnas del 3100
 
 ideas pdf :
 - asumir que una misma tabla no puede estar en dos paginas quizas...
+- asumir que la primera columna es el indice
+- ver para encontrar los nombres de las columnas... 
+- asumir que datos son en general numeros
+- 

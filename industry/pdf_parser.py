@@ -1,6 +1,13 @@
 from tabula import read_pdf
+import camelot
 import os
 import pandas as pd
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from industry.scrapping import Cmf_scrapper
+from industry.industry_data import Industry
+from  fuzzywuzzy import fuzz
+
 
 """
 scraps and download analisis razonados y estados financieros en pdf
@@ -34,37 +41,7 @@ class Text_PDF_extractor():
     def __init__(self):
         pass
     def extract_tables(self,pdf_path,pages="all"):
-        df = read_pdf(pdf_path,pages=pages)
-        return(df)
-
-
-from tabula import read_pdf
-import pandas as pd
-import os
-
-class BasePDFclass:
-    def __init__(self,pdf_path):
-        self.pdf_path = pdf_path
-    
-    def extract_tables(self):
-        """ Método a implementar que entregue todas las tablas en formato de una ista de dataframes
-        """
-        raise NotImplementedError
-
-class Image_PDF_extractor():
-    def __init__(self):
-        pass
-
-    def exctract_tables(self):
-        pass
-
-
-
-class Text_PDF_extractor():
-    def __init__(self):
-        pass
-    def extract_tables(self,pdf_path,pages="all"):
-        df = read_pdf(pdf_path,pages=pages)
+        df = camelot.read_pdf(pdf_path,pages=pages,flavor="stream")
         return(df)
 
 
@@ -112,17 +89,20 @@ class PDF_tables(BasePDFclass):
     
     def preprocess_data(self,df_list,function=None):
         "quizas implementar funciones propias por empresa..."
-
-        for i,df in enumerate(df_list):
+        new_list=[]
+        for table in df_list: # table is an object of camelot 
+            print(table.parsing_report)
+            df=table.df
 
             df = df.apply(lambda x: x.astype(str).str.replace('.', ''))
             df = df.apply(lambda x: x.astype(str).str.replace('(', ''))
             df = df.apply(lambda x: x.astype(str).str.replace(')', ''))
             df.dropna(how="all",inplace=True)
             df = df.map(lambda x: x.lower() if isinstance(x, str) else x)
-            df_list[i]=df
+            new_list.append(df)
+            
 
-        return(df_list)
+        return(new_list)
     
     def tables_to_excel(self,filename,concept=None):
         
@@ -141,17 +121,23 @@ class PDF_tables(BasePDFclass):
 
 
 
-    #class  clase para busca los links y descargar los analisis razonados o los pdf ... 
 
 
 if __name__=="__main__":
+
+    industry_instance=Industry(empresa="besalco")
+    empresa_link = industry_instance.web_link
+    configurador=industry_instance.build_configurator_to_scrapping(año=2020,quarter="03")  # arreglar lo de si no encuentra la fecha
+
+    scrappy_instance=Cmf_scrapper()
+
+    pdf=scrappy_instance.find_pdf_from_rut_name(empresa_link,configurador)
+    """ falta descargar pdf en carpeta, y entregar despues el path... 
+    """
+
     pdf_path="C:/Users/ataglem/Desktop/LV_project/Análisis_Razonado92434000_202212.pdf"
     pdf_tables_instance=PDF_tables(pdf_path)
     pdf_tables_instance.extract_tables()
     #df=pdf_tables_instance.search_concept("activos corrientes")
     pdf_tables_instance.tables_to_excel(filename="besalco_razonados")
-    import sys
-    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-    import numpy as np
-    from industry.scrapping import Cmf_scrapper
-    cmf=Cmf_scrapper
+

@@ -139,11 +139,11 @@ class Cmf_scrapper(Scrapper):
         """
 
         driver=self.enter_main_page(Empresa, configurador)
-        link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[2]/div/div/div/div[3]/p/a[3]')))
+        link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[2]/div/div/div/div[3]/p/a[3]'))) # el 3 es el razonado
 
-        xbrl_url = link[0].get_attribute('href')
+        pdf_url = link.get_attribute('href')
 
         driver.close()
-        return(xbrl_url)
+        return(pdf_url)
 
 
