@@ -97,7 +97,7 @@ class Cmf_scrapper(Scrapper):
 
     def find_xbrl_from_rut_name(self,Empresa,configurador):
         """
-        Function that given a list of links from the enterprise website, it will find the xbrl file and download it.
+        Function that given the enterprise website, it will find the xbrl file.
 
         Args:
             Empresa (list): list of links from the enterprise website.
@@ -125,4 +125,25 @@ class Cmf_scrapper(Scrapper):
         html= driver.page_source
         driver.close()
         return(html)
+    
+    def find_pdf_from_rut_name(self,Empresa,configurador):
+        """
+        Function that given  the enterprise website, it will find the pdf file.
+
+        Args:
+            Empresa (list): list of links from the enterprise website.
+            configurador (list): list of configuration parameters.
+
+        Returns:
+            str: path to the downloaded xbrl file.
+        """
+
+        driver=self.enter_main_page(Empresa, configurador)
+        link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[2]/div/div/div/div[3]/p/a[3]')))
+
+        xbrl_url = link[0].get_attribute('href')
+
+        driver.close()
+        return(xbrl_url)
+
 
