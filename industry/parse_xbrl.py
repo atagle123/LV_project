@@ -6,7 +6,11 @@ import arelle.FileSource
 import os
 import requests
 import zipfile
-
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from industry.parse_xbrl import DF_XBRL
+from industry.scrapping import Cmf_scrapper
+from industry.industry_data import Industry
 class Manage_xbrl:
     """ Base class to manage an xbrl file
         The process is as follows:
@@ -361,3 +365,46 @@ class DF_XBRL(Manage_xbrl):
             filtered_df=self.loc_data(date_list=useful_dates,df=filtered_df)
             self.save_data(df=filtered_df, concept_name=concept)
         pass
+
+
+def get_industry_data(empresa="falabella", año=2022, mes="06"):
+
+    industry_instance=Industry(empresa)
+
+    empresa_link = industry_instance.web_link
+
+    dates_dict={"03":31,
+                "06":30,
+                "09":30,
+                "12":31
+                }
+    
+    dia=dates_dict[mes]
+
+    configurador=industry_instance.build_configurator_to_scrapping(año,mes)
+
+    useful_dates=[f"{año}-{mes}-{dia}",f"{año-1}-12-31"]
+
+    scrapper_instance=Cmf_scrapper()
+    xbrl_url=scrapper_instance.find_xbrl_from_rut_name(empresa_link,configurador) 
+
+    df_xbrl_instance=DF_XBRL(xbrl_url,empresa,useful_dates)
+
+    concept_dict={"210000":useful_dates,
+                "310000":"all",
+                "420000":"all"} #" hacer algo para construir esto quizas..."
+    #[f"Desde {año-1}-01-01 Hasta {año-1}-{mes}-{dia}",f"Desde {año}-01-01 Hasta {año}-{mes}-{dia}"]} # ojo que esto cambia dependiendo del quarter, que se elija... ver
+
+    df_xbrl_instance.download_concepts(concept_dict)
+
+
+
+def get_historic_data_of_industry(empresa="falabella",desde=2005):
+    for i in range(desde,2022):
+        for j in ["03","06","09","12"]:
+            get_industry_data(empresa, i, j)
+
+    pass
+
+if __name__=="__main__":
+    get_industry_data("besalco")

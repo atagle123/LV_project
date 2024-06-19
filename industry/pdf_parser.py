@@ -153,7 +153,5 @@ if __name__=="__main__":
     import sys
     sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
     import numpy as np
-    from utils import build_website_link_from_industry,build_configurator_to_scrapping, read_json
     from industry.scrapping import Cmf_scrapper
     cmf=Cmf_scrapper
-    

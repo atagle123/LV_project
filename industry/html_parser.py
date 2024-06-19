@@ -6,7 +6,8 @@ import datetime
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
-from utils import build_website_link_from_industry,build_configurator_to_scrapping, read_json
+from utils import  read_json
+from industry.industry_data import Industry
 from industry.scrapping import Cmf_scrapper
 
 
@@ -49,9 +50,8 @@ class HTML_parser:
 
 
 
-class HTML_industry_data():
+class HTML_industry_data:
     def __init__(self):
-
         current_dir = os.getcwd()
         self.csv_path=os.path.join(current_dir, "data","industrydata","html","csv")
         self.excel_path=os.path.join(current_dir, "data", "industrydata", "html", "excel")
@@ -64,14 +64,13 @@ class HTML_industry_data():
         pd_list=[[] for _ in range(len(concept_list))]
         dict_list=dict(zip(concept_list,pd_list))
 
-        empresa_link = build_website_link_from_industry(empresa)
 
         hasta = hasta or  datetime.datetime.now().year
 
         for año in range(desde,hasta+1):
             for mes in ["03","06","09","12"]:
 
-                df_dict=self.get_one_period_data(año, mes,empresa_link,concept_list)
+                df_dict=self.get_one_period_data(año, mes,empresa,concept_list)
 
                 for keys,values in df_dict.items():
 
@@ -88,9 +87,12 @@ class HTML_industry_data():
 
         return(dict_list)
     
-    def get_one_period_data(self, año, mes,empresa_link,concept_list):
+    def get_one_period_data(self, año, mes,empresa,concept_list):
 
-        configurador=build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
+        industry_instance=Industry(empresa)
+        empresa_link = industry_instance.web_link
+        configurador=industry_instance.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
+
         scrappy_instance=Cmf_scrapper()
         html=scrappy_instance.get_html(empresa_link,configurador)
         html_instance=HTML_parser(html)
