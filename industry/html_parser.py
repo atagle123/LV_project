@@ -93,18 +93,17 @@ class HTML_industry_data:
                 # Read the entire content of the file as a string
                 html = file.read()
 
-                # obtener html de path
-                html_instance=HTML_parser(html)
-                df_dict=html_instance.search_concept_list(concept_list)
+            html_instance=HTML_parser(html)
+            df_dict=html_instance.search_concept_list(concept_list)
 
-                return(df_dict)
+            return(df_dict)
         except FileNotFoundError:
             print(f"Not found file: html_{año}_{mes} for {self.industry}")
 
 
     def process_and_save_historic_data(self,desde=2018,hasta=None):
 
-        df_dict=self.get_historic_data(self.industry, desde,hasta)
+        df_dict=self.get_historic_data(desde,hasta)
 
         for keys,df in df_dict.items():
             if df is not None:
@@ -346,7 +345,7 @@ class HTML_industry_data:
 if __name__=="__main__":
 
     instance=HTML_industry_data("besalco")
-    instance.get_historic_data(desde=2018)#,hasta=2020)
+    instance.process_and_save_historic_data(desde=2018)#,hasta=2020)
 
 
 

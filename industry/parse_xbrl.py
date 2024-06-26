@@ -168,12 +168,12 @@ class DF_XBRL(Manage_xbrl):
     def __init__(self,url,industry,dates,already_downloaded=False): # path es industry_data
         """ Class to preprocess an xbrl file
         works with the following directories:
-        - data/industry_data/
-            - excel/
-            - csv/
-            - xbrl/
-                - zip_xbrl
-                - unzip_xbrl
+        - data/industry_data/industry_name
+                            - excel/
+                            - csv/
+                            - xbrl/
+                                - zip_xbrl
+                                - unzip_xbrl
 
         To name a countabiity file: /industry_dates
             
