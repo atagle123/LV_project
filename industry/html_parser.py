@@ -99,6 +99,7 @@ class HTML_industry_data:
             return(df_dict)
         except FileNotFoundError:
             print(f"Not found file: html_{año}_{mes} for {self.industry}")
+            return({})
 
 
     def process_and_save_historic_data(self,desde=2018,hasta=None):

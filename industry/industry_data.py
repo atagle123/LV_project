@@ -1,11 +1,12 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+import time
 from utils import read_json
 import datetime
 import requests
 from industry.scrapping import Cmf_scrapper
+from selenium.common.exceptions import TimeoutException
 
 class Industry:
     def __init__(self,empresa) -> None:
@@ -102,21 +103,30 @@ class Industry:
 
         configurador=self.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
 
-        scrappy_instance=Cmf_scrapper()
-        scrappy_instance.enter_main_page(self.web_link,configurador)
 
-        html=scrappy_instance.get_html()
-        xbrl_url=scrappy_instance.find_xbrl()
-        pdf_razonados_url=scrappy_instance.find_pdf_razonados()
-        pdf_financials_url=scrappy_instance.find_pdf_financials()
+        for i in range(5):
+            try:
+                scrappy_instance=Cmf_scrapper()
+                scrappy_instance.enter_main_page(self.web_link,configurador)
+                break
+            except TimeoutException as e:
+                print(f"TimeoutException occurred: {e}")
+        try:
+            html=scrappy_instance.get_html()
+            xbrl_url=scrappy_instance.find_xbrl()
+            pdf_razonados_url=scrappy_instance.find_pdf_razonados()
+            pdf_financials_url=scrappy_instance.find_pdf_financials()
+
+            self.save_html(html,self.html_path,filename=f"html_{año}_{mes}")
+            self.save_pdf(pdf_razonados_url,self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}")
+            self.save_pdf(pdf_financials_url,self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}")
+            self.save_xbrl(xbrl_url,self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}")
+            
+        except TimeoutException as e:
+            print(f"TimeoutException occurred: {e} data not finded")
 
         scrappy_instance.close_driver()
 
-
-        self.save_html(html,self.html_path,filename=f"html_{año}_{mes}")
-        self.save_pdf(pdf_razonados_url,self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}")
-        self.save_pdf(pdf_financials_url,self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}")
-        self.save_xbrl(xbrl_url,self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}")
 
         pass
     

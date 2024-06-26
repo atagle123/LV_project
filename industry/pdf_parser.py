@@ -36,7 +36,6 @@ class Image_PDF_extractor():
         pass
 
 
-
 class Text_PDF_extractor():
     def __init__(self):
         pass
