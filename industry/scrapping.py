@@ -109,7 +109,7 @@ class Cmf_scrapper(Scrapper):
 
         link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="contenido"]/p/a[6]')))
 
-        xbrl_url = link[0].get_attribute('href')
+        xbrl_url = link.get_attribute('href')
 
         return(xbrl_url)
 

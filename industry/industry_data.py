@@ -1,5 +1,7 @@
 import os
 import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from utils import read_json
 import datetime
 import requests
@@ -13,11 +15,13 @@ class Industry:
 
         current_dir = os.getcwd()
 
-        self.csv_path=os.path.join(current_dir, "data","industrydata",empresa,"raw","html")
-        self.pdf_path=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf")
-        self.excel_path=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf")
+        self.html_path=os.path.join(current_dir, "data","industrydata",empresa,"raw","html")
+        self.pdf_path_razonados=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf_razonados")
+        self.pdf_path_financials=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf_financials")
         self.xbrl_path=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "xbrl")
 
+        self.headers= {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
 
     def get_rut(self,industry_name,folderpath="industry/empresas.json"):
         """
@@ -94,7 +98,7 @@ class Industry:
         years_dict={year : i+1 for i,year in enumerate(reversed(range(desde,current_year+1)))}
         return(years_dict)
     
-    def get_one_period_data(self, año, mes,concept_list):
+    def get_one_period_data(self, año, mes):
 
         configurador=self.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
 
@@ -109,46 +113,85 @@ class Industry:
         scrappy_instance.close_driver()
 
 
-        # llamar a manage xbrl
+        self.save_html(html,self.html_path,filename=f"Html_{año}_{mes}")
+        self.save_pdf(pdf_razonados_url,self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}")
+        self.save_pdf(pdf_financials_url,self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}")
+        self.save_xbrl(xbrl_url,self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}")
 
-
-
-      #  html_instance=HTML_parser(html)
-      #  df_dict=html_instance.search_concept_list(concept_list)
-
-        return(df_dict)
+        pass
     
-    def get_historic_data(self,empresa="besalco",desde=2018,hasta=None):
-
-        concept_list=["210000","310000","510000"]
-
-        pd_list=[[] for _ in range(len(concept_list))]
-        dict_list=dict(zip(concept_list,pd_list))
-
+    def get_historic_data(self,desde=2018,hasta=None):
 
         hasta = hasta or  datetime.datetime.now().year
 
         for año in range(desde,hasta+1):
             for mes in ["03","06","09","12"]:
 
-                df_dict=self.get_one_period_data(año, mes,empresa,concept_list)
+                self.get_one_period_data(año, mes)
 
-                for keys,values in df_dict.items():
+        print(f"Downloaded all data of {self.empresa} from {desde} to {hasta}")
+    
+    def save_html(self,html,path,filename):
+         
+        os.makedirs(path, exist_ok=True)
 
-                    dict_list[keys].append(values)
+        file_path=os.path.join(path,f"{filename}.txt")  # check if not use string io
 
-        for keys,values in dict_list.items():
-            for i,df in enumerate(values):
-                if df is not None:
-                   print(keys,i,"Index is unique: ", df.index.is_unique)
-                else:
-                    print(keys, i, "df is None")
+        with open(file_path,"wt") as f:
+            f.write(html)
+        print(f"Downloaded {filename}")
 
-            dict_list[keys]=pd.concat(values,join="outer",axis="columns")
+        pass
 
-        return(dict_list)
+
+    def save_pdf(self,pdf_url,path,filename):
+        try:
+            response=requests.get(pdf_url,headers=self.headers)
+            response.raise_for_status()
+
+            os.makedirs(path, exist_ok=True)
+
+            file_path=os.path.join(path,f"{filename}.pdf")
+
+            with open(file_path,"wb") as f:
+                f.write(response.content)
+            print(f"Downloaded {filename}")
+
+        except requests.RequestException as e:
+            print(f"Failed to download: {filename}:{e}")
+        
+
+    def save_xbrl(self,xbrl_url,path,filename):   
+        """
+            Function to get data from an url download to the file path.
+            The download format is in a zip file
+
+            Args:
+                url (str): url to download
+                path (str): path to save the file
+                filename (str): name of the file        
+        """
+
+        try:
+            response=requests.get(xbrl_url,headers=self.headers)
+            response.raise_for_status()
+
+            os.makedirs(path, exist_ok=True)
+
+            file_path=os.path.join(path,f"{filename}.zip")
+
+            with open(file_path,"wb") as f:
+                f.write(response.content)
+            print(f"Downloaded {filename}")
+
+        except requests.RequestException as e:
+            print(f"Failed to download: {filename}:{e}")
+
+
+
     
 
 
 if __name__ == "__main__":
-     pass
+    industry=Industry("besalco")
+    industry.get_historic_data(desde=2018,hasta=2020)
