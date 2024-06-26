@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from industry.parse_xbrl import DF_XBRL
 from industry.scrapping import Cmf_scrapper
 from industry.industry_data import Industry
+
 class Manage_xbrl:
     """ Base class to manage an xbrl file
         The process is as follows:
@@ -386,7 +387,10 @@ def get_industry_data(empresa="falabella", año=2022, mes="06"):
     useful_dates=[f"{año}-{mes}-{dia}",f"{año-1}-12-31"]
 
     scrapper_instance=Cmf_scrapper()
-    xbrl_url=scrapper_instance.find_xbrl_from_rut_name(empresa_link,configurador) 
+    scrapper_instance.enter_main_page(empresa_link,configurador)
+    xbrl_url=scrapper_instance.find_xbrl()
+    
+    scrapper_instance.close_driver() 
 
     df_xbrl_instance=DF_XBRL(xbrl_url,empresa,useful_dates)
 

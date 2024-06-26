@@ -95,7 +95,7 @@ class Cmf_scrapper(Scrapper):
         return(self.driver)
 
 
-    def find_xbrl_from_rut_name(self,Empresa,configurador):
+    def find_xbrl(self):
         """
         Function that given the enterprise website, it will find the xbrl file.
 
@@ -107,26 +107,22 @@ class Cmf_scrapper(Scrapper):
             str: path to the downloaded xbrl file.
         """
 
-        driver=self.enter_main_page(Empresa, configurador)
         link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="contenido"]/p/a[6]')))
 
         xbrl_url = link[0].get_attribute('href')
 
-        driver.close()
         return(xbrl_url)
 
     
-    def get_html(self,Empresa,configurador):
+    def get_html(self):
         """
         Get the html of the page.
         
         """
-        driver=self.enter_main_page(Empresa, configurador)
-        html= driver.page_source
-        driver.close()
+        html= self.driver.page_source
         return(html)
     
-    def find_pdf_from_rut_name(self,Empresa,configurador):
+    def find_pdf_razonados(self):
         """
         Function that given  the enterprise website, it will find the pdf file.
 
@@ -138,12 +134,31 @@ class Cmf_scrapper(Scrapper):
             str: path to the downloaded xbrl file.
         """
 
-        driver=self.enter_main_page(Empresa, configurador)
         link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[2]/div/div/div/div[3]/p/a[3]'))) # el 3 es el razonado
 
         pdf_url = link.get_attribute('href')
 
-        driver.close()
+        return(pdf_url)
+    
+    def find_pdf_financials(self):
+        """
+        Function that given  the enterprise website, it will find the pdf file.
+
+        Args:
+            Empresa (list): list of links from the enterprise website.
+            configurador (list): list of configuration parameters.
+
+        Returns:
+            str: path to the downloaded xbrl file.
+        """
+
+        link=WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[2]/div/div/div/div[3]/p/a[2]'))) # el 3 es el razonado y el 2 los estados financieros
+
+        pdf_url = link.get_attribute('href')
+
         return(pdf_url)
 
+    def close_driver(self):
+        print("Clossing driver...")
+        self.driver.close()
 
