@@ -1,6 +1,0 @@
-imacon: "F034.PCC.IND.CCHC.2014.0.M"   2014 tine mismos datos que 2008 y esta mas actualizado (usar 2014), se reporta el 1 de cada mes. 
-"venta viviendas nuevas Santiago (promesas compra/venta)": "F034.VVNS.FLU.CCHC.Z.0.T", 
-"venta viviendas nuevas nacional (promesas compra/venta)": "F034.VVNN.FLU.CCHC.Z.0.T",
-"imacec":"F032.IMC.IND.Z.Z.EP18.Z.Z.0.M", hay varios indices (imacec no minero por ejemplo),
-"valor mercado vivienda":   , hay general y por zonas, 
-" "
