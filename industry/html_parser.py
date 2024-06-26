@@ -6,10 +6,6 @@ import datetime
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
-from utils import  read_json
-from industry.industry_data import Industry
-from industry.scrapping import Cmf_scrapper
-
 
 class HTML_parser:
     def __init__(self,html):
@@ -51,13 +47,15 @@ class HTML_parser:
 
 
 class HTML_industry_data:
-    def __init__(self):
+    def __init__(self,industry):
+        self.industry=industry
         current_dir = os.getcwd()
-        self.csv_path=os.path.join(current_dir, "data","industrydata","html","csv")
-        self.excel_path=os.path.join(current_dir, "data", "industrydata", "html", "excel")
+        self.html_path=os.path.join(current_dir, "data","industrydata",industry,"raw","html")
+        self.csv_path=os.path.join(current_dir, "data","industrydata",industry,"results","csv")
+        self.excel_path=os.path.join(current_dir, "data", "industrydata",industry,"results", "excel")
 
 
-    def get_historic_data(self,empresa="besalco",desde=2018,hasta=None):
+    def get_historic_data(self,desde=2018,hasta=None):
 
         concept_list=["210000","310000","510000"]
 
@@ -70,7 +68,7 @@ class HTML_industry_data:
         for año in range(desde,hasta+1):
             for mes in ["03","06","09","12"]:
 
-                df_dict=self.get_one_period_data(año, mes,empresa,concept_list)
+                df_dict=self.get_one_period_data(año, mes,concept_list)
 
                 for keys,values in df_dict.items():
 
@@ -87,36 +85,36 @@ class HTML_industry_data:
 
         return(dict_list)
     
-    def get_one_period_data(self, año, mes,empresa,concept_list):
-
-        industry_instance=Industry(empresa)
-        empresa_link = industry_instance.web_link
-        configurador=industry_instance.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
-
-        scrappy_instance=Cmf_scrapper()
-        html=scrappy_instance.get_html(empresa_link,configurador)
-        html_instance=HTML_parser(html)
-        df_dict=html_instance.search_concept_list(concept_list)
-
-        return(df_dict)
-
-
-    def get_all_industry_historic_data(self,desde=2018,hasta=None):
-        empresas_json=read_json("C:/Users/ataglem/Desktop/LV_project/industry/empresas.json")
+    def get_one_period_data(self, año, mes,concept_list):
         
-        for empresa in empresas_json.keys():
+        html_path=os.path.join(self.html_path,f"html_{año}_{mes}")
+        try:
+            with open(f'{html_path}.txt', 'r') as file:
+                # Read the entire content of the file as a string
+                html = file.read()
 
-            df_dict=self.get_historic_data(empresa, desde,hasta)
+                # obtener html de path
+                html_instance=HTML_parser(html)
+                df_dict=html_instance.search_concept_list(concept_list)
 
-            for keys,df in df_dict.items():
-                if df is not None:
-                    check=self.column_checker(df)
-                    print("Column checker: ", check)
-                    df_dict[keys] = df.loc[:,~df.columns.duplicated()].copy()
-                else: 
-                    print("df is None")
+                return(df_dict)
+        except FileNotFoundError:
+            print(f"Not found file: html_{año}_{mes} for {self.industry}")
 
-            self.save_file_excel(df_dict, filename=empresa)
+
+    def process_and_save_historic_data(self,desde=2018,hasta=None):
+
+        df_dict=self.get_historic_data(self.industry, desde,hasta)
+
+        for keys,df in df_dict.items():
+            if df is not None:
+                check=self.column_checker(df)
+                print("Column checker: ", check)
+                df_dict[keys] = df.loc[:,~df.columns.duplicated()].copy()
+            else: 
+                print("df is None")
+
+        self.save_file_excel(df_dict, filename=self.industry)
 
 
     def column_checker(self,df):
@@ -347,8 +345,8 @@ class HTML_industry_data:
 
 if __name__=="__main__":
 
-    instance=HTML_industry_data()
-    instance.get_all_industry_historic_data(desde=2018)#,hasta=2020)
+    instance=HTML_industry_data("besalco")
+    instance.get_historic_data(desde=2018)#,hasta=2020)
 
 
 

@@ -33,9 +33,10 @@ class Manage_xbrl:
         self.dates=dates
 
         current_dir = os.getcwd()
-        self.zip_path=os.path.join(current_dir, "data","industrydata","xbrl","zip")
-        self.unzip_path=os.path.join(current_dir, "data","industrydata","xbrl","unzip")
-        self.rawcsv_path=os.path.join(current_dir, "data","industrydata","xbrl","raw_csv")
+        
+        self.xbrl_path=os.path.join(current_dir, "data","industrydata",industry,"raw","xbrl")
+        self.unzip_path=os.path.join(current_dir, "data","industrydata",industry,"xbrl","unzip") # ver a donde va 
+        self.rawcsv_path=os.path.join(current_dir, "data","industrydata",industry,"xbrl","raw_csv") # 
         self.industry_path=os.path.join(self.rawcsv_path, industry) 
 
         self.filename=self.gen_filename(dates, industry)
@@ -43,34 +44,6 @@ class Manage_xbrl:
     def make_dirs(self):
         pass
 
-
-    def download_xbrl(self,url,zip_path,filename):   
-        """
-            Function to get data from an url download to the file path.
-            The download format is in a zip file
-
-            Args:
-                url (str): url to download
-                path (str): path to save the file
-                filename (str): name of the file        
-        """
-
-        headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
-    
-        response = requests.get(url,headers=headers)
-        response.raise_for_status()
-
-        os.makedirs(zip_path, exist_ok=True)
-
-        self.zip_path=zip_path
-
-        file_path=os.path.join(zip_path,f"{filename}.zip")  
-
-        with open(file_path, 'wb') as f:
-            f.write(response.content)
-
-        print(f"XBRL.zip downloaded in {file_path}")
 
 
 
@@ -89,7 +62,6 @@ class Manage_xbrl:
         file_path=os.path.join(zip_path,filename)
         target_path=os.path.join(unzip_path, filename)
 
-        #self.unzip_path=unzip_path
 
         with zipfile.ZipFile(f'{file_path}.zip', 'r') as zip_ref:
             zip_ref.extractall(target_path)
@@ -389,7 +361,7 @@ def get_industry_data(empresa="falabella", año=2022, mes="06"):
     scrapper_instance=Cmf_scrapper()
     scrapper_instance.enter_main_page(empresa_link,configurador)
     xbrl_url=scrapper_instance.find_xbrl()
-    
+
     scrapper_instance.close_driver() 
 
     df_xbrl_instance=DF_XBRL(xbrl_url,empresa,useful_dates)
