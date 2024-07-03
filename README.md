@@ -1,43 +1,117 @@
-cosas por hacer:
 
 
-cosas que faltan importantes:
-- cambiar prints por logger
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+LV project to get macro and industry data from Bcentral API and from CMF chile
 
 
-ideas:
-quizas hacer una clase que vaya buscando e iterando sobre todos los conceptos y descargando los archivos correspondientes
-dos opciones:
-
--armar a mano las fallas
--extraer datos de pdf
--ir armando iterativamente las cosas... puede ser buena opcion para q funcione (quizas en la cmf lo hacen asi)
-- notar que falabella las columnas esan bien (aunq no dicen la fecha q corresponden) pero besalco no, es probable qu idea descrita anteriormente tenga sentido y que el reporte sea solo
-para ese trimestre en particular, entonces habria que ir sumando los otros trimestres para ir obteniendo los mismos resultados.
-
-para el quarter 12 son las eerr de todo el año, pero se se selecciona un trimestre son las de ese treimestre, habria que sumar, ver si es necesario tenerlo para cada quarter.
-
-problema error en los datos ? porque ocurre
-
-posible problema: cambiar nombre a archivono solo por concepto, si no tmb por las columnas
-posible problema 2: si queremos a prtiori cualquier info, va a haber que hacer un multi columns names
-
-problema 3 distintas compañias reportan diferentes valores en el xbrl dependiendo el nombre
-
-- IR SUMANDO ITERATIVAMENTE A LO LARGO DEL AÑO PARA VER SI S EOBTIENEN LOS MISMOS RESULTADOS DE LA CMF, los quarter son los resultados parciales, pero cuando se selecciona el 12 es el total del año
-
-ideas:
-usar html parser o pdf parser para obtener los resultados
-usar el html parser para la info importante... si no ir al pdf, y si no ir al xbrl... 
-
-ojo: es porbable que xbrl sea solo consistente con utilizar 12 como mes osea final de año.
-
-usar ultima info disponible , restar los del 510000 y eliminar columnas del 310000, ordenar por fecha 
+<!-- GETTING STARTED -->
+## Getting Started
 
 
-ideas pdf :
-- asumir que una misma tabla no puede estar en dos paginas quizas...
-- asumir que la primera columna es el indice
-- ver para encontrar los nombres de las columnas... 
-- asumir que datos son en general numeros
-- 
+### Installation
+### Conda Environment
+
+To set up the project environment, create a Conda environment using the provided `environment.yml` file:
+
+```bash
+conda env create -f environment.yml
+conda activate lv_project
+```
+
+### Setup
+
+1. Get free API credentials at [https://si3.bcentral.cl/Siete/en/Siete/API?respuesta=](BANCO CENTRAL CHILE API)
+   
+2. Enter your credentials in credentials.txt in the project folder
+   ```js
+   USER;
+   PASSWORD
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+
+
+<!-- ROADMAP -->
+## File organization
+
+LV_PROJECT/
+│
+├── data/
+│   ├── industrydata/...
+│   └── macrodata/...
+│   
+├── drivers/
+│   └── driver1.exe
+│ 
+├── industry/
+│   ├── html_parser.py
+│   ├── industry_data.py
+│   ├── main_data.py
+│   ├── parse_xbrl.py
+│   ├── pdf_parser.py
+│   ├── scrapping.py
+│   └── empresas.json
+│
+├── macro/
+│   ├── get_data.py
+│   ├── plots_data.py
+│   └── serie.json
+│
+├── utils/
+│   ├── cchc_preprocess.py
+│   ├── download_data.py
+│   ├── excel_downloads.py
+│   └── json_utils.py
+│  
+├── scripts/
+│   ├── reports_plots.py
+│   ├── model2.h5
+│   └── ...
+│ 
+├── .gitignore
+├── README.md
+├── credentials.txt
+└── environment.yml
+
+
+
+
+data/
+├── industrydata/
+│   ├── industry1/
+│   │   ├── raw/
+│   │   │   ├── html/...
+│   │   │   ├── pdf_financials/...
+│   │   │   ├── pdf_razonados/...
+│   │   │   └── xbrl/...
+│   │   │
+│   │   └── results/
+│   │       ├── excel/...
+│   │       └── csv/...
+│   │
+│   └── industry2/...
+│
+└── macrodata/
+    ├── excel/...
+    └── plots/...
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
