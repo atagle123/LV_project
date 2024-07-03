@@ -1,10 +1,12 @@
+import os
+import time
+import requests
+from zipfile import ZipFile
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import os
 
 class Scrapper:
     """ Class scraper, works with a driver in the drivers folder
@@ -12,27 +14,66 @@ class Scrapper:
     """
     def __init__(self,browser="edge",driver_path=None):
         self.browser = browser
+        self.drivers_dict = {
+            'edge': 'msedgedriver.exe'
+            # Add drivers
+        }
         self.driver_path = driver_path or self.__get_default_driver_path()
         self.driver=self.__init_driver()
         
     def __get_default_driver_path(self):
         """ 
-        Method that returns driver name
+        Method that returns driver name and if not exit download it 
         
         Returns:
             driver executable path (str): driver exe path 
         """
 
-        drivers = {
-            'edge': 'msedgedriver.exe'
-        }
-
-        driver_exe_path=drivers.get(self.browser, drivers['edge']) # get driver name and if not use edge driver
+        driver_exe_path=self.drivers_dict.get(self.browser, self.drivers_dict['edge']) # get driver name and if not use edge driver
 
         absolute_path = os.path.abspath("drivers") # folder to save the drivers exe
         full_driver_path=os.path.join(absolute_path, driver_exe_path)
 
+        if not os.path.exists(full_driver_path):
+            self.__download_driver()
+
         return full_driver_path
+    
+    def __download_driver(self):
+
+        url="https://msedgedriver.azureedge.net/126.0.2592.87/edgedriver_win64.zip"
+
+        headers= {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
+
+        response = requests.get(url,headers=headers)
+
+        file_name = os.path.basename(url)
+        absolute_path = os.path.abspath("drivers") # folder to save the drivers exe
+
+        os.makedirs(absolute_path,exist_ok=True)
+
+        file_path = os.path.join(absolute_path, file_name)
+
+        with open(file_path, 'wb') as f:
+            f.write(response.content)
+
+        # If it's a zip file, extract it
+        if file_path.endswith('.zip'):
+            with ZipFile(file_path, 'r') as zip_ref:
+                # Find the .exe file in the zip archive
+                exe_files = [name for name in zip_ref.namelist() if name.endswith('.exe')]
+                if exe_files:
+                    zip_ref.extract(exe_files[0], absolute_path) # extract first exe file
+                    self.drivers_dict["edge"]=str(exe_files[0])
+
+        # Delete the zip file after extraction
+            os.remove(file_path)
+
+        elif file_path.endswith('.exe'):
+            self.drivers_dict["edge"]=file_name
+        
+        print(f"Driver executable extracted and saved to {absolute_path}")
     
     def __init_driver(self):
         """ 
@@ -191,3 +232,7 @@ class Cmf_scrapper(Scrapper):
         pdf_url = link.get_attribute('href')
 
         return(pdf_url)
+
+
+if __name__=="__main__":
+    scrapper=Scrapper()

@@ -1,6 +1,7 @@
 /ignore
 /data
 /to_do_list.txt
+/drivers
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

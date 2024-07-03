@@ -11,7 +11,7 @@ class Data:
     
     '''
     def __init__(self,data_dir="data"):
-        self.siete = bcchapi.Siete(file="credentials.txt") # tiene que ser string # file="credenciales.txt" hacer mas seguro el logging con variables de ambiente
+        self.siete = bcchapi.Siete(file="credentials.txt") # eventualmente usar dotenv y cargar las variables
         self.data_directory=data_dir
         if not os.path.exists( self.data_directory):
               os.makedirs( self.data_directory)
