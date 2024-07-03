@@ -8,6 +8,7 @@ dependencies:
   - pip
   - urllib3==1.26.6
   - selenium==3.141.0
+  - pandas
   - pip:
     - arelle-release
     - camelot

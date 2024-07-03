@@ -2,6 +2,8 @@
 /data
 /to_do_list.txt
 /drivers
+*.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

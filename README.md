@@ -26,7 +26,7 @@ conda activate lv_project
    
 2. Enter your credentials in credentials.txt in the project folder
    ```js
-   USER;
+   USER
    PASSWORD
    ```
 
