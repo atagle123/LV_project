@@ -83,7 +83,7 @@ LV_PROJECT/
 ```
 
 
-
+```kotlin
 data/
 ├── industrydata/
 │   ├── industry1/
@@ -102,7 +102,7 @@ data/
 └── macrodata/
     ├── excel/...
     └── plots/...
-
+```
 
 
 <!-- LICENSE -->
