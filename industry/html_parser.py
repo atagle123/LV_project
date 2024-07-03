@@ -7,11 +7,27 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
 
+
 class HTML_parser:
+    """ Base class to manage the HTML tables.
+        Given html string parse to a list of dataframes with pandas.
+
+    """
     def __init__(self,html):
         self.df_list=pd.read_html(io.StringIO(html))
     
     def search_concept(self,concept):
+        """ 
+        Function that search a given concept in the tables and returns the FIRST dataframe with the concept
+        Note that first is enough for the task of searching accountability ID's
+
+        Args:
+            concept (str): concept to match
+        
+        Returns:
+            df (pandas.df): dataframe with given concept
+
+        """
         for df in self.df_list:
             if len(df.filter(like=concept).columns)>0:
                 df=self.multi_index_create(df)
@@ -21,6 +37,17 @@ class HTML_parser:
         print("Concept not found")
 
     def search_concept_list(self,concept_list):
+        """ 
+        Function that search a given list of concept in the tables and returns a dict {concept:df,...}
+        calls method search_concept
+
+        Args:
+            concept list (list of str): list of concepts to match
+        
+        Returns:
+            dict: dict of concepts and dataframes
+
+        """
         dict={}
         for concept in concept_list:
             df=self.search_concept(concept)
@@ -47,8 +74,15 @@ class HTML_parser:
 
 
 class HTML_industry_data:
+    """ 
+    HTML industry class that works by specific industry name, and saerch specific concepts, the class assumes that ALL the data is previously downloaded by the scrapper
+    
+    
+    """
     def __init__(self,industry):
         self.industry=industry
+
+        ### data paths ###
         current_dir = os.getcwd()
         self.html_path=os.path.join(current_dir, "data","industrydata",industry,"raw","html")
         self.csv_path=os.path.join(current_dir, "data","industrydata",industry,"results","csv")
@@ -56,6 +90,17 @@ class HTML_industry_data:
 
 
     def get_historic_data(self,desde=2018,hasta=None):
+        """
+        Function that gets all the historic data of the concept_list, from the html savepath
+
+        Args:
+            desde (int): initial year to get the data
+            hasta (int): If None current year is used
+        
+        Returns:
+            dict: A dict with concepts as keys, and the merged dataframe from all the periods of the industry ej: {210000: df,...}
+        
+        """
 
         concept_list=["210000","310000","510000"]
 
@@ -86,29 +131,51 @@ class HTML_industry_data:
         return(dict_list)
     
     def get_one_period_data(self, año, mes,concept_list):
+        """
+        Function that gets one period data from the html savepath
+
+        Args: 
+            año (int): Year to search the file
+            mes (str): Quarter to search the file could be one of: (03,06,09,12)
+            concept_list (list of str): list of strings of concepts to search in the tables
+
+        Returns:
+            dict: A dict with concepts as keys, and the dataframe from the given period of the industry ej: {210000: df,...}
         
-        html_path=os.path.join(self.html_path,f"html_{año}_{mes}")
+        """
+        
+        html_path=os.path.join(self.html_path,f"html_{año}_{mes}") # specific path to the file
+
         try:
             with open(f'{html_path}.txt', 'r') as file:
-                # Read the entire content of the file as a string
                 html = file.read()
 
             html_instance=HTML_parser(html)
             df_dict=html_instance.search_concept_list(concept_list)
 
             return(df_dict)
+        
         except FileNotFoundError:
             print(f"Not found file: html_{año}_{mes} for {self.industry}")
             return({})
 
 
     def process_and_save_historic_data(self,desde=2018,hasta=None):
+        """ 
+        Function that gets the historic data of the industry, preprocess it and save it into excel format
+
+        Args:
+            desde (int): initial year to get the data
+            hasta (int): If None current year is used
+            
+        
+        """
 
         df_dict=self.get_historic_data(desde,hasta)
 
         for keys,df in df_dict.items():
             if df is not None:
-                check=self.column_checker(df)
+                check=self.column_checker(df)  # check the columns of the dataframe to robust results 
                 print("Column checker: ", check)
                 df_dict[keys] = df.loc[:,~df.columns.duplicated()].copy()
             else: 
@@ -118,15 +185,36 @@ class HTML_industry_data:
 
 
     def column_checker(self,df):
+        """
+        Function that given a dataframe checks all the columns and return False if one duplicated columns are not equal.
+
+        Args:
+            df (pandas.df): df to check columns
+
+        Returns:
+            bool: True if the dataframe it's fine False if not
+
+        Obs:
+            This function is very important and could be more robust
+        
+        """
         columns = df.columns
         num_columns = len(columns)
         for i in range(num_columns):
             for j in range(i + 1, num_columns):
-                if columns[i] == columns[j] and not df[columns[i]].equals(df[columns[j]]):
+                if columns[i] == columns[j] and not df[columns[i]].equals(df[columns[j]]): 
                     return False
         return True
 
     def save_file_csv(self,df,filename): #excel o csv
+        """
+        Function that saves df in csv format in the csv path
+        
+        Args: 
+            df (pandas.df): df to save
+            filename (str): name of the file
+        
+        """
 
         os.makedirs(self.csv_path, exist_ok=True)
 
@@ -135,6 +223,15 @@ class HTML_industry_data:
 
 
     def save_file_excel(self, df_dict, filename): #excel o csv
+        """
+        Function that saves df in excel format in the excel path
+        This funciton also do specific preprocessing for concepts before saving to excel 
+        
+        Args: 
+            df_dict (dict of pandas.df): dict of df's to save 
+            filename (str): name of the file
+        
+        """
 
         os.makedirs(self.excel_path, exist_ok=True)
         filepath=os.path.join(self.excel_path, f"{filename}.xlsx")
@@ -145,7 +242,7 @@ class HTML_industry_data:
                 df=self.clean(df)
                 if sheet_name in [ "310000", "510000"]:
 
-                        # Construct all quarter data
+                    # Construct all quarter data
                     df=self.construct_all_quarter_data(df)
                     df=self.delete_col_is_not_quarter_data(df)
                     df=self.change_quarter_cols_names(df)
@@ -159,9 +256,6 @@ class HTML_industry_data:
                 df = df.sort_index(axis=1)
                 df.columns = df.columns.map(self.format_quarter)
 
-                """
-                aca va funcion para odernar fechas y para cambiar datos en 51000 y 310000   y para cambiar fechas por Qs
-                """
                 df.to_excel(writer, sheet_name=sheet_name)
 
 ### AUX functions to clean and order the data ###

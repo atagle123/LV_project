@@ -6,6 +6,7 @@ def download_excel_file(url,path,filename="excel_file"):
 
     Args:
         url (str): The URL of the Excel file to download
+        path (str): Path to download the excel
         name (str): The name to give the downloaded file
     """
     response = requests.get(url)
