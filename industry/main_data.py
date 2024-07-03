@@ -13,7 +13,7 @@ if __name__ == "__main__":
     hasta=2024
 
     empresas_json=read_json("C:/Users/ataglem/Desktop/LV_project/industry/empresas.json")
-    #empresas_json={"SIGDO KOPPERS S.A.":1}
+   # empresas_json={"SIGDO KOPPERS S.A.":1}
     for empresa in empresas_json.keys():
         
         industry=Industry(empresa)

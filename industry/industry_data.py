@@ -149,7 +149,7 @@ class Industry:
             self.save_xbrl(xbrl_url,self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}")
             
         except TimeoutException as e:
-            print(f"TimeoutException occurred: {e} data not finded")
+            print(f"TimeoutException occurred: {e} Data not finded from {self.empresa}, {año}, {mes}")
 
         scrappy_instance.close_driver()
 

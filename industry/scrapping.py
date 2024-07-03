@@ -27,7 +27,7 @@ class Scrapper:
             'edge': 'msedgedriver.exe'
         }
 
-        driver_exe_path=drivers.get(self.browser, default=drivers['edge']) # get driver name and if not use edge driver
+        driver_exe_path=drivers.get(self.browser, drivers['edge']) # get driver name and if not use edge driver
 
         absolute_path = os.path.abspath("drivers") # folder to save the drivers exe
         full_driver_path=os.path.join(absolute_path, driver_exe_path)
