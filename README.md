@@ -41,7 +41,7 @@ conda activate lv_project
 
 <!-- ROADMAP -->
 ## File organization
-
+```kotlin
 LV_PROJECT/
 │
 ├── data/
@@ -80,7 +80,7 @@ LV_PROJECT/
 ├── README.md
 ├── credentials.txt
 └── environment.yml
-
+```
 
 
 
