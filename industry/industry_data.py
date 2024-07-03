@@ -9,18 +9,24 @@ from industry.scrapping import Cmf_scrapper
 from selenium.common.exceptions import TimeoutException
 
 class Industry:
+    """
+    Industry class that uses the Cmf_scrapper class to download the data to the path 
+    
+    """
+    
     def __init__(self,empresa) -> None:
         self.empresa=empresa
         self.rut=self.get_rut(empresa)
         self.web_link=self.build_website_link_from_industry(empresa)
 
+        ### Default data directories ###
         current_dir = os.getcwd()
-
         self.html_path=os.path.join(current_dir, "data","industrydata",empresa,"raw","html")
         self.pdf_path_razonados=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf_razonados")
         self.pdf_path_financials=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf_financials")
         self.xbrl_path=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "xbrl")
 
+        ### Use headers for requests ###
         self.headers= {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
 
@@ -106,6 +112,14 @@ class Industry:
         return(years_dict)
     
     def get_one_period_data(self, año, mes):
+        """
+        Function that calls scrapper, enter page of the deired industry, quarter and year. And downloads all the relevant data (pdf's, html, xbrl)
+
+        Args:
+            año (int): Year to download data
+            mes (str): Month to download data, is one of the following ["03","06","09","12"]
+
+        """
 
         configurador=self.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
 
@@ -121,10 +135,13 @@ class Industry:
                 print(f"TimeoutException occurred: {e}")
 
         try:
+            ### Get data sources ###
             html=scrappy_instance.get_html()
             xbrl_url=scrappy_instance.find_xbrl()
             pdf_razonados_url=scrappy_instance.find_pdf_razonados()
             pdf_financials_url=scrappy_instance.find_pdf_financials()
+            
+            ### Download and save data ###
 
             self.save_html(html,self.html_path,filename=f"html_{año}_{mes}")
             self.save_pdf(pdf_razonados_url,self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}")
@@ -136,12 +153,20 @@ class Industry:
 
         scrappy_instance.close_driver()
 
-
         pass
     
-    def get_historic_data(self,desde=2018,hasta=None):
 
-        hasta = hasta or  datetime.datetime.now().year
+    def get_historic_data(self,desde=2018,hasta=None):
+        """
+        Function that gets all the historic data from a given date, it calls get one period data
+        
+        Args:
+            desde (int): initial year to download the data  
+            hasta (int): final year to download the data
+
+        """
+
+        hasta = hasta or  datetime.datetime.now().year # if none current year is provided
 
         for año in range(desde,hasta+1):
             for mes in ["03","06","09","12"]:
@@ -149,8 +174,18 @@ class Industry:
                 self.get_one_period_data(año, mes)
 
         print(f"Downloaded all data of {self.empresa} from {desde} to {hasta}")
+
     
     def save_html(self,html,path,filename):
+        """
+        Function to save html source code in to txt
+
+        Args:
+            html (str): html source code
+            path (str): path to html saved data
+            filename (str): filename to name the txt file
+
+        """
          
         os.makedirs(path, exist_ok=True)
 
@@ -164,6 +199,16 @@ class Industry:
 
 
     def save_pdf(self,pdf_url,path,filename):
+        """
+        Function to download and save pdf
+
+        Args:
+            pdf_url (str): url to download pdf
+            path (str): path to html saved data
+            filename (str): filename to name the txt file
+            
+        """
+
         try:
             response=requests.get(pdf_url,headers=self.headers)
             response.raise_for_status()
