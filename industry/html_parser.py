@@ -168,7 +168,6 @@ class HTML_industry_data:
             desde (int): initial year to get the data
             hasta (int): If None current year is used
             
-        
         """
 
         df_dict=self.get_historic_data(desde,hasta)

@@ -21,4 +21,3 @@ if __name__ == "__main__":
 
         html_industry=HTML_industry_data(empresa)
         html_industry.process_and_save_historic_data(desde=desde,hasta=hasta)
-#

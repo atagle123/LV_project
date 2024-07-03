@@ -40,11 +40,6 @@ class Manage_xbrl:
         self.industry_path=os.path.join(self.rawcsv_path, industry) 
 
         self.filename=self.gen_filename(dates, industry)
-    
-    def make_dirs(self):
-        pass
-
-
 
 
     def unzip_file(self,filename,unzip_path,zip_path):

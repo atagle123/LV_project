@@ -48,15 +48,17 @@ class Industry:
                 industry_name (str): industry name
 
             Returns:
-                list: website links
+                industry_links (list): industry website links
 
             """
-            default_folder_path="industry/empresas.json"
+
+            default_folder_path="industry/empresas.json" # path to json with {industry_name: rut,...} . Maybe refactor and do it automatically
             rut=self.get_rut(industry_name,folderpath=default_folder_path)
+
             print(f"RUT:{rut}")
             
-            Empresa = [f'https://www.cmfchile.cl/portal/principal/613/w3-search.php?keywords={industry_name}#fiscalizados',f"//td[text()={rut}]","./following-sibling::td/a"] # esto puede estar sujeto a cambios de la CMF
-            return(Empresa)
+            industry_links = [f'https://www.cmfchile.cl/portal/principal/613/w3-search.php?keywords={industry_name}#fiscalizados',f"//td[text()={rut}]","./following-sibling::td/a"] # esto puede estar sujeto a cambios de la CMF
+            return(industry_links)
 
 
     def build_configurator_to_scrapping(self,año,quarter,url=None,norma=1): # eventualmente buscar ultimo año disponible por url 
@@ -67,6 +69,9 @@ class Industry:
             año (int): year
             quarter (str): month ["03", "06", "09", "12"]
             norma (int): norma to scrapping 1 IFRS, 2 norma chilena
+        
+        Returns:
+            configurador (list): specific configurator to scrapping, to map year,month and norm into a lit of element position in the clickable selection
 
         """
         quarter_dict={"03":0,
@@ -86,13 +91,14 @@ class Industry:
 
     def generate_years_dict(self,desde=2005):
         """
-        Generate dict of years from the given year in the fllowing way {1:2024, 2:2023, ...}
+        Generate dict of years from the given year in the fllowing way {1:2024, 2:2023, ...} 
+        Note that 0 is not a year, is "Año" see the CMF page
 
         Args:
-            from (int): year
+            desde (int): year
 
         Returns:
-            list: list of years
+            dict: dict of years
 
         """
         current_year = datetime.datetime.now().year
@@ -104,13 +110,16 @@ class Industry:
         configurador=self.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
 
 
-        for i in range(5):
+        for i in range(5): # do 5 trys to enter the page
+
             try:
                 scrappy_instance=Cmf_scrapper()
                 scrappy_instance.enter_main_page(self.web_link,configurador)
                 break
+
             except TimeoutException as e:
                 print(f"TimeoutException occurred: {e}")
+
         try:
             html=scrappy_instance.get_html()
             xbrl_url=scrappy_instance.find_xbrl()
