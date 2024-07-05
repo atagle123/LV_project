@@ -55,6 +55,14 @@ class HTML_parser:
         return(dict)
     
     def multi_index_create(self,df):
+        """ Function that creates a multi index to a df in the given way desired.
+
+        Args: 
+            df: df without complete index
+
+        Returns:
+            df: df with index
+        """
         df["category"]=""
         
         for row_idx, row in df.iterrows():
