@@ -84,7 +84,7 @@ class HTML_parser:
 class HTML_industry_data:
     """ 
     HTML industry class that works by specific industry name, and saerch specific concepts, the class assumes that ALL the data is previously downloaded by the scrapper
-    
+    the objective of the class is to extract and parse the html tables of the CMF industries data.
     
     """
     def __init__(self,industry):

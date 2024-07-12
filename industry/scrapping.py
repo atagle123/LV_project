@@ -9,7 +9,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 class Scrapper:
-    """ Class scraper, works with a driver in the drivers folder
+    """ Class scraper, works with a driver in the drivers folder, finds the driver and inits 
     
     """
     def __init__(self,browser="edge",driver_path=None):
