@@ -311,6 +311,9 @@ class PDF_num_table(Text_PDF_extractor):
         self.set_headers_to_tables()
         return(self.table_list)
     
+
+## Aux functions to process tables
+
 def identify_columns_types(df): # pandas dataframe with ALL strings
 
     dtype_dict = OrderedDict()

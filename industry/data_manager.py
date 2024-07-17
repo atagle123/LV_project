@@ -44,8 +44,12 @@ class Manage_Data:
         file_path=os.path.join(path,f"{filename}.{extension}")
 
         with open(file_path,mode) as f:
-            f.write(file_content)
-        print(f"Downloaded {filename}")
+            try:
+                f.write(file_content)
+                print(f"Downloaded {filename}")
+            except TypeError as e:
+                print(f"Error: {e}")
+
 
     def get_and_download_data(self,url,path,filename,extension="txt",mode="wb"):
         """
@@ -54,3 +58,19 @@ class Manage_Data:
         response_content=self.get_data(url)
         self.download_data(file_content=response_content,path=path,filename=filename,extension=extension,mode=mode)
         pass
+
+
+    def open_file(self,file_path,extension="txt"):
+        """
+            Function that opens a file and return its content     
+        """
+
+        try:
+            with open(f'{file_path}.{extension}', 'r') as file:
+                content = file.read()
+                
+            return(content)
+        
+        except FileNotFoundError:
+            print(f"Not found file: {file_path}")
+            pass

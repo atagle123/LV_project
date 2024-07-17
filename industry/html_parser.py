@@ -6,6 +6,7 @@ import datetime
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
+from data_manager import Manage_Data
 
 
 class HTML_parser:
@@ -14,8 +15,12 @@ class HTML_parser:
 
     """
     def __init__(self,html):
-        self.df_list=pd.read_html(io.StringIO(html))
-    
+        try:
+            self.df_list=pd.read_html(io.StringIO(html))
+        except:
+            print("No tables extracted from html")
+            self.df_list=[]
+            
     def search_concept(self,concept):
         """ 
         Function that search a given concept in the tables and returns the FIRST dataframe with the concept
@@ -81,13 +86,15 @@ class HTML_parser:
 
 
 
-class HTML_industry_data:
+class HTML_industry_data(Manage_Data):
     """ 
     HTML industry class that works by specific industry name, and saerch specific concepts, the class assumes that ALL the data is previously downloaded by the scrapper
     the objective of the class is to extract and parse the html tables of the CMF industries data.
     
     """
     def __init__(self,industry):
+        super().__init__() # data manager class, to get and download the data
+
         self.industry=industry
 
         ### data paths ###
@@ -123,7 +130,7 @@ class HTML_industry_data:
 
                 df_dict=self.get_one_period_data(año, mes,concept_list)
 
-                for keys,values in df_dict.items():
+                for keys,values in df_dict.items(): 
 
                     dict_list[keys].append(values)
 
@@ -153,12 +160,11 @@ class HTML_industry_data:
         """
         
         html_path=os.path.join(self.html_path,f"html_{año}_{mes}") # specific path to the file
-
+        ### change this for the data manager class
         try:
-            with open(f'{html_path}.txt', 'r') as file:
-                html = file.read()
+            html_content=self.open_file(file_path=html_path,extension="txt")
 
-            html_instance=HTML_parser(html)
+            html_instance=HTML_parser(html_content)
             df_dict=html_instance.search_concept_list(concept_list)
 
             return(df_dict)

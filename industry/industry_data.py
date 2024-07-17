@@ -2,20 +2,21 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import datetime
-import requests
 from utils import read_json
 from industry.scrapping import Cmf_scrapper
 from selenium.common.exceptions import TimeoutException
 from industry.data_manager import Manage_Data
 
 
-class Industry:
+class Industry_Data(Manage_Data):
     """
     Industry class that uses the Cmf_scrapper class to download the data to the path 
     
     """
     
     def __init__(self,empresa) -> None:
+        super().__init__() # data manager class, to get and download the data
+
         self.empresa=empresa
         self.default_empresas_path= "configs/empresas.json" # path to json with {industry_name: rut,...} . Maybe refactor and do it automatically
 
@@ -30,7 +31,6 @@ class Industry:
         self.xbrl_path=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "xbrl")
 
         self.Scrappy_instance=Cmf_scrapper() # scrapper class to find the data 
-        self.Data_Manager=Manage_Data() # data manager class, to get and download the data
 
     def get_rut(self,industry_name,folderpath="configs/empresas.json"):
         """
@@ -143,10 +143,10 @@ class Industry:
             pdf_financials_url=self.Scrappy_instance.find_pdf_financials()
             
             ### Download and save data ###
-            self.Data_Manager.download_data(file_content=html,path=self.html_path,filename=f"html_{año}_{mes}",extension="txt",mode="wt") # download html
-            self.Data_Manager.get_and_download_data(url=xbrl_url,path=self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}",extension="zip") # download and get xbrl
-            self.Data_Manager.get_and_download_data(url=pdf_razonados_url,path=self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}",extension="pdf") # download and get pdf
-            self.Data_Manager.get_and_download_data(url=pdf_financials_url,path=self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}",extension="pdf") # download and get pdf
+            self.download_data(file_content=html,path=self.html_path,filename=f"html_{año}_{mes}",extension="txt",mode="wt") # download html
+            self.get_and_download_data(url=xbrl_url,path=self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}",extension="zip") # download and get xbrl
+            self.get_and_download_data(url=pdf_razonados_url,path=self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}",extension="pdf") # download and get pdf
+            self.get_and_download_data(url=pdf_financials_url,path=self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}",extension="pdf") # download and get pdf
 
         except TimeoutException as e:
             print(f"TimeoutException occurred: {e} Data not finded from {self.empresa}, {año}, {mes}")
