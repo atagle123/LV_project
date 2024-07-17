@@ -146,13 +146,13 @@ class Cmf_scrapper(Scrapper):
         select_periodo = Select(periodo)
         # Obtener todas las opciones del <select> en una lista
         base_periodo = select_periodo.options
-        #-----------------------------------------
+
         año = self.driver.find_element(By.ID,'aa')
         # Crear un objeto Select a partir del elemento <select>
         select_año = Select(año)
         # Obtener todas las opciones del <select> en una lista
         base_año = select_año.options
-        #--------------------------------------------------------
+
         tipo_norma = self.driver.find_element(By.NAME,'tipo_norma')
         # Crear un objeto Select a partir del elemento <select>
         select_tipo_norma = Select(tipo_norma)
