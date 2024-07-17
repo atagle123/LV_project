@@ -7,13 +7,11 @@ from industry.html_parser import HTML_industry_data
 
 
 
-
-if __name__ == "__main__":
-    desde=2010
-    hasta=2024
-
-    empresas_json=read_json("C:/Users/ataglem/Desktop/LV_project/industry/empresas.json")
-   # empresas_json={"SIGDO KOPPERS S.A.":1}
+def main(desde,hasta):
+    current_dir=os.getcwd()
+    empresas_dir=os.path.join(current_dir,"configs","empresas.json")
+    
+    empresas_json=read_json(empresas_dir)
     for empresa in empresas_json.keys():
         
         industry=Industry(empresa)
@@ -21,3 +19,13 @@ if __name__ == "__main__":
 
         html_industry=HTML_industry_data(empresa)
         html_industry.process_and_save_historic_data(desde=desde,hasta=hasta)
+
+
+
+
+
+if __name__ == "__main__":
+    desde=2010
+    hasta=2024
+    
+    main(desde,hasta)
