@@ -20,6 +20,17 @@ conda env create -f environment.yml
 conda activate lv_project
 ```
 
+### Docker Setup
+Build the container
+```bash
+docker buid -t LV_PROJECT . 
+```
+
+Run the container
+```bash
+docker run -it  --rm LV_PROJECT scripts/main_data.py 
+```
+
 ### Setup
 
 1. Get free API credentials at [https://si3.bcentral.cl/Siete/en/Siete/API?respuesta=](BANCO CENTRAL CHILE API)
@@ -29,8 +40,6 @@ conda activate lv_project
    USER
    PASSWORD
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 

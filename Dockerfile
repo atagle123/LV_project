@@ -16,4 +16,4 @@ SHELL ["conda", "run", "-n", "lv_project", "/bin/bash", "-c"]
 # Copy the rest of your application code
 
 # Set the entrypoint to your script
-ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "lv_project", "python", "scripts/main_data.py"]
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "lv_project", "python"]
