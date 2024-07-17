@@ -20,7 +20,8 @@ class HTML_parser:
         except:
             print("No tables extracted from html")
             self.df_list=[]
-            
+
+
     def search_concept(self,concept):
         """ 
         Function that search a given concept in the tables and returns the FIRST dataframe with the concept
@@ -35,8 +36,7 @@ class HTML_parser:
         """
         for df in self.df_list:
             if len(df.filter(like=concept).columns)>0:
-                df=self.multi_index_create(df)
-
+                df=self.multi_index_create(df) 
                 return df  # returns first df with the concept match (should work fine)
             
         print("Concept not found")
@@ -69,7 +69,7 @@ class HTML_parser:
             df: df with index
         """
         df["category"]=""
-        
+        last_category=""
         for row_idx, row in df.iterrows():
 
             actual_name=df.iloc[row_idx,0]
@@ -82,8 +82,6 @@ class HTML_parser:
         df.set_index([df.columns.values[i] for i in [-1,0]],inplace=True)
 
         return(df)
-
-
 
 
 class HTML_industry_data(Manage_Data):
@@ -119,8 +117,7 @@ class HTML_industry_data(Manage_Data):
 
         concept_list=["210000","310000","510000"]
 
-        pd_list=[[] for _ in range(len(concept_list))]
-        dict_list=dict(zip(concept_list,pd_list))
+        dict_list={key: [] for key in concept_list}
 
 
         hasta = hasta or  datetime.datetime.now().year
@@ -134,16 +131,14 @@ class HTML_industry_data(Manage_Data):
 
                     dict_list[keys].append(values)
 
+        ### Join dataframes ###
         for keys,values in dict_list.items():
-            for i,df in enumerate(values):
-                if df is not None:
-                   print(keys,i,"Index is unique: ", df.index.is_unique)
-                else:
-                    print(keys, i, "df is None")
+            self.check_index(df_list=values)
 
             dict_list[keys]=pd.concat(values,join="outer",axis="columns")
 
         return(dict_list)
+
     
     def get_one_period_data(self, año, mes,concept_list):
         """
@@ -166,7 +161,6 @@ class HTML_industry_data(Manage_Data):
 
             html_instance=HTML_parser(html_content)
             df_dict=html_instance.search_concept_list(concept_list)
-
             return(df_dict)
         
         except FileNotFoundError:
@@ -195,6 +189,18 @@ class HTML_industry_data(Manage_Data):
                 print("df is None")
 
         self.save_file_excel(df_dict, filename=self.industry)
+
+    def check_index(self,df_list):
+        """
+        Sanity check if index is unique
+        
+        """
+        for i,df in enumerate(df_list):
+            if df is not None:
+                print("Index is unique: ", df.index.is_unique)
+
+            else:
+                print( i, "df is None")
 
 
     def column_checker(self,df):
@@ -252,24 +258,46 @@ class HTML_industry_data(Manage_Data):
         with pd.ExcelWriter(filepath) as writer:
             # Iterate over the dictionary and write each DataFrame to a separate Excel sheet
             for sheet_name, df in df_dict.items():
-                df=self.clean(df)
-                if sheet_name in [ "310000", "510000"]:
-
-                    # Construct all quarter data
-                    df=self.construct_all_quarter_data(df)
-                    df=self.delete_col_is_not_quarter_data(df)
-                    df=self.change_quarter_cols_names(df)
-
-                                    # Convert column names to datetime
-                    df.columns = pd.to_datetime(df.columns.map(self.parse_quarter))
-
-                elif sheet_name=="210000":
-                    df.columns = pd.to_datetime(df.columns)
-
-                df = df.sort_index(axis=1)
-                df.columns = df.columns.map(self.format_quarter)
-
+                df=self.main_cleaning_pipeline(df,concept_type=sheet_name) # se aplica preprocesamiento por concepto 
+                
                 df.to_excel(writer, sheet_name=sheet_name)
+
+    def main_cleaning_pipeline(self,df,concept_type):
+        
+        processing_functions={
+        "310000": self.process_310000,
+        "510000": self.process_310000,
+        "210000": self.process_210000,
+            }
+
+        if concept_type in processing_functions:
+            processing_function = processing_functions[concept_type]
+            processed_df = processing_function(df)
+
+        return processed_df
+    
+    def process_310000(self,df): # or 510000
+
+        df=self.clean(df)
+        # Construct all quarter data
+        df=self.construct_all_quarter_data(df)
+        df=self.delete_col_is_not_quarter_data(df)
+        df=self.change_quarter_cols_names(df)
+
+        # Convert column names to datetime
+        df.columns = pd.to_datetime(df.columns.map(self.parse_quarter))
+
+        df = df.sort_index(axis=1)
+        df.columns = df.columns.map(self.format_quarter)
+        return(df)
+    
+    def process_210000(self,df):
+        df=self.clean(df)
+        df.columns = pd.to_datetime(df.columns)
+
+        df = df.sort_index(axis=1)
+        df.columns = df.columns.map(self.format_quarter)
+        return(df)
 
 ### AUX functions to clean and order the data ###
 
