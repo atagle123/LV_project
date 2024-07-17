@@ -7,6 +7,8 @@ from utils import read_json
 from industry.scrapping import Cmf_scrapper
 from selenium.common.exceptions import TimeoutException
 from industry.data_manager import Manage_Data
+
+
 class Industry:
     """
     Industry class that uses the Cmf_scrapper class to download the data to the path 
@@ -27,8 +29,8 @@ class Industry:
         self.pdf_path_financials=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "pdf_financials")
         self.xbrl_path=os.path.join(current_dir, "data", "industrydata",empresa,"raw", "xbrl")
 
-        self.Data_Manager=Manage_Data()
-
+        self.Scrappy_instance=Cmf_scrapper() # scrapper class to find the data 
+        self.Data_Manager=Manage_Data() # data manager class, to get and download the data
 
     def get_rut(self,industry_name,folderpath="configs/empresas.json"):
         """
@@ -126,8 +128,8 @@ class Industry:
         for i in range(5): # do 5 trys to enter the page
 
             try:
-                scrappy_instance=Cmf_scrapper()
-                scrappy_instance.enter_main_page(self.web_link,configurador)
+                self.Scrappy_instance.init_driver()
+                self.Scrappy_instance.enter_main_page(self.web_link,configurador)
                 break
 
             except TimeoutException as e:
@@ -135,10 +137,10 @@ class Industry:
 
         try:
             ### Get data sources ###
-            html=scrappy_instance.get_html()
-            xbrl_url=scrappy_instance.find_xbrl()
-            pdf_razonados_url=scrappy_instance.find_pdf_razonados()
-            pdf_financials_url=scrappy_instance.find_pdf_financials()
+            html=self.Scrappy_instance.get_html()
+            xbrl_url=self.Scrappy_instance.find_xbrl()
+            pdf_razonados_url=self.Scrappy_instance.find_pdf_razonados()
+            pdf_financials_url=self.Scrappy_instance.find_pdf_financials()
             
             ### Download and save data ###
             self.Data_Manager.download_data(file_content=html,path=self.html_path,filename=f"html_{año}_{mes}",extension="txt",mode="wt") # download html
@@ -146,11 +148,10 @@ class Industry:
             self.Data_Manager.get_and_download_data(url=pdf_razonados_url,path=self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}",extension="pdf") # download and get pdf
             self.Data_Manager.get_and_download_data(url=pdf_financials_url,path=self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}",extension="pdf") # download and get pdf
 
-            
         except TimeoutException as e:
             print(f"TimeoutException occurred: {e} Data not finded from {self.empresa}, {año}, {mes}")
 
-        scrappy_instance.close_driver()
+        self.Scrappy_instance.close_driver()
 
         pass
     

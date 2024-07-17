@@ -19,7 +19,6 @@ class Scrapper:
             # Add drivers
         }
         self.driver_path = driver_path or self.__get_default_driver_path()
-        self.driver=self.__init_driver()
         
     def __get_default_driver_path(self):
         """ 
@@ -75,7 +74,7 @@ class Scrapper:
         
         print(f"Driver executable extracted and saved to {absolute_path}")
     
-    def __init_driver(self):
+    def init_driver(self):
         """ 
         Function thats inits the driver 
         
@@ -93,6 +92,8 @@ class Scrapper:
         if self.browser in browser_mapping:
             driver_class = browser_mapping[self.browser]
             driver = driver_class(executable_path=self.driver_path)
+            
+            self.driver=driver
             return driver
         
         else:
