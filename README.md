@@ -41,6 +41,7 @@ docker run -it  --rm LV_PROJECT scripts/main_data.py
    PASSWORD
    ```
 
+3. Fill the configs/empresas.json file with this format: {empresa_name : rut,...} , example: {"industry1":"94321000",...}
 
 
 <!-- USAGE EXAMPLES -->
@@ -56,18 +57,20 @@ LV_PROJECT/
 ├── data/
 │   ├── industrydata/...
 │   └── macrodata/...
-│   
+│
+├── configs/
+│   └── empresas.json 
+│
 ├── drivers/
 │   └── driver1.exe
 │ 
 ├── industry/
+│   ├── data_manager.py
 │   ├── html_parser.py
 │   ├── industry_data.py
-│   ├── main_data.py
 │   ├── parse_xbrl.py
 │   ├── pdf_parser.py
-│   ├── scrapping.py
-│   └── empresas.json
+│   └── scrapping.py
 │
 ├── macro/
 │   ├── get_data.py
@@ -81,9 +84,8 @@ LV_PROJECT/
 │   └── json_utils.py
 │  
 ├── scripts/
-│   ├── reports_plots.py
-│   ├── model2.h5
-│   └── ...
+│   ├── main_data.py
+│   └── reports_plots.py
 │ 
 ├── .gitignore
 ├── README.md
