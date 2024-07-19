@@ -6,7 +6,7 @@ import datetime
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
-from data_manager import Manage_Data
+from industry.data_manager import Manage_Data
 
 
 class HTML_parser:
@@ -214,14 +214,15 @@ class HTML_industry_data(Manage_Data):
             bool: True if the dataframe it's fine False if not
 
         Obs:
-            This function is very important and could be more robust
+            This function is very important and could be more robust and more efficent
         
         """
         columns = df.columns
         num_columns = len(columns)
+        
         for i in range(num_columns):
             for j in range(i + 1, num_columns):
-                if columns[i] == columns[j] and not df[columns[i]].equals(df[columns[j]]): 
+                if columns[i] == columns[j] and not df[columns[i]].equals(df[columns[j]]):
                     return False
         return True
 
