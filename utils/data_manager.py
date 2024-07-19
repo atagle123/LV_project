@@ -15,7 +15,6 @@ class Manage_Data:
             Args:
                 url (str): url to download
 
-                       
             Returns:
                 Response content
         """
@@ -28,11 +27,9 @@ class Manage_Data:
             print(f"Failed to get data from : {url} : {e}")
 
 
-    def download_data(self,file_content,path,filename,extension="txt",mode="wb"):   
+    def save_data(self,file_content,path,filename,extension="txt",mode="wb"):   
         """
-            Function to get data from an url download to the file path.
-            The download format is in a zip file
-
+            Function to save content in a file
             Args:
                 url (str): url to download
                 path (str): path to save the file
@@ -51,12 +48,12 @@ class Manage_Data:
                 print(f"Error: {e}")
 
 
-    def get_and_download_data(self,url,path,filename,extension="txt",mode="wb"):
+    def download_data(self,url,path,filename,extension="txt",mode="wb"):
         """
             Function that calls the other functions to download data       
         """
         response_content=self.get_data(url)
-        self.download_data(file_content=response_content,path=path,filename=filename,extension=extension,mode=mode)
+        self.save_data(file_content=response_content,path=path,filename=filename,extension=extension,mode=mode)
         pass
 
 

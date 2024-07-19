@@ -6,7 +6,7 @@ import datetime
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
-from industry.data_manager import Manage_Data
+from utils.data_manager import Manage_Data
 
 
 class HTML_parser:

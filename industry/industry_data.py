@@ -5,7 +5,7 @@ import datetime
 from utils import read_json
 from industry.scrapping import Cmf_scrapper
 from selenium.common.exceptions import TimeoutException
-from industry.data_manager import Manage_Data
+from utils.data_manager import Manage_Data
 
 
 class Industry_Data(Manage_Data):
@@ -143,10 +143,10 @@ class Industry_Data(Manage_Data):
             pdf_financials_url=self.Scrappy_instance.find_pdf_financials()
             
             ### Download and save data ###
-            self.download_data(file_content=html,path=self.html_path,filename=f"html_{año}_{mes}",extension="txt",mode="wt") # download html
-            self.get_and_download_data(url=xbrl_url,path=self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}",extension="zip") # download and get xbrl
-            self.get_and_download_data(url=pdf_razonados_url,path=self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}",extension="pdf") # download and get pdf
-            self.get_and_download_data(url=pdf_financials_url,path=self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}",extension="pdf") # download and get pdf
+            self.save_data(file_content=html,path=self.html_path,filename=f"html_{año}_{mes}",extension="txt",mode="wt") # download html
+            self.download_data(url=xbrl_url,path=self.xbrl_path,filename=f"XBRL_zip_{año}_{mes}",extension="zip") # download and get xbrl
+            self.download_data(url=pdf_razonados_url,path=self.pdf_path_razonados,filename=f"Analisis_razonados_{año}_{mes}",extension="pdf") # download and get pdf
+            self.download_data(url=pdf_financials_url,path=self.pdf_path_financials,filename=f"Estados_financieros_{año}_{mes}",extension="pdf") # download and get pdf
 
         except TimeoutException as e:
             print(f"TimeoutException occurred: {e} Data not finded from {self.empresa}, {año}, {mes}")

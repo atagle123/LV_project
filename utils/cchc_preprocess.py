@@ -1,8 +1,7 @@
-from utils.excel_downloads import download_excel_file
 import pandas as pd
 import math
 import os
-
+from utils.data_manager import Manage_Data
 
 
 def download_excel_to_df(url,path,filename="ICEWeb",sheet_name=0): # url: "https://cchc.cl/uploads/indicador/archivos/ICEWeb.xls"
@@ -15,8 +14,8 @@ def download_excel_to_df(url,path,filename="ICEWeb",sheet_name=0): # url: "https
     Returns:
         df (DataFrame): The dataframe read from the excel file.
     """
-
-    download_excel_file(url,path=path,filename=filename) 
+    data_instance=Manage_Data()
+    data_instance.download_data(url=url,path=path,filename=filename,extension="xlsx",mode="wb")
 
     filepath = os.path.join(path, f"{filename}.xlsx")
 
