@@ -4,11 +4,19 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.11.7
   - pip
+  - setuptools==68.2.2
+  - pytz==2023.3.post1
   - urllib3==1.26.6
   - selenium==3.141.0
-  - pandas
+  - matplotlib==3.8.4
+  - beautifulsoup4==4.12.3
+  - pandas==2.2.2
+  - numpy==1.26.4
+  - openpyxl==3.1.5
+  - requests==2.31.0
   - pip:
     - arelle-release
-    - camelot
+    - bcchapi==1.0.1
+    - xlsxwriter==3.2.0
