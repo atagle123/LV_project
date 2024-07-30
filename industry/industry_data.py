@@ -124,7 +124,6 @@ class Industry_Data(Manage_Data):
 
         configurador=self.build_configurator_to_scrapping(año,mes)  # arreglar lo de si no encuentra la fecha
 
-
         for i in range(5): # do 5 trys to enter the page
 
             try:
@@ -165,7 +164,6 @@ class Industry_Data(Manage_Data):
             hasta (int): final year to download the data
 
         """
-
         hasta = hasta or  datetime.datetime.now().year # if none current year is provided
 
         for año in range(desde,hasta+1):

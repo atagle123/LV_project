@@ -135,7 +135,7 @@ class HTML_industry_data(Manage_Data):
         for keys,values in dict_list.items():
             self.check_index(df_list=values)
 
-            dict_list[keys]=pd.concat(values,join="outer",axis="columns")
+            dict_list[keys]=pd.concat(values,join="outer",axis="columns") # see verify_integrity param
 
         return(dict_list)
 
@@ -153,9 +153,8 @@ class HTML_industry_data(Manage_Data):
             dict: A dict with concepts as keys, and the dataframe from the given period of the industry ej: {210000: df,...}
         
         """
-        
         html_path=os.path.join(self.html_path,f"html_{año}_{mes}") # specific path to the file
-        ### change this for the data manager class
+        print(html_path)
         try:
             html_content=self.open_file(file_path=html_path,extension="txt")
 
@@ -316,6 +315,10 @@ class HTML_industry_data(Manage_Data):
 
     
     def construct_all_quarter_data(self,df): # 510000 or 310000
+        """
+        Important! Note that sometimes there is no avaliable information about some columns, and the way to construct it its by substracting accomulated data to quarter data
+        see besalco and enaex for differences...
+        """
 
         cols = df.columns.tolist()
         # Iterate over the columns

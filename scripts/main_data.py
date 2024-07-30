@@ -13,7 +13,6 @@ def main(desde,hasta):
     
     empresas_json=read_json(empresas_dir)
     for empresa in empresas_json.keys():
-        
         industry=Industry_Data(empresa)
         industry.get_historic_data(desde=desde,hasta=hasta)
 
